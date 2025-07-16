@@ -1201,3 +1201,16 @@ section {
     color: #0d9488;
 }
 
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.language-switcher select {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+
