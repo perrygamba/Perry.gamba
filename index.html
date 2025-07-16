@@ -47,6 +47,13 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            <div class="language-switcher">
+    <label for="language-select" style="font-size: 14px;">Language:</label>
+    <select id="language-select" onchange="switchLanguage()">
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+    </select>
+</div>
         </div>
     </nav>
 
@@ -55,12 +62,16 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="hero-name">Perry Gamba</span>
-                    <span class="hero-subtitle">Public Health Expert & M&E Specialist</span>
-                </h1>
-                <p class="hero-description">
-                    Bridging data analytics and health systems strengthening across Africa and Switzerland with 15+ years of experience in monitoring and evaluation, project management, and research.
-                </p>
+    <span class="hero-name">Perry Gamba</span>
+    <span class="hero-subtitle lang lang-en">Public Health Expert & M&E Specialist</span>
+    <span class="hero-subtitle lang lang-de" style="display: none;">Fachmann für öffentliche Gesundheit & M&E-Spezialist</span>
+</h1>
+<p class="hero-description lang lang-en">
+    Bridging data analytics and health systems strengthening across Africa and Switzerland with 15+ years of experience in monitoring and evaluation, project management, and research.
+</p>
+<p class="hero-description lang lang-de" style="display: none;">
+    Verbindet Datenanalyse und Gesundheitsstärkung in Afrika und der Schweiz mit über 15 Jahren Erfahrung in Monitoring und Evaluation, Projektmanagement und Forschung.
+</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">15+</span>
@@ -617,6 +628,30 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+  function switchLanguage() {
+    const selectedLang = document.getElementById("language-select").value;
+
+    // Hide all
+    document.querySelectorAll(".lang").forEach(el => {
+      el.style.display = "none";
+    });
+
+    // Show selected language
+    document.querySelectorAll(".lang-" + selectedLang).forEach(el => {
+      el.style.display = "inline";
+    });
+
+    localStorage.setItem("site-lang", selectedLang);
+  }
+
+  // Load preferred language on page load
+  window.onload = () => {
+    const savedLang = localStorage.getItem("site-lang") || "en";
+    document.getElementById("language-select").value = savedLang;
+    switchLanguage();
+  };
+</script>
 </body>
 </html>
 
