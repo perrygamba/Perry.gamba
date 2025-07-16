@@ -633,18 +633,18 @@
         </div>
     </footer>
 
-    <script>
-function switchLanguage() {
-  const lang = document.getElementById('language-select').value;
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
-  localStorage.setItem('site-lang', lang);
+        <script>
+        function switchLanguage() {
+      const lang = document.getElementById('language-select').value;
+      document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+      localStorage.setItem('site-lang', lang);
 }
-// On page load
-window.onload = () => {
-  const saved = localStorage.getItem('site-lang') || 'en';
-  document.getElementById('language-select').value = saved;
-  switchLanguage();
+    // On page load
+    window.onload = () => {
+      const saved = localStorage.getItem('site-lang') || 'en';
+      document.getElementById('language-select').value = saved;
+      switchLanguage();
 };
 </script>
 </body>
