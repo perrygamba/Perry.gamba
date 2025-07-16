@@ -633,30 +633,19 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script>
-  function switchLanguage() {
-    const selectedLang = document.getElementById("language-select").value;
-
-    // Hide all
-    document.querySelectorAll(".lang").forEach(el => {
-      el.style.display = "none";
-    });
-
-    // Show selected language
-    document.querySelectorAll(".lang-" + selectedLang).forEach(el => {
-      el.style.display = "inline";
-    });
-
-    localStorage.setItem("site-lang", selectedLang);
-  }
-
-  // Load preferred language on page load
-  window.onload = () => {
-    const savedLang = localStorage.getItem("site-lang") || "en";
-    document.getElementById("language-select").value = savedLang;
-    switchLanguage();
-  };
+function switchLanguage() {
+  const lang = document.getElementById('language-select').value;
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+  localStorage.setItem('site-lang', lang);
+}
+// On page load
+window.onload = () => {
+  const saved = localStorage.getItem('site-lang') || 'en';
+  document.getElementById('language-select').value = saved;
+  switchLanguage();
+};
 </script>
 </body>
 </html>
