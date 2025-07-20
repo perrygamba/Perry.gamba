@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perry Gamba - Public Health Expert | Project Manager | Data Analyst | Monitoring & Evaluation Specialist</title>
-    <meta name="description" content="Perry Gamba is a seasoned public health professional with 15+ years of experience in monitoring and evaluation, project management, and research across Africa and Switzerland.">
+    <title data-key="hero_title">Perry Gamba - Public Health Expert | Project Manager | Data Analyst | Monitoring & Evaluation Specialist</title>
+    <meta name="description" data-key="hero_description" content="Perry Gamba is a seasoned public health professional with 15+ years of experience in monitoring and evaluation, project management, and research.">ross Africa and Switzerland.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -38,28 +38,19 @@
                 <li class="nav-item">
                     <a href="#football" class="nav-link">Football</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <div class="language-switcher">
-  <select id="language-select" onchange="switchLanguage()">
-    <option value="en">EN</option>
-    <option value="de">DE</option>
-  </select>
-</div>
+            <div class="language-selector">
+                <label for="language-select">Language:</label>
+                <select id="language-select">
+                    <option value="en">EN</option>
+                    <option value="de">DE</option>
+                </select>
+            </div>            <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <div class="language-switcher">
-    <label for="language-select" style="font-size: 14px;">Language:</label>
-    <select id="language-select" onchange="switchLanguage()">
-        <option value="en">EN</option>
-        <option value="de">DE</option>
-    </select>
-</div>
         </div>
     </nav>
 
@@ -68,16 +59,12 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-    <span class="hero-name">Perry Gamba</span>
-    <span class="hero-subtitle lang lang-en">Public Health Expert & M&E Specialist</span>
-    <span class="hero-subtitle lang lang-de" style="display: none;">Fachmann für öffentliche Gesundheit & M&E-Spezialist</span>
-</h1>
-<p class="hero-description lang lang-en">
-    Bridging data analytics and health systems strengthening across Africa and Switzerland with 15+ years of experience in monitoring and evaluation, project management, and research.
-</p>
-<p class="hero-description lang lang-de" style="display: none;">
-    Verbindet Datenanalyse und Gesundheitsstärkung in Afrika und der Schweiz mit über 15 Jahren Erfahrung in Monitoring und Evaluation, Projektmanagement und Forschung.
-</p>
+                    <span class="hero-name">Perry Gamba</span>
+                    <span class="hero-subtitle">Public Health Expert & M&E Specialist</span>
+                </h1>
+                <p class="hero-description">
+                    Bridging data analytics and health systems strengthening across Africa and Switzerland with 15+ years of experience in monitoring and evaluation, project management, and research.
+                </p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">15+</span>
@@ -99,7 +86,7 @@
             </div>
             <div class="hero-image">
                 <div class="hero-avatar">
-                    <img src="assets/images/Z92_0616.jpeg" alt="Perry Gamba" class="hero-photo">
+                    <img src="assets/images/IMG_5654.jpeg" alt="Perry Gamba" class="hero-photo">
                 </div>
             </div>
         </div>
@@ -140,7 +127,7 @@
                 </div>
                 <div class="about-image">
                     <div class="about-avatar">
-                        <img src="assets/images/IMG_3593.jpg" alt="Perry Gamba Professional" class="about-photo">
+                        <img src="assets/images/IMG_3806.jpeg" alt="Perry Gamba Professional" class="about-photo">
                     </div>
                 </div>
             </div>
@@ -198,46 +185,47 @@
             </div>
         </div>
     </section>
-
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Education & Certifications</h2>
-                <p class="section-subtitle">Continuous learning and professional development</p>
+                <h2 class="section-title" data-key="education_title">Education & Certifications</h2>
+                <p class="section-subtitle" data-key="education_subtitle">Continuous learning and professional development</p>
             </div>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>MSc Data Analytics</h3>
-                    <h4>University of Cumbria</h4>
-                    <span class="education-year">2022 - 2024</span>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <h3 data-key="msc_data_analytics">MSc Data Analytics</h3>
+                    <h4 data-key="university_cumbria">University of Cumbria</h4>
                 </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Masters in Project Monitoring and Evaluation</h3>
-                    <h4>Uganda Technology and Management University</h4>
-                    <span class="education-year">2015 - 2016</span>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2016</div>
+                    <h3 data-key="masters_pme">Masters in Project Monitoring and Evaluation</h3>
+                    <h4 data-key="utamu">Uganda Technology and Management University</h4>
                 </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>MSc Public Health</h3>
-                    <h4>Nexus International University, Uganda</h4>
-                    <span class="education-year">2014 - 2015</span>
+                <div class="timeline-item">
+                    <div class="timeline-date">2014 - 2015</div>
+                    <h3 data-key="msc_public_health">MSc Public Health</h3>
+                    <h4 data-key="nexus_university">Nexus International University, Uganda</h4>
                 </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <h3>Diploma in Law</h3>
-                    <h4>Law Development Centre, Uganda</h4>
-                    <span class="education-year">2013 - 2015</span>
+                <div class="timeline-item">
+                    <div class="timeline-date">2013 - 2015</div>
+                    <h3 data-key="diploma_law">Diploma in Law</h3>
+                    <h4 data-key="law_development_centre">Law Development Centre, Uganda</h4>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2000 - 2003</div>
+                    <h3 data-key="bba">Bachelor of Business Administration</h3>
+                    <h4 data-key="makerere_university">Makerere University, Uganda</h4>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Certified</div>
+                    <h3 data-key="pmp">Project Management Professional (PMP )®</h3>
+                    <h4 data-key="pmi">Project Management Institute (PMI)</h4>
+                </div>
+            </div>
+        </div>
+    </section>ear">2013 - 2015</span>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">
@@ -264,52 +252,30 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Research & Publications</h2>
-                <p class="section-subtitle">Contributing to the body of knowledge</p>
+                <p class="section-subtitle">Contributing to the body of knowledge in public health</p>
             </div>
             <div class="research-grid">
                 <div class="research-card">
                     <div class="research-year">2021</div>
-                    <h3>
-                    <a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/64">
-                        Community Factors and Utilization of Monitoring and Evaluation Results
-                    </a>
-                </h3>
+                    <h3>Community Factors and Utilization of Monitoring and Evaluation Results</h3>
                     <p>Evidence from Malaria Control Programs' Implementation in Mukono District</p>
                     <span class="research-journal">International Journal of Technology and Management 6.1 (2021): 1-11</span>
                 </div>
                 <div class="research-card">
                     <div class="research-year">2020</div>
-                    <h3>
-                    <a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/56">
-                        Effect of Implementation Factors on Monitoring & Evaluation Results Utilization
-                    </a>
-                </h3>
+                    <h3>Effect of Implementation Factors on Monitoring & Evaluation Results Utilization</h3>
                     <p>Evidence from the Malaria Control Programs in Mukono District, Central Uganda</p>
                     <span class="research-journal">International Journal of Technology and Management 5.2 (2020): 1-8</span>
                 </div>
                 <div class="research-card">
                     <div class="research-year">2020</div>
-                    <h3>
-                    <a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/55">
-                        Decision Factors and the Utilization of Monitoring and Evaluation Findings
-                    </a>
-                </h3>
+                    <h3>Decision Factors and the Utilization of Monitoring and Evaluation Findings</h3>
                     <p>A Case of the Ugandan Malaria Control Program</p>
                     <span class="research-journal">International Journal of Technology and Management 5.2 (2020): 1-10</span>
-
-                    <p><strong>🎧 Listen to Podcast Commentary:</strong></p>
-                    <audio controls>
-                    <source src="https://perrygamba.github.io/perrygamba.consulting/Podcast.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                  </audio>
-                </div>
                 </div>
                 <div class="research-card">
                     <div class="research-year">2021</div>
-                    <h3>
-                    <a href="https://www.academia.edu/129443472/Turning_Risk_into_Reform_A_Strategy_for_Inclusive_Investment_in_Uganda_A_Policy_and_Risk_Management_Strategy_for_Ugandas_Investment_Reform">
-                        Turning Risk into Reform: A Strategy for Inclusive Investment in Uganda
-                    </a>
+                    <h3>Turning Risk into Reform: A Strategy for Inclusive Investment in Uganda</h3>
                     <p>A Policy and Risk Management Strategy for Uganda's Investment Reform</p>
                     <span class="research-journal">Research Publication</span>
                 </div>
@@ -321,33 +287,33 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Technical and professional competencies</p>
+                <h2 class="section-title" data-key="skills_title">Skills & Expertise</h2>
+                <p class="section-subtitle" data-key="skills_subtitle">Technical and professional competencies</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Technical Skills</h3>
+                    <h3 data-key="technical_skills">Technical Skills</h3>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <span class="skill-name">SPSS</span>
+                            <span class="skill-name" data-key="spss">SPSS</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Advanced Excel</span>
+                            <span class="skill-name" data-key="advanced_excel">Advanced Excel</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MySQL</span>
+                            <span class="skill-name" data-key="mysql">MySQL</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">PSPP</span>
+                            <span class="skill-name" data-key="pspp">PSPP</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 80%"></div>
                             </div>
@@ -355,52 +321,52 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Core Competencies</h3>
+                    <h3 data-key="core_competencies">Core Competencies</h3>
                     <div class="competency-grid">
                         <div class="competency-item">
                             <i class="fas fa-chart-line"></i>
-                            <span>Data Analytics</span>
+                            <span data-key="data_analytics">Data Analytics</span>
                         </div>
                         <div class="competency-item">
                             <i class="fas fa-tasks"></i>
-                            <span>Project Management</span>
+                            <span data-key="project_management">Project Management</span>
                         </div>
                         <div class="competency-item">
                             <i class="fas fa-search"></i>
-                            <span>Research</span>
+                            <span data-key="research">Research</span>
                         </div>
                         <div class="competency-item">
                             <i class="fas fa-heartbeat"></i>
-                            <span>Public Health</span>
+                            <span data-key="public_health">Public Health</span>
                         </div>
                         <div class="competency-item">
                             <i class="fas fa-clipboard-check"></i>
-                            <span>M&E</span>
+                            <span data-key="me">M&E</span>
                         </div>
                         <div class="competency-item">
                             <i class="fas fa-globe"></i>
-                            <span>Global Health</span>
+                            <span data-key="global_health">Global Health</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Languages</h3>
+                    <h3 data-key="languages_title">Languages</h3>
                     <div class="language-grid">
                         <div class="language-item">
-                            <span class="language-name">English</span>
-                            <span class="language-level">Native</span>
+                            <span class="language-name" data-key="english">English</span>
+                            <span class="language-level" data-key="native">Native</span>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">German</span>
-                            <span class="language-level">Professional</span>
+                            <span class="language-name" data-key="german">German</span>
+                            <span class="language-level" data-key="professional">Professional</span>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">Swahili</span>
-                            <span class="language-level">Native</span>
+                            <span class="language-name" data-key="swahili">Swahili</span>
+                            <span class="language-level" data-key="native">Native</span>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">10 African Languages</span>
-                            <span class="language-level">Various Levels</span>
+                            <span class="language-name" data-key="african_languages">10 African Languages</span>
+                            <span class="language-level" data-key="various_levels">Various Levels</span>
                         </div>
                     </div>
                 </div>
@@ -412,8 +378,8 @@
     <section id="football" class="football">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Football Career</h2>
-                <p class="section-subtitle">Combining athletic excellence with professional achievement</p>
+                <h2 class="section-title" data-key="football_title">Football Career</h2>
+                <p class="section-subtitle" data-key="football_subtitle">Combining athletic excellence with professional achievement</p>
             </div>
             <div class="football-content">
                 <div class="football-info">
@@ -422,94 +388,74 @@
                             <div class="stat-icon">
                                 <i class="fas fa-futbol"></i>
                             </div>
-                            <h3>Current Team</h3>
-                            <p>FC Weesen</p>
-                            <span class="stat-detail">Swiss 1. Liga</span>
+                            <h3><span data-key="current_team_heading">Current Team</span></h3>
+                            <p><span data-key="current_team_name">FC Weesen</span></p>
+                            <span class="stat-detail" data-key="current_team_league">Swiss 1. Liga</span>
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-running"></i>
                             </div>
-                            <h3>Position</h3>
-                            <p>Forward</p>
-                            <span class="stat-detail">Right Wing</span>
+                            <h3><span data-key="position_heading">Position</span></h3>
+                            <p><span data-key="position_main">Forward</span></p>
+                            <span class="stat-detail" data-key="position_sub">Right Wing</span>
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-calendar"></i>
                             </div>
-                            <h3>Born</h3>
-                            <p>April 4, 1981</p>
-                            <span class="stat-detail">Nebbi, Uganda</span>
+                            <h3><span data-key="born_heading">Born</span></h3>
+                            <p><span data-key="born_date">April 4, 1981</span></p>
+                            <span class="stat-detail" data-key="born_location">Nebbi, Uganda</span>
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-flag"></i>
                             </div>
-                            <h3>Nationality</h3>
-                            <p>Ugandan</p>
-                            <span class="stat-detail">International</span>
+                            <h3><span data-key="nationality_heading">Nationality</span></h3>
+                            <p><span data-key="nationality_country">Ugandan</span></p>
+                            <span class="stat-detail" data-key="nationality_status">International</span>
                         </div>
                     </div>
                     <div class="football-description">
-                        <h3>Athletic Excellence</h3>
-                        <p>
+                        <h3 data-key="athletic_excellence_heading">Athletic Excellence</h3>
+                        <p data-key="football_desc_1">
                             Beyond my professional career in public health, I maintain an active football career as a forward for FC Weesen in the Swiss 1. Liga. This unique combination of academic excellence and athletic achievement demonstrates my commitment to maintaining peak performance in multiple disciplines.
                         </p>
-                        <p>
+                        <p data-key="football_desc_2">
                             Playing football at a competitive level has enhanced my leadership skills, teamwork abilities, and strategic thinking - qualities that directly translate to my professional work in project management and monitoring & evaluation.
                         </p>
                         <div class="season-stats">
-                            <h4>2019/2020 - 2022/2023 Season Statistics</h4>
+                            <h4 data-key="season_stats_heading">2022/2023 Season Statistics</h4>
                             <div class="stats-grid">
                                 <div class="stat-item">
                                     <span class="stat-number">21</span>
-                                    <span class="stat-number">36</span>
-                                      <span class="stat-number">4</span>
-                                    <span class="stat-label">Appearances</span>
+                                    <span class="stat-label" data-key="appearances">Appearances</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="stat-number">1. Liga</span>
-                                    <span class="stat-number">2. Liga Inter</span>
-                                     <span class="stat-number">Swiss Cup qualifiers</span>
-                                    <span class="stat-label">League Level</span>
+                                    <span class="stat-label" data-key="league_level">League Level</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-number">1,549 mins</span>
-                                    <span class="stat-number">2,268 mins</span>
-                                    <span class="stat-number">213 mins</span>
-                                    <span class="stat-label">Minutes Played</span>
+                                    <span class="stat-number">Forward</span>
+                                    <span class="stat-label" data-key="primary_position">Primary Position</span>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="football-gallery">
-                    <h3>Football Gallery</h3>
+                    <h3 data-key="football_gallery_heading">Football Gallery</h3>
                     <div class="gallery-grid">
                         <div class="gallery-item">
                             <img src="assets/images/IMG_5656.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
                         </div>
                         <div class="gallery-item">
                             <img src="assets/images/IMG_5662.jpeg" alt="Perry Gamba Team Photo" class="gallery-photo">
-                            </div>
-                         <div class="gallery-item">
-                              <img src="assets/images/0009.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
-                            </div>
+                        </div>
                         <div class="gallery-item">
                             <img src="assets/images/IMG_5663.jpeg" alt="Perry Gamba Match Day" class="gallery-photo">
-                            </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/IMG_3806.jpeg" alt="Perry Gamba Match Day" class="gallery-photo">
-                               </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/IMG_3908.jpeg" alt="Perry Gamba Match Day" class="gallery-photo">
-                               </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/IMG_5654.jpeg" alt="Perry Gamba Match Day" class="gallery-photo">
-                               </div>
-                         <div class="gallery-item">
-                              <img src="assets/images/0010.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
-                            </div>
+                        </div>
                         <div class="gallery-item">
                             <img src="assets/images/IMG_5664.jpeg" alt="Perry Gamba Training" class="gallery-photo">
                         </div>
@@ -519,81 +465,65 @@
                         <div class="gallery-item">
                             <img src="assets/images/IMG_0007.jpeg" alt="Perry Gamba Action Shot" class="gallery-photo">
                         </div>
-                         <div class="gallery-item">
-                              <img src="assets/images/0001.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
-                             </div>
-                         <div class="gallery-item">
-                              <img src="assets/images/0006.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
-                             </div>
-                         <div class="gallery-item">
-                              <img src="assets/images/0008.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
                     </div>
-                        <div class="gallery-item">
-                              <img src="assets/images/0002.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
                 </div>
-                        <div class="gallery-item">
-                              <img src="assets/images/0003.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
             </div>
-                        <div class="gallery-item">
-                              <img src="assets/images/0004.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
         </div>
-                        <div class="gallery-item">
-                              <img src="assets/images/0005.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's collaborate on your next public health project</p>
+                <h2 class="section-title" data-key="contact_title">Get In Touch</h2>
+                <p class="section-subtitle" data-key="contact_subtitle">Let's collaborate on your next public health project</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-key="email_heading">Email</h4>
                             <p>parmu02@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
+                            <h4 data-key="phone_heading">Phone</h4>
                             <p>+41 765156367</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Location</h4>
+                            <h4 data-key="location_heading">Location</h4>
                             <p>Forrenstr 8, Schänis, Switzerland</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <div>
-                            <h4>LinkedIn</h4>
-                            <p><a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank">Perry Gamba</a></p>
+                            <h4 data-key="linkedin_heading">LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank" data-key="linkedin_profile">Perry Gamba</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required data-key="form_name_placeholder">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required data-key="form_email_placeholder">
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required data-key="form_subject_placeholder">
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required data-key="form_message_placeholder"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-key="form_submit_button">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -605,21 +535,21 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Perry Gamba</h3>
-                    <p>Public Health Expert & M&E Specialist</p>
+                    <h3 data-key="footer_name">Perry Gamba</h3>
+                    <p data-key="footer_tagline">Public Health Expert & M&E Specialist</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-key="quick_links_heading">Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#football">Football</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-key="about_nav_footer">About</a></li>
+                        <li><a href="#experience" data-key="experience_nav_footer">Experience</a></li>
+                        <li><a href="#research" data-key="research_nav_footer">Research</a></li>
+                        <li><a href="#football" data-key="football_nav_footer">Football</a></li>
+                        <li><a href="#contact" data-key="contact_nav_footer">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4 data-key="connect_heading">Connect</h4>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://independent.academia.edu/PerryGamba" target="_blank"><i class="fas fa-graduation-cap"></i></a>
@@ -628,25 +558,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Perry Gamba. All rights reserved.</p>
+                <p data-key="copyright">&copy; 2024 Perry Gamba. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-        <script>
-        function switchLanguage() {
-      const lang = document.getElementById('language-select').value;
-      document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-      document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
-      localStorage.setItem('site-lang', lang);
-}
-    // On page load
-    window.onload = () => {
-      const saved = localStorage.getItem('site-lang') || 'en';
-      document.getElementById('language-select').value = saved;
-      switchLanguage();
-};
-</script>
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
 </body>
 </html>
-
