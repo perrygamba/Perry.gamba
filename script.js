@@ -309,3 +309,104 @@ loadingStyle.textContent = `
 `;
 document.head.appendChild(loadingStyle);
 
+
+
+
+// Language Switching Logic
+document.addEventListener("DOMContentLoaded", () => {
+    const languageSelect = document.getElementById("language-select");
+
+    // Function to set the language
+    const setLanguage = (lang) => {
+        // Update content based on selected language
+        document.querySelectorAll("[data-key]").forEach(element => {
+            const key = element.getAttribute("data-key");
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+
+        // Update placeholder texts
+        document.querySelectorAll("[data-placeholder-key]").forEach(element => {
+            const key = element.getAttribute("data-placeholder-key");
+            if (translations[lang] && translations[lang][key]) {
+                element.placeholder = translations[lang][key];
+            }
+        });
+
+        // Update nav links
+        document.querySelectorAll(".nav-link").forEach(link => {
+            const key = link.getAttribute("data-nav-key");
+            if (translations[lang] && translations[lang][key]) {
+                link.textContent = translations[lang][key];
+            }
+        });
+
+        // Update the select value
+        languageSelect.value = lang;
+
+        // Save selected language to localStorage
+        localStorage.setItem("selectedLanguage", lang);
+    };
+
+    // Event listener for language change
+    languageSelect.addEventListener("change", (event) => {
+        setLanguage(event.target.value);
+    });
+
+    // Load saved language or default to English
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+    setLanguage(savedLanguage);
+});
+
+
+
+
+// Language Switching Logic
+document.addEventListener("DOMContentLoaded", () => {
+    const languageSelect = document.getElementById("language-select");
+
+    // Function to set the language
+    const setLanguage = (lang) => {
+        // Update content based on selected language
+        document.querySelectorAll("[data-key]").forEach(element => {
+            const key = element.getAttribute("data-key");
+            if (translations[lang] && translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+
+        // Update placeholder texts
+        document.querySelectorAll("[data-placeholder-key]").forEach(element => {
+            const key = element.getAttribute("data-placeholder-key");
+            if (translations[lang] && translations[lang][key]) {
+                element.placeholder = translations[lang][key];
+            }
+        });
+
+        // Update nav links
+        document.querySelectorAll(".nav-link").forEach(link => {
+            const key = link.getAttribute("data-nav-key");
+            if (translations[lang] && translations[lang][key]) {
+                link.textContent = translations[lang][key];
+            }
+        });
+
+        // Update the select value
+        languageSelect.value = lang;
+
+        // Save selected language to localStorage
+        localStorage.setItem("selectedLanguage", lang);
+    };
+
+    // Event listener for language change
+    languageSelect.addEventListener("change", (event) => {
+        setLanguage(event.target.value);
+    });
+
+    // Load saved language or default to English
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+    setLanguage(savedLanguage);
+});
+
+
