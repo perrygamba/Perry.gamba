@@ -548,6 +548,44 @@ section {
     font-size: 0.9rem;
 }
 
+.research-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #1e3a8a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-bottom: 2px solid #0d9488;
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.research-link:hover {
+    color: #0d9488;
+}
+
+.research-scholar {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.research-scholar a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #1e3a8a;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.research-scholar a:hover {
+    background: #0d9488;
+}
+
 .research-card--inprogress {
     border-left-color: #d4a843;
     background: linear-gradient(to bottom right, #fffdf5, #fff);
@@ -1036,7 +1074,7 @@ section {
 }
 
 .about-photo {
-    object-position: center 20%;
+    object-position: center top;
 }
 
 .hero-avatar {
