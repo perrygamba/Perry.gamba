@@ -18,30 +18,35 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-key="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" data-key="nav.about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#services" class="nav-link" data-key="nav.services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link" data-key="nav.experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#education" class="nav-link" data-key="nav.education">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#research" class="nav-link" data-key="nav.research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link" data-key="nav.skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" data-key="nav.contact">Contact</a>
                 </li>
             </ul>
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -56,28 +61,28 @@
             <div class="hero-content">
                 <h1 class="hero-title">
                     <span class="hero-name">Perry Gamba</span>
-                    <span class="hero-subtitle">PMP® | M&E Consultant | Data Analytics | Public Health</span>
+                    <span class="hero-subtitle" data-key="hero.subtitle">PMP® | M&E Consultant | Data Analytics | Public Health</span>
                 </h1>
-                <p class="hero-description">
+                <p class="hero-description" data-key="hero.description">
                     I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">15+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-label" data-key="hero.stat1">Years Experience</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">50+</span>
-                        <span class="stat-label">Health Facilities</span>
+                        <span class="stat-label" data-key="hero.stat2">Health Facilities</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">300+</span>
-                        <span class="stat-label">People Trained</span>
+                        <span class="stat-label" data-key="hero.stat3">People Trained</span>
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Book a Consultation</a>
-                    <a href="#services" class="btn btn-secondary">View Services</a>
+                    <a href="#contact" class="btn btn-primary" data-key="hero.cta.primary">Book a Consultation</a>
+                    <a href="#services" class="btn btn-secondary" data-key="hero.cta.secondary">View Services</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -92,32 +97,32 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about leveraging data to improve public health outcomes</p>
+                <h2 class="section-title" data-key="about.title">About Me</h2>
+                <p class="section-subtitle" data-key="about.subtitle">Passionate about evidence-based solutions that improve lives</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
+                    <p class="about-intro" data-key="about.intro">
                         PMP®-certified consultant with 15+ years delivering complex public health, M&E, and social development programs across Africa and Europe — for government ministries, NGOs, and international organisations.
                     </p>
-                    <p>
+                    <p data-key="about.p1">
                         I specialise in designing and implementing national M&E systems, leading multi-country programs, and applying data analytics to drive accountability and performance improvement. My work has directly strengthened health service delivery across 50+ facilities, improved reporting and performance by 20–40%, and built lasting capacity in organisations across Uganda, Switzerland, and beyond.
                     </p>
-                    <p>
+                    <p data-key="about.p2">
                         With an MSc in Data Analytics, Masters in Project M&E, MSc in Public Health, and credentials from Harvard Business School and PMI, I bring both strategic depth and hands-on delivery experience to every engagement. I work fluently across English, German, and Swahili — essential for multicultural stakeholder environments.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight">
                             <i class="fas fa-globe"></i>
-                            <span>Multi-Country Programs</span>
+                            <span data-key="about.h1">Multi-Country Programs</span>
                         </div>
                         <div class="highlight">
                             <i class="fas fa-chart-line"></i>
-                            <span>Evidence-Based Impact</span>
+                            <span data-key="about.h2">Evidence-Based Impact</span>
                         </div>
                         <div class="highlight">
                             <i class="fas fa-certificate"></i>
-                            <span>PMP® Certified</span>
+                            <span data-key="about.h3">PMP® Certified</span>
                         </div>
                     </div>
                 </div>
@@ -134,56 +139,44 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Services</h2>
-                <p class="section-subtitle">Practical expertise, delivered from strategy through to implementation</p>
+                <h2 class="section-title" data-key="services.title">Services</h2>
+                <p class="section-subtitle" data-key="services.subtitle">Practical expertise, delivered from strategy through to implementation</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>M&E Systems Design & Implementation</h3>
-                    <p>Design and deploy national and organisational M&E frameworks, data quality systems, HMIS infrastructure, and reporting tools — built to last and drive accountability.</p>
+                    <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3 data-key="s1.title">M&E Systems Design & Implementation</h3>
+                    <p data-key="s1.desc">Design and deploy national and organisational M&E frameworks, data quality systems, HMIS infrastructure, and reporting tools — built to last and drive accountability.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search-dollar"></i>
-                    </div>
-                    <h3>Program Evaluation & Impact Assessment</h3>
-                    <p>Rigorous evaluation of public health, social development, and education programs using qualitative and quantitative methods, including systematic reviews and USAID frameworks.</p>
+                    <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
+                    <h3 data-key="s2.title">Program Evaluation & Impact Assessment</h3>
+                    <p data-key="s2.desc">Rigorous evaluation of public health, social development, and education programs using qualitative and quantitative methods, including systematic reviews and USAID frameworks.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Data Analytics & Reporting</h3>
-                    <p>Transform raw program data into actionable insight using SPSS, R, MySQL, Advanced Excel, and Tableau. Build dashboards and reporting systems that inform strategic decisions.</p>
+                    <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3 data-key="s3.title">Data Analytics & Reporting</h3>
+                    <p data-key="s3.desc">Transform raw program data into actionable insight using SPSS, R, MySQL, Advanced Excel, and Tableau. Build dashboards and reporting systems that inform strategic decisions.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3>Public Health Program Management</h3>
-                    <p>End-to-end PMP®-certified management of complex multi-country health and development programs — from planning and stakeholder coordination through to delivery and performance review.</p>
+                    <div class="service-icon"><i class="fas fa-tasks"></i></div>
+                    <h3 data-key="s4.title">Public Health Program Management</h3>
+                    <p data-key="s4.desc">End-to-end PMP®-certified management of complex multi-country health and development programs — from planning and stakeholder coordination through to delivery and performance review.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <h3>Capacity Building & Training</h3>
-                    <p>Design and deliver M&E, public health, and project management training for government staff, community health workers, NGO teams, and refugee community leaders.</p>
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 data-key="s5.title">Capacity Building & Training</h3>
+                    <p data-key="s5.desc">Design and deliver M&E, public health, and project management training for government staff, community health workers, NGO teams, and refugee community leaders.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Strategy & Development Consulting</h3>
-                    <p>Advisory support for organisations entering African markets, designing development initiatives, navigating refugee integration programs, or strengthening ESG and public-sector accountability frameworks.</p>
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 data-key="s6.title">Strategy & Development Consulting</h3>
+                    <p data-key="s6.desc">Advisory support for organisations entering African markets, designing development initiatives, navigating refugee integration programs, or strengthening ESG and public-sector accountability frameworks.</p>
                 </div>
             </div>
             <div class="services-cta">
-                <p>Ready to discuss your project?</p>
-                <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+                <p data-key="services.cta.text">Ready to discuss your project?</p>
+                <a href="#contact" class="btn btn-primary" data-key="services.cta.button">Book a Consultation</a>
             </div>
         </div>
     </section>
@@ -192,8 +185,8 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Professional Experience</h2>
-                <p class="section-subtitle">A journey of impact across continents</p>
+                <h2 class="section-title" data-key="experience.title">Professional Experience</h2>
+                <p class="section-subtitle" data-key="experience.subtitle">A journey of impact across continents</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
@@ -260,8 +253,8 @@
     <section id="education" class="education">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Education & Certifications</h2>
-                <p class="section-subtitle">Continuous learning and professional development</p>
+                <h2 class="section-title" data-key="education.title">Education & Certifications</h2>
+                <p class="section-subtitle" data-key="education.subtitle">Continuous learning and professional development</p>
             </div>
             <div class="education-grid">
                 <div class="education-card">
@@ -376,8 +369,8 @@
     <section id="research" class="research">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Research & Publications</h2>
-                <p class="section-subtitle">Contributing to the body of knowledge in public health</p>
+                <h2 class="section-title" data-key="research.title">Research & Publications</h2>
+                <p class="section-subtitle" data-key="research.subtitle">Contributing to the body of knowledge in public health</p>
             </div>
             <div class="research-grid">
                 <div class="research-card">
@@ -424,12 +417,12 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Technical and professional competencies</p>
+                <h2 class="section-title" data-key="skills.title">Skills & Expertise</h2>
+                <p class="section-subtitle" data-key="skills.subtitle">Technical and professional competencies</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Technical Skills</h3>
+                    <h3 data-key="skills.technical">Technical Skills</h3>
                     <div class="skill-list">
                         <div class="skill-item">
                             <span class="skill-name">SPSS / PSPP</span>
@@ -476,7 +469,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Core Competencies</h3>
+                    <h3 data-key="skills.competencies">Core Competencies</h3>
                     <div class="competency-grid">
                         <div class="competency-item">
                             <i class="fas fa-clipboard-check"></i>
@@ -521,23 +514,23 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Languages</h3>
+                    <h3 data-key="skills.languages">Languages</h3>
                     <div class="language-grid">
                         <div class="language-item">
-                            <span class="language-name">English</span>
-                            <span class="language-level">Native</span>
+                            <span class="language-name" data-key="lang.english">English</span>
+                            <span class="language-level" data-key="level.fluent">Fluent</span>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">German</span>
-                            <span class="language-level">Professional</span>
+                            <span class="language-name" data-key="lang.german">German</span>
+                            <span class="language-level" data-key="level.professional">Professional (B1/B2)</span>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">Swahili</span>
-                            <span class="language-level">Native</span>
+                            <span class="language-name" data-key="lang.swahili">Swahili</span>
+                            <span class="language-level" data-key="level.fluent">Fluent</span>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">10 African Languages</span>
-                            <span class="language-level">Various Levels</span>
+                            <span class="language-name" data-key="lang.other">10 African Languages</span>
+                            <span class="language-level" data-key="level.various">Various Levels</span>
                         </div>
                     </div>
                 </div>
@@ -646,36 +639,36 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's collaborate on your next public health project</p>
+                <h2 class="section-title" data-key="contact.title">Get In Touch</h2>
+                <p class="section-subtitle" data-key="contact.subtitle">Let's collaborate on your next project</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-key="contact.email">Email</h4>
                             <p>parmu02@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
+                            <h4 data-key="contact.phone">Phone</h4>
                             <p>+41 765156367</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Location</h4>
+                            <h4 data-key="contact.location">Location</h4>
                             <p>Forrenstr 8, Schänis, Switzerland</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <div>
-                            <h4>LinkedIn</h4>
+                            <h4 data-key="contact.linkedin">LinkedIn</h4>
                             <p><a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank">Perry Gamba</a></p>
                         </div>
                     </div>
@@ -683,18 +676,18 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" data-key="form.name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" data-key="form.email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" data-key="form.subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" data-key="form.message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-key="form.submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -707,21 +700,21 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Perry Gamba</h3>
-                    <p>PMP® | M&E Consultant | Data Analytics | Public Health</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #a7f3d0;">Based in Schänis, Switzerland</p>
+                    <p data-key="footer.tagline">PMP® | M&E Consultant | Data Analytics | Public Health</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #a7f3d0;" data-key="footer.location">Based in Schänis, Switzerland</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-key="footer.links">Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-key="nav.about">About</a></li>
+                        <li><a href="#services" data-key="nav.services">Services</a></li>
+                        <li><a href="#experience" data-key="nav.experience">Experience</a></li>
+                        <li><a href="#research" data-key="nav.research">Research</a></li>
+                        <li><a href="#contact" data-key="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
+                    <h4 data-key="footer.connect">Connect</h4>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://independent.academia.edu/PerryGamba" target="_blank"><i class="fas fa-graduation-cap"></i></a>
@@ -730,11 +723,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Perry Gamba. All rights reserved.</p>
+                <p data-key="footer.copy">&copy; 2025 Perry Gamba. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

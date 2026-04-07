@@ -1,3 +1,15 @@
+/* Design tokens */
+:root {
+    --navy:   #1e3a8a;
+    --teal:   #0d9488;
+    --gold:   #d4a843;
+    --orange: #ea580c;
+    --light:  #f9fafb;
+    --white:  #ffffff;
+    --text:   #374151;
+    --muted:  #6b7280;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
