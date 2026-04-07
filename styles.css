@@ -631,6 +631,80 @@ section {
     font-size: 0.8rem;
 }
 
+/* Services Section */
+.services {
+    background-color: #f9fafb;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    border-top: 4px solid #0d9488;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    border-color: #0d9488;
+}
+
+.service-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #0d9488, #1e3a8a);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.service-card h3 {
+    color: #1e3a8a;
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.service-card p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 0.97rem;
+}
+
+.services-cta {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1e3a8a, #0d9488);
+    border-radius: 12px;
+    color: white;
+}
+
+.services-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Contact Section */
 .contact {
     background-color: #f9fafb;
