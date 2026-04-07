@@ -548,6 +548,15 @@ section {
     font-size: 0.9rem;
 }
 
+.research-card--inprogress {
+    border-left-color: #d4a843;
+    background: linear-gradient(to bottom right, #fffdf5, #fff);
+}
+
+.research-year--inprogress {
+    background: #d4a843;
+}
+
 /* Skills Section */
 .skills {
     background-color: white;
@@ -1020,6 +1029,14 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.hero-photo {
+    object-position: center top;
+}
+
+.about-photo {
+    object-position: center 20%;
 }
 
 .hero-avatar {
