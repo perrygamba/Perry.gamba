@@ -127,7 +127,7 @@ if (contactForm) {
         const message = formData.get('message');
         
         // Create mailto link
-        const mailtoLink = `mailto:parmu02@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        const mailtoLink = `mailto:perry@perrygamba.consulting?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
         
         // Open email client
         window.location.href = mailtoLink;
