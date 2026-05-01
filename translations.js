@@ -54,6 +54,7 @@ const translations = {
     // Education
     'education.title':    'Education & Certifications',
     'education.subtitle': 'Continuous learning and professional development',
+    'edu.fhgr':           'University of Applied Sciences of the Grisons (FHGR)',
 
     // Research
     'research.title':    'Research & Publications',
@@ -150,6 +151,7 @@ const translations = {
     // Education
     'education.title':    'Ausbildung & Zertifikate',
     'education.subtitle': 'Kontinuierliches Lernen und berufliche Weiterentwicklung',
+    'edu.fhgr':           'Fachhochschule Graubünden (FHGR)',
 
     // Research
     'research.title':    'Forschung & Publikationen',
