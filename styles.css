@@ -385,8 +385,10 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: 50% 8%;
     border-radius: 10px;
+    transform: scale(1.05);
+    transform-origin: center top;
 }
 
 /* ── Section Common ──────────────────────────────────────── */
