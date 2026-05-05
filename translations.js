@@ -1,17 +1,19 @@
 const translations = {
   en: {
     // Navigation
-    'nav.home':       'Home',
-    'nav.about':      'About',
-    'nav.services':   'Services',
-    'nav.experience': 'Experience',
-    'nav.education':  'Education',
-    'nav.research':   'Research',
-    'nav.skills':     'Skills',
-    'nav.contact':    'Contact',
+    'nav.home':         'Home',
+    'nav.about':        'About',
+    'nav.services':     'Services',
+    'nav.experience':   'Experience',
+    'nav.education':    'Education',
+    'nav.research':     'Research',
+    'nav.skills':       'Skills',
+    'nav.testimonials': 'Testimonials',
+    'nav.contact':      'Contact',
 
     // Hero
-    'hero.subtitle':    'PMP® | M&E Consultant | Data Analytics | Public Health',
+    'hero.eyebrow':     'PMP® Certified Consultant · Schänis, Switzerland',
+    'hero.subtitle':    'M&E Systems · Program Management · Public Health',
     'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.',
     'hero.stat1':       'Years Experience',
     'hero.stat2':       'Health Facilities',
@@ -20,6 +22,7 @@ const translations = {
     'hero.cta.secondary': 'View Services',
 
     // About
+    'about.eyebrow':  'The Person Behind the Work',
     'about.title':    'About Me',
     'about.subtitle': 'Passionate about evidence-based solutions that improve lives',
     'about.intro':    'PMP®-certified consultant with 15+ years delivering complex public health, M&E, and social development programs across Africa and Europe — for government ministries, NGOs, and international organisations.',
@@ -52,13 +55,23 @@ const translations = {
     'experience.subtitle': 'A journey of impact across continents',
 
     // Education
+    'education.eyebrow':  'Academic & Professional Credentials',
     'education.title':    'Education & Certifications',
     'education.subtitle': 'Continuous learning and professional development',
     'edu.fhgr':           'University of Applied Sciences of the Grisons (FHGR)',
 
     // Research
+    'research.eyebrow':  'Peer-Reviewed & Published',
     'research.title':    'Research & Publications',
-    'research.subtitle': 'Contributing to the body of knowledge in public health',
+    'research.subtitle': 'Contributing to the body of knowledge in public health, digital marketing and investment strategy',
+
+    // Testimonials
+    'testimonials.eyebrow': 'What Colleagues Say',
+    'testimonials.title':   'Testimonials',
+    'testimonials.subtitle':'Reflections from colleagues and supervisors across international organisations',
+    't1.text': 'Perry demonstrates an exceptional work ethic and a remarkable ability to integrate into new cultural environments. His dedication, reliability, and professional approach make him an outstanding collaborator in any international setting.',
+    't2.text': 'Perry\'s PMP® certification is well-deserved — he brings structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.',
+    't3.text': 'What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity — a rare combination in international development.',
 
     // Skills
     'skills.title':       'Skills & Expertise',
@@ -99,16 +112,18 @@ const translations = {
   de: {
     // Navigation
     'nav.home':       'Startseite',
-    'nav.about':      'Über mich',
-    'nav.services':   'Leistungen',
-    'nav.experience': 'Erfahrung',
-    'nav.education':  'Ausbildung',
-    'nav.research':   'Forschung',
-    'nav.skills':     'Kompetenzen',
-    'nav.contact':    'Kontakt',
+    'nav.about':        'Über mich',
+    'nav.services':     'Leistungen',
+    'nav.experience':   'Erfahrung',
+    'nav.education':    'Ausbildung',
+    'nav.research':     'Forschung',
+    'nav.skills':       'Kompetenzen',
+    'nav.testimonials': 'Referenzen',
+    'nav.contact':      'Kontakt',
 
     // Hero
-    'hero.subtitle':    'PMP® | M&E-Berater | Datenanalyse | Öffentliche Gesundheit',
+    'hero.eyebrow':     'PMP®-zertifizierter Berater · Schänis, Schweiz',
+    'hero.subtitle':    'M&E-Systeme · Programmmanagement · Öffentliche Gesundheit',
     'hero.description': 'Ich helfe Regierungen, NGOs und internationalen Organisationen, evidenzbasierte M&E-Systeme zu gestalten, komplexe Programme zu managen und Daten in Entscheidungen umzuwandeln – mit über 15 Jahren Wirkung in Afrika und Europa.',
     'hero.stat1':       'Jahre Erfahrung',
     'hero.stat2':       'Gesundheitseinrichtungen',
@@ -117,6 +132,7 @@ const translations = {
     'hero.cta.secondary': 'Leistungen ansehen',
 
     // About
+    'about.eyebrow':  'Die Person hinter der Arbeit',
     'about.title':    'Über mich',
     'about.subtitle': 'Leidenschaft für evidenzbasierte Lösungen, die Leben verbessern',
     'about.intro':    'PMP®-zertifizierter Berater mit über 15 Jahren Erfahrung in der Umsetzung komplexer Projekte in öffentlicher Gesundheit, M&E und sozialer Entwicklung – für Regierungsministerien, NGOs und internationale Organisationen in Afrika und Europa.',
@@ -149,13 +165,23 @@ const translations = {
     'experience.subtitle': 'Wirkungsvolle Arbeit über Kontinente hinweg',
 
     // Education
+    'education.eyebrow':  'Akademische & berufliche Qualifikationen',
     'education.title':    'Ausbildung & Zertifikate',
     'education.subtitle': 'Kontinuierliches Lernen und berufliche Weiterentwicklung',
     'edu.fhgr':           'Fachhochschule Graubünden (FHGR)',
 
     // Research
+    'research.eyebrow':  'Peer-reviewed & publiziert',
     'research.title':    'Forschung & Publikationen',
-    'research.subtitle': 'Beiträge zur Wissensbasis in der öffentlichen Gesundheit',
+    'research.subtitle': 'Beiträge zur Wissensbasis in öffentlicher Gesundheit, digitalem Marketing und Investitionsstrategie',
+
+    // Testimonials
+    'testimonials.eyebrow': 'Was Kollegen sagen',
+    'testimonials.title':   'Referenzen',
+    'testimonials.subtitle':'Stimmen von Kollegen und Vorgesetzten aus internationalen Organisationen',
+    't1.text': 'Perry zeigt eine außergewöhnliche Arbeitsmoral und eine bemerkenswerte Fähigkeit, sich in neue kulturelle Umgebungen zu integrieren. Seine Hingabe, Zuverlässigkeit und professionelle Haltung machen ihn zu einem herausragenden Mitarbeiter in jedem internationalen Umfeld.',
+    't2.text': 'Perrys PMP®-Zertifizierung ist wohlverdient – er bringt strukturiertes, diszipliniertes Projektmanagement in jedes Engagement. Seine Beiträge zur Programmabwicklung und zu Monitoring-Rahmen haben stets messbaren professionellen Mehrwert geschaffen.',
+    't3.text': 'Was Perry auszeichnet, ist seine intellektuelle Neugier kombiniert mit tadellosem professionellem Verhalten. Er geht komplexe Probleme mit analytischer Strenge an und kommuniziert seine Erkenntnisse mit Klarheit – eine seltene Kombination in der internationalen Entwicklung.',
 
     // Skills
     'skills.title':       'Fähigkeiten & Expertise',
