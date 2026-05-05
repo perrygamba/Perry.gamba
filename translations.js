@@ -13,7 +13,7 @@ const translations = {
 
     // Hero
     'hero.eyebrow':     'PMP® Certified Consultant · Schänis, Switzerland',
-    'hero.subtitle':    'M&E Systems · Program Management · Public Health',
+    'hero.subtitle':    'M&E Systems   Program Management   Public Health',
     'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.',
     'hero.stat1':       'Years Experience',
     'hero.stat2':       'Health Facilities',
@@ -123,7 +123,7 @@ const translations = {
 
     // Hero
     'hero.eyebrow':     'PMP®-zertifizierter Berater · Schänis, Schweiz',
-    'hero.subtitle':    'M&E-Systeme · Programmmanagement · Öffentliche Gesundheit',
+    'hero.subtitle':    'M&E-Systeme   Programmmanagement   Öffentliche Gesundheit',
     'hero.description': 'Ich helfe Regierungen, NGOs und internationalen Organisationen, evidenzbasierte M&E-Systeme zu gestalten, komplexe Programme zu managen und Daten in Entscheidungen umzuwandeln – mit über 15 Jahren Wirkung in Afrika und Europa.',
     'hero.stat1':       'Jahre Erfahrung',
     'hero.stat2':       'Gesundheitseinrichtungen',
