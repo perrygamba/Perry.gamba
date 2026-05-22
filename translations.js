@@ -13,13 +13,16 @@ const translations = {
 
     // Hero
     'hero.eyebrow':     'PMP® Certified Consultant · Schänis, Switzerland',
-    'hero.subtitle':    'M&E Systems   Program Management   Public Health',
+    'hero.availability':'Available for new engagements',
+    'hero.subtitle':    'M&E Systems   Program Management   Data Analytics   Consulting',
     'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.',
     'hero.stat1':       'Years Experience',
     'hero.stat2':       'Health Facilities',
     'hero.stat3':       'People Trained',
+    'hero.stat4':       'Performance Uplift',
     'hero.cta.primary': 'Book a Consultation',
     'hero.cta.secondary': 'View Services',
+    'hero.cta.cv':      'Download CV',
 
     // About
     'about.eyebrow':  'The Person Behind the Work',
@@ -106,7 +109,7 @@ const translations = {
     'footer.location': 'Based in Schänis, Switzerland',
     'footer.links':    'Quick Links',
     'footer.connect':  'Connect',
-    'footer.copy':     '© 2025 Perry Gamba. All rights reserved.',
+    'footer.copy':     '© 2026 Perry Gamba. All rights reserved.',
   },
 
   de: {
@@ -123,13 +126,16 @@ const translations = {
 
     // Hero
     'hero.eyebrow':     'PMP®-zertifizierter Berater · Schänis, Schweiz',
-    'hero.subtitle':    'M&E-Systeme   Programmmanagement   Öffentliche Gesundheit',
+    'hero.availability':'Offen für neue Projekte',
+    'hero.subtitle':    'M&E-Systeme   Programmmanagement   Datenanalyse   Beratung',
     'hero.description': 'Ich helfe Regierungen, NGOs und internationalen Organisationen, evidenzbasierte M&E-Systeme zu gestalten, komplexe Programme zu managen und Daten in Entscheidungen umzuwandeln – mit über 15 Jahren Wirkung in Afrika und Europa.',
     'hero.stat1':       'Jahre Erfahrung',
     'hero.stat2':       'Gesundheitseinrichtungen',
     'hero.stat3':       'Ausgebildete Personen',
+    'hero.stat4':       'Leistungsverbesserung',
     'hero.cta.primary': 'Beratung buchen',
     'hero.cta.secondary': 'Leistungen ansehen',
+    'hero.cta.cv':      'Lebenslauf herunterladen',
 
     // About
     'about.eyebrow':  'Die Person hinter der Arbeit',
@@ -216,7 +222,7 @@ const translations = {
     'footer.location': 'Ansässig in Schänis, Schweiz',
     'footer.links':    'Schnelllinks',
     'footer.connect':  'Verbinden',
-    'footer.copy':     '© 2025 Perry Gamba. Alle Rechte vorbehalten.',
+    'footer.copy':     '© 2026 Perry Gamba. Alle Rechte vorbehalten.',
   }
 };
 
