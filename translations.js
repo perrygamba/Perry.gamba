@@ -110,6 +110,70 @@ const translations = {
     'footer.links':    'Quick Links',
     'footer.connect':  'Connect',
     'footer.copy':     '© 2026 Perry Gamba. All rights reserved.',
+
+    // Key Achievements
+    'achieve.eyebrow': 'Key Achievements',
+    'achieve.1': 'Built and deployed national M&E systems for Uganda\'s Ministry of Defence — improving accountability across <strong>50+ health facilities</strong>',
+    'achieve.2': 'Managed <strong>multi-country</strong> public health and refugee integration programs across Africa and Europe',
+    'achieve.3': 'Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making — improving performance by <strong>20–40%</strong>',
+    'achieve.4': 'Trained <strong>300+ health workers</strong>, educators, refugees, and community leaders in M&E, public health, and project management',
+    'achieve.5': 'Strengthened <strong>Switzerland–East Africa</strong> partnerships through program coordination, intercultural collaboration, and performance tracking',
+
+    // Professional Experience
+    'exp.1.title': 'Strategic Consultant — Education Policy &amp; Regulatory Affairs',
+    'exp.1.desc':  'Engaged as independent external strategic advisor following the Canton Schwyz education department\'s rejection of a private primary school permit application (LebeORT Innerthal concept, 13–22 pupils). Conducted a systematic compliance analysis of the submitted concept against Swiss constitutional and cantonal regulatory frameworks (Art. 62 Federal Constitution, Lehrplan 21, HarmoS Concordat, Volksschulgesetz Schwyz). Identified 13 specific compliance gaps across curriculum alignment, teacher qualifications, governance completeness, financial viability, special needs inclusion, quality assurance architecture, safeguarding, and data protection. Produced a 9-page structured advisory report with a prioritised recommendation framework and 5-step resubmission action plan, equipping the founding team to rebuild their regulatory dossier and reapproach the Canton Schwyz Department of Education as a credible, compliant school operator.',
+    'exp.2.title': 'Project Coordinator',
+    'exp.2.desc':  'Coordinate Switzerland–East Africa school partnership programs, enhancing intercultural collaboration and outcomes. Design and evaluate youth leadership workshops across public and private schools. Lead project planning, monitoring, and performance reporting. Engage school leaders and partners to identify needs and strengthen program delivery. Facilitate team-building and experiential learning programs for youth.',
+    'exp.3.title': 'Mentee / Mentor',
+    'exp.3.desc':  'Facilitated integration and professional development of individuals with refugee and migrant backgrounds. Led project management and entrepreneurship workshops, developed training curricula, and mentored participants to strengthen professional and life skills.',
+    'exp.4.title': 'Trainee — Integration, Consulting &amp; Research',
+    'exp.4.desc':  'Completed intensive training in financial consulting, taxation, and legal services. Contributed to research supporting refugee integration and development initiatives. Provided analytical insights to improve program strategies.',
+    'exp.5.title': 'M&amp;E / Health Component Manager (Part-Time)',
+    'exp.5.desc':  'Managed M&E activities for community health and social development projects. Trained refugee leaders and cultural leaders in public health and environmental management. Conducted national assessments and health camps. Provided strategic recommendations for program improvement.',
+    'exp.6.title': 'Monitoring &amp; Evaluation Manager',
+    'exp.6.desc':  'Designed and implemented national M&E systems, data quality frameworks, and digital reporting tools adopted across the organisation. Led performance reviews of health service delivery (malaria, HIV/AIDS) across 50+ military health facilities. Built digital beneficiary databases and intervention selection systems. Supported inter-sectoral coordination between the Ministry and Parliament. Drove capacity building for 300+ health facilitators and community workers. Achieved 20–40% improvement in reporting quality and program accountability.',
+    'exp.7.title': 'Program Officer',
+    'exp.7.desc':  'Facilitated workshops and community mobilisation for agricultural and social development programs. Supported planning, reporting, and field coordination for community development activities and training initiatives.',
+    'exp.8.title': 'Accounts Assistant',
+    'exp.8.desc':  'Managed financial reconciliation, cash flow, and monthly accounting reports. Ensured compliance with donor and organisational financial procedures.',
+
+    // Research descriptions & labels
+    'research.desc.1':  'Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.',
+    'research.desc.2':  'Investigation of digital marketing strategies and their effect on market penetration in emerging market contexts',
+    'research.desc.3':  'Analysis of digital marketing modalities and their strategic application across emerging and established markets',
+    'research.desc.4':  'A policy and risk management strategy for Uganda\'s investment reform framework',
+    'research.desc.5':  'Evidence from Malaria Control Programs\' Implementation in Mukono District',
+    'research.desc.6':  'Examination of key determinants influencing M&E findings uptake in malaria program implementation',
+    'research.desc.7':  'Evidence from the Malaria Control Programs in Mukono District, Central Uganda',
+    'research.desc.8':  'A Case of the Ugandan Malaria Control Program',
+    'research.desc.9':  'Professional research examining insurance practitioner perspectives on risk assessment, data-driven decision-making, and accountability frameworks in public sector and development programs.',
+    'research.desc.10': 'Ongoing research investigating body-signal awareness frameworks and their application in professional coaching and consulting practice in Switzerland.',
+    'research.inprogress':         'In Progress',
+    'research.label.academic':     'Academic Publication',
+    'research.label.research':     'Research Publication',
+    'research.label.professional': 'Professional Research Publication, 2024',
+    'research.label.switzerland':  'Professional Consultation Research — Switzerland (2025)',
+
+    // Football Career
+    'football.title':          'Football Career',
+    'football.subtitle':       'Combining athletic excellence with professional achievement',
+    'football.card1.title':    'Current Team',
+    'football.card2.title':    'Position',
+    'football.card3.title':    'Born',
+    'football.card4.title':    'Nationality',
+    'football.pos.value':      'Forward',
+    'football.pos.detail':     'Right Wing',
+    'football.born.value':     'April 4, 1981',
+    'football.nat.value':      'Ugandan',
+    'football.nat.detail':     'International',
+    'football.athletic.title': 'Athletic Excellence',
+    'football.athletic.p1':    'Beyond my professional career in public health, I maintain an active football career as a forward for FC Weesen in the Swiss 1. Liga. This unique combination of academic excellence and athletic achievement demonstrates my commitment to maintaining peak performance in multiple disciplines.',
+    'football.athletic.p2':    'Playing football at a competitive level has enhanced my leadership skills, teamwork abilities, and strategic thinking - qualities that directly translate to my professional work in project management and monitoring &amp; evaluation.',
+    'football.season.title':   '2022/2023 Season Statistics',
+    'football.stat.apps':      'Appearances',
+    'football.stat.league':    'League Level',
+    'football.stat.pos':       'Primary Position',
+    'football.gallery.title':  'Football Gallery',
   },
 
   de: {
@@ -223,6 +287,70 @@ const translations = {
     'footer.links':    'Schnelllinks',
     'footer.connect':  'Verbinden',
     'footer.copy':     '© 2026 Perry Gamba. Alle Rechte vorbehalten.',
+
+    // Key Achievements
+    'achieve.eyebrow': 'Wichtigste Leistungen',
+    'achieve.1': 'Nationales M&amp;E-System für das ugandische Verteidigungsministerium aufgebaut und eingeführt — Rechenschaftspflicht in <strong>50+ Gesundheitseinrichtungen</strong> verbessert',
+    'achieve.2': '<strong>Länderübergreifende</strong> öffentliche Gesundheits- und Flüchtlingsintegrationsprogramme in Afrika und Europa geleitet',
+    'achieve.3': 'Fortgeschrittene Analytik (SPSS, R, MSc) eingesetzt, um evidenzbasierte Entscheidungsfindung zu stärken — Leistungsverbesserung um <strong>20–40%</strong>',
+    'achieve.4': '<strong>300+ Gesundheitsfachkräfte</strong>, Pädagogen, Flüchtlinge und Gemeindevertreter in M&amp;E, öffentlicher Gesundheit und Projektmanagement ausgebildet',
+    'achieve.5': '<strong>Schweiz–Ostafrika</strong>-Partnerschaften durch Programmkoordination, interkulturelle Zusammenarbeit und Leistungsverfolgung gestärkt',
+
+    // Professional Experience
+    'exp.1.title': 'Strategischer Berater — Bildungspolitik &amp; Regulierung',
+    'exp.1.desc':  'Als unabhängiger externer Strategieberater tätig nach Ablehnung eines Antrags auf Bewilligung einer Privatschule durch das Bildungsdepartement Kanton Schwyz (Konzept LebeORT Innerthal, 13–22 Schüler). Durchführung einer systematischen Compliance-Analyse des eingereichten Konzepts gegenüber schweizerischen verfassungs- und kantonsrechtlichen Rahmenbedingungen (Art. 62 Bundesverfassung, Lehrplan 21, HarmoS-Konkordat, Volksschulgesetz Schwyz). Identifizierung von 13 spezifischen Compliance-Lücken in den Bereichen Lehrplanausrichtung, Lehrerqualifikation, Governance, finanzielle Tragfähigkeit, sonderpädagogische Inklusion, Qualitätssicherung, Kindesschutz und Datenschutz. Erstellung eines strukturierten 9-seitigen Beratungsberichts mit priorisiertem Empfehlungsrahmen und 5-stufigem Neueinreichungsplan.',
+    'exp.2.title': 'Projektkoordinator',
+    'exp.2.desc':  'Koordination von Schulpartnerschaftsprogrammen zwischen der Schweiz und Ostafrika zur Stärkung der interkulturellen Zusammenarbeit und Ergebnisqualität. Konzeption und Evaluation von Jugendführungs-Workshops in öffentlichen und privaten Schulen. Leitung von Projektplanung, Monitoring und Leistungsberichterstattung. Einbindung von Schulleitungen und Partnern zur Bedarfsermittlung und Stärkung der Programmabwicklung. Durchführung von Teambuilding- und Erlebnislernprogrammen für Jugendliche.',
+    'exp.3.title': 'Mentee / Mentor',
+    'exp.3.desc':  'Begleitung der Integration und beruflichen Entwicklung von Personen mit Flüchtlings- und Migrationshintergrund. Durchführung von Workshops zu Projektmanagement und Unternehmertum, Entwicklung von Trainingskonzepten und Mentoring zur Stärkung beruflicher und sozialer Kompetenzen.',
+    'exp.4.title': 'Trainee — Integration, Beratung &amp; Forschung',
+    'exp.4.desc':  'Intensive Ausbildung in Finanzberatung, Steuerwesen und Rechtsdienstleistungen. Mitarbeit an Forschungsvorhaben zur Flüchtlingsintegration und Entwicklungsinitiativen. Analytische Beiträge zur Verbesserung von Programmstrategien.',
+    'exp.5.title': 'M&amp;E / Gesundheitskomponentenmanager (Teilzeit)',
+    'exp.5.desc':  'Verwaltung von M&amp;E-Aktivitäten für gemeindliche Gesundheits- und Sozialentwicklungsprojekte. Schulung von Flüchtlings- und Gemeindeleitern in öffentlicher Gesundheit und Umweltmanagement. Durchführung nationaler Bewertungen und Gesundheitscamps. Strategische Empfehlungen zur Programmentwicklung.',
+    'exp.6.title': 'Monitoring &amp; Evaluation Manager',
+    'exp.6.desc':  'Entwicklung und Implementierung nationaler M&amp;E-Systeme, Datenqualitätsrahmen und digitaler Berichtstools mit organisationsweiter Übernahme. Leitung von Leistungsüberprüfungen der Gesundheitsversorgung (Malaria, HIV/AIDS) in über 50 Militärgesundheitseinrichtungen. Aufbau digitaler Begünstigtendatenbanken und Interventionsauswahlsysteme. Unterstützung der sektorübergreifenden Koordination zwischen Ministerium und Parlament. Kapazitätsaufbau für 300+ Gesundheitsfachkräfte und Gemeindearbeiter. Verbesserung der Berichtsqualität und Programmrechenschaft um 20–40%.',
+    'exp.7.title': 'Programmbeauftragter',
+    'exp.7.desc':  'Durchführung von Workshops und Gemeindemobilisierung für landwirtschaftliche und soziale Entwicklungsprogramme. Unterstützung bei Planung, Berichterstattung und Feldkoordination für Gemeindeentwicklungsaktivitäten und Trainingsinitiativen.',
+    'exp.8.title': 'Buchhaltungsassistent',
+    'exp.8.desc':  'Verwaltung von Finanzabstimmungen, Cashflow und monatlichen Buchhaltungsberichten. Einhaltung der Geber- und Organisations-Finanzrichtlinien sichergestellt.',
+
+    // Research descriptions & labels
+    'research.desc.1':  'Peer-Review-Studie zu soziostrukturellen und individuellen Faktoren, die HIV-Offenlegungsentscheidungen beeinflussen, mit Implikationen für gemeindebasiertes Gesundheitsprogrammdesign.',
+    'research.desc.2':  'Untersuchung digitaler Marketingstrategien und ihrer Auswirkung auf die Marktdurchdringung in Schwellenmärkten',
+    'research.desc.3':  'Analyse digitaler Marketingmodalitäten und ihrer strategischen Anwendung in Schwellen- und etablierten Märkten',
+    'research.desc.4':  'Eine strategie- und risikomanagementbezogene Publikation zum ugandischen Investitionsreformrahmen',
+    'research.desc.5':  'Erkenntnisse aus der Umsetzung von Malaria-Bekämpfungsprogrammen im Distrikt Mukono',
+    'research.desc.6':  'Untersuchung zentraler Determinanten für die Nutzung von M&amp;E-Ergebnissen in der Malaria-Programmimplementierung',
+    'research.desc.7':  'Erkenntnisse aus den Malaria-Bekämpfungsprogrammen im Distrikt Mukono, Zentraluganda',
+    'research.desc.8':  'Ein Fallbeispiel des ugandischen Malaria-Bekämpfungsprogramms',
+    'research.desc.9':  'Berufliche Forschung zu Perspektiven von Versicherungspraktikern auf Risikobewertung, datengestützte Entscheidungsfindung und Rechenschaftsrahmen in öffentlichen und Entwicklungsprogrammen.',
+    'research.desc.10': 'Laufende Forschung zu Körpersignal-Bewusstsein-Frameworks und deren Anwendung in professionellem Coaching und Beratungspraxis in der Schweiz.',
+    'research.inprogress':         'In Bearbeitung',
+    'research.label.academic':     'Akademische Publikation',
+    'research.label.research':     'Forschungspublikation',
+    'research.label.professional': 'Berufliche Forschungspublikation, 2024',
+    'research.label.switzerland':  'Berufliche Beratungsforschung — Schweiz (2025)',
+
+    // Football Career
+    'football.title':          'Fussballkarriere',
+    'football.subtitle':       'Athletische Exzellenz verbunden mit beruflicher Leistung',
+    'football.card1.title':    'Aktuelles Team',
+    'football.card2.title':    'Position',
+    'football.card3.title':    'Geboren',
+    'football.card4.title':    'Nationalität',
+    'football.pos.value':      'Stürmer',
+    'football.pos.detail':     'Rechtsaussen',
+    'football.born.value':     '4. April 1981',
+    'football.nat.value':      'Ugandisch',
+    'football.nat.detail':     'International',
+    'football.athletic.title': 'Sportliche Exzellenz',
+    'football.athletic.p1':    'Neben meiner beruflichen Tätigkeit im öffentlichen Gesundheitswesen pflege ich als Stürmer beim FC Weesen in der Schweizer 1. Liga eine aktive Fussballkarriere. Diese einzigartige Kombination aus akademischer Exzellenz und sportlichen Leistungen zeigt mein Engagement für Höchstleistungen in mehreren Disziplinen.',
+    'football.athletic.p2':    'Das Fussballspielen auf Wettbewerbsniveau hat meine Führungsqualitäten, Teamfähigkeit und strategisches Denken geschärft — Eigenschaften, die sich direkt auf meine berufliche Arbeit im Projektmanagement und Monitoring &amp; Evaluation übertragen.',
+    'football.season.title':   'Statistiken Saison 2022/2023',
+    'football.stat.apps':      'Einsätze',
+    'football.stat.league':    'Liga',
+    'football.stat.pos':       'Hauptposition',
+    'football.gallery.title':  'Fotogalerie',
   }
 };
 
@@ -238,7 +366,7 @@ function setLanguage(lang) {
     if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
       el.placeholder = value;
     } else {
-      el.textContent = value;
+      el.innerHTML = value;
     }
   });
 
