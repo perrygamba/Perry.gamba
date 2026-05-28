@@ -189,8 +189,8 @@ const translations = {
     'research.label.switzerland':  'Professional Consultation Research — Switzerland (2025)',
 
     // Football Career
-    'football.eyebrow':        'Athletic Excellence & Corporate Grit',
-    'football.title':          'Football Career',
+    'football.eyebrow':        'Operational Stamina &amp; Team Grit',
+    'football.title':          'High-Performance Leadership',
     'football.subtitle':       'Combining athletic excellence with professional achievement',
     'football.card1.title':    'Current Team',
     'football.card2.title':    'Position',
@@ -201,7 +201,7 @@ const translations = {
     'football.born.value':     'April 4, 1981',
     'football.nat.value':      'Ugandan',
     'football.nat.detail':     'International',
-    'football.athletic.title': 'Athletic Excellence',
+    'football.athletic.title': 'Operational Stamina &amp; Team Grit',
     'football.athletic.p1':    'Beyond my professional career in public health, I maintain an active football career as a forward for FC Weesen in the Swiss 1. Liga. This unique combination of academic excellence and athletic achievement demonstrates my commitment to maintaining peak performance in multiple disciplines.',
     'football.athletic.p2':    'Playing football at a competitive level has enhanced my leadership skills, teamwork abilities, and strategic thinking - qualities that directly translate to my professional work in project management and monitoring &amp; evaluation.',
     'football.season.title':   '2022/2023 Season Statistics',
@@ -401,8 +401,8 @@ const translations = {
     'research.label.switzerland':  'Berufliche Beratungsforschung — Schweiz (2025)',
 
     // Football Career
-    'football.eyebrow':        'Athletische Exzellenz & Beruflicher Biss',
-    'football.title':          'Fussballkarriere',
+    'football.eyebrow':        'Operative Ausdauer &amp; Teamgeist',
+    'football.title':          'High-Performance Leadership',
     'football.subtitle':       'Athletische Exzellenz verbunden mit beruflicher Leistung',
     'football.card1.title':    'Aktuelles Team',
     'football.card2.title':    'Position',
@@ -413,7 +413,7 @@ const translations = {
     'football.born.value':     '4. April 1981',
     'football.nat.value':      'Ugandisch',
     'football.nat.detail':     'International',
-    'football.athletic.title': 'Sportliche Exzellenz',
+    'football.athletic.title': 'Operative Ausdauer &amp; Teamgeist',
     'football.athletic.p1':    'Neben meiner beruflichen Tätigkeit im öffentlichen Gesundheitswesen pflege ich als Stürmer beim FC Weesen in der Schweizer 1. Liga eine aktive Fussballkarriere. Diese einzigartige Kombination aus akademischer Exzellenz und sportlichen Leistungen zeigt mein Engagement für Höchstleistungen in mehreren Disziplinen.',
     'football.athletic.p2':    'Das Fussballspielen auf Wettbewerbsniveau hat meine Führungsqualitäten, Teamfähigkeit und strategisches Denken geschärft — Eigenschaften, die sich direkt auf meine berufliche Arbeit im Projektmanagement und Monitoring &amp; Evaluation übertragen.',
     'football.season.title':   'Statistiken Saison 2022/2023',
