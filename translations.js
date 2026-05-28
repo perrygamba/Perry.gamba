@@ -155,6 +155,7 @@ const translations = {
     'research.label.switzerland':  'Professional Consultation Research — Switzerland (2025)',
 
     // Football Career
+    'football.eyebrow':        'Athletic Excellence & Corporate Grit',
     'football.title':          'Football Career',
     'football.subtitle':       'Combining athletic excellence with professional achievement',
     'football.card1.title':    'Current Team',
@@ -332,6 +333,7 @@ const translations = {
     'research.label.switzerland':  'Berufliche Beratungsforschung — Schweiz (2025)',
 
     // Football Career
+    'football.eyebrow':        'Athletische Exzellenz & Beruflicher Biss',
     'football.title':          'Fussballkarriere',
     'football.subtitle':       'Athletische Exzellenz verbunden mit beruflicher Leistung',
     'football.card1.title':    'Aktuelles Team',

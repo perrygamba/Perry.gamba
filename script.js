@@ -374,3 +374,13 @@ loadingStyle.textContent = `
 `;
 document.head.appendChild(loadingStyle);
 
+// ── Experience Accordion ──────────────────────────────────
+function toggleExpItem(btn) {
+    const item = btn.closest('.exp-item');
+    const isOpen = item.classList.contains('exp-item--open');
+    // Collapse all open items
+    document.querySelectorAll('.exp-item--open').forEach(i => i.classList.remove('exp-item--open'));
+    // Expand clicked item if it was closed
+    if (!isOpen) item.classList.add('exp-item--open');
+}
+
