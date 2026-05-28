@@ -310,7 +310,7 @@ function filterResearch(category) {
     document.querySelectorAll('.research-filter-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.filter === category);
     });
-    document.querySelectorAll('.research-entry').forEach(entry => {
+    document.querySelectorAll('.research-card-v2').forEach(entry => {
         const cat = entry.dataset.category;
         if (category === 'all' || cat === category) {
             entry.classList.remove('hidden');
