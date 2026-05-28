@@ -1710,21 +1710,21 @@ section { padding: 6rem 0; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    width: 46px;
+    height: 46px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    font-size: 0.95rem;
-    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    font-size: 1.05rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .linkedin-icon-link:hover {
     background: #0077b5;
     border-color: #0077b5;
     color: white;
+    transform: translateY(-3px) rotate(360deg);
 }
 
 /* ── STAR Bullet Lists (Experience) ─────────────────────── */
@@ -2102,9 +2102,16 @@ section { padding: 6rem 0; }
     grid-template-columns: repeat(3, 1fr);
 }
 
+.gallery-grid--trio .gallery-item {
+    max-height: 180px;
+}
+
 @media (max-width: 768px) {
     .gallery-grid--trio {
         grid-template-columns: 1fr;
+    }
+    .gallery-grid--trio .gallery-item {
+        max-height: 220px;
     }
 }
 
