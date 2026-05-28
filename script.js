@@ -291,6 +291,71 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Education Credential Tabs
+function switchCredTab(tabName) {
+    document.querySelectorAll('.edu-tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tabName);
+    });
+    document.querySelectorAll('.edu-tab-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.id === 'tab-' + tabName);
+    });
+}
+
+document.querySelectorAll('.edu-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchCredTab(btn.dataset.tab));
+});
+
+// Research Filter
+function filterResearch(category) {
+    document.querySelectorAll('.research-filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === category);
+    });
+    document.querySelectorAll('.research-entry').forEach(entry => {
+        const cat = entry.dataset.category;
+        if (category === 'all' || cat === category) {
+            entry.classList.remove('hidden');
+        } else {
+            entry.classList.add('hidden');
+        }
+    });
+}
+
+document.querySelectorAll('.research-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => filterResearch(btn.dataset.filter));
+});
+
+// Async contact form (Formspree / fetch-based)
+(function setupAsyncForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    const successEl = form.parentElement?.querySelector('.form-success');
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const submitBtn = form.querySelector('[type="submit"]');
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+
+        try {
+            const response = await fetch(form.action || window.location.href, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            if (response.ok) {
+                form.reset();
+                if (successEl) { successEl.style.display = 'block'; form.style.display = 'none'; }
+                else showNotification('Message sent successfully!', 'success');
+            } else {
+                throw new Error('Server error');
+            }
+        } catch {
+            showNotification('Could not send message. Please email directly.', 'error');
+        } finally {
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send Message'; }
+        }
+    });
+})();
+
 // Loading animation
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
