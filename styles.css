@@ -1801,6 +1801,80 @@ section { padding: 6rem 0; }
     to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ── Education Card Grid (replaces old timeline list) ─────── */
+.edu-grid-v2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.4rem;
+}
+
+.edu-card-v2 {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.6rem 1.8rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.edu-card-v2:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+    box-shadow: 0 8px 24px var(--shadow-lg);
+}
+
+.edu-card-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal);
+    font-size: 1.15rem;
+    flex-shrink: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.edu-card-v2:hover .edu-card-icon {
+    background: var(--navy);
+    color: var(--gold);
+}
+
+.edu-card-info h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+    line-height: 1.35;
+}
+
+.edu-card-info h4 {
+    font-size: 0.88rem;
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 0.55rem;
+}
+
+.edu-card-year {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.1);
+    padding: 0.18rem 0.6rem;
+    border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+    .edu-grid-v2 { grid-template-columns: 1fr; }
+}
+
 /* ── Competency Matrix (Skills) ──────────────────────────── */
 .competency-matrix {
     display: grid;
