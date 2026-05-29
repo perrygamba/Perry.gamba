@@ -2661,3 +2661,188 @@ section { padding: 6rem 0; }
     .exp-item-date { font-size: 0.68rem; padding: 0.22rem 0.6rem; }
     .exp-item-titles h3 { font-size: 0.92rem; }
 }
+
+/* ── LernWeg Primarschule Section ───────────────────────── */
+.lernweg-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 60%, #fff8f0 100%);
+    position: relative;
+}
+
+.lernweg-section .section-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c84b0f;
+    background: rgba(200, 75, 15, 0.08);
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 0.75rem;
+}
+
+.lernweg-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin-top: 2.5rem;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.lernweg-identity {
+    background: linear-gradient(160deg, #1a2e5a 0%, #0f1e3d 100%);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.lernweg-logo-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lernweg-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.lernweg-triad {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.04em;
+    margin-top: 0.25rem;
+}
+
+.lernweg-tagline {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+    margin-top: 0.1rem;
+}
+
+.lernweg-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.lw-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.lw-stat-num {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f5c842;
+    line-height: 1;
+}
+
+.lw-stat-label {
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.lernweg-body {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lernweg-role {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.lernweg-role-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-light);
+    background: var(--light);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.lernweg-role-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.lernweg-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.lernweg-bullets li {
+    font-size: 0.9rem;
+    color: var(--text);
+    line-height: 1.65;
+    padding-left: 1.1rem;
+    border-left: 2px solid rgba(200, 75, 15, 0.25);
+}
+
+.lernweg-bullets li strong {
+    color: var(--navy);
+}
+
+.lernweg-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.lw-tag {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #1a2e5a;
+    background: rgba(26, 46, 90, 0.07);
+    border: 1px solid rgba(26, 46, 90, 0.12);
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+    .lernweg-card {
+        grid-template-columns: 1fr;
+    }
+    .lernweg-stats-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .lernweg-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .lernweg-body {
+        padding: 1.5rem;
+    }
+}

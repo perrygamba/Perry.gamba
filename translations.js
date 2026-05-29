@@ -9,6 +9,7 @@ const translations = {
     'nav.research':     'Research',
     'nav.skills':       'Skills',
     'nav.testimonials': 'Testimonials',
+    'nav.lernweg':      'LernWeg',
     'nav.contact':      'Contact',
 
     // Hero
@@ -188,6 +189,28 @@ const translations = {
     'research.label.professional': 'Professional Research Publication, 2024',
     'research.label.switzerland':  'Professional Consultation Research, Switzerland (2025)',
 
+    // LernWeg Initiative
+    'lernweg.eyebrow':      'Featured Initiative · 2025–Present',
+    'lernweg.title':        'LernWeg Primarschule',
+    'lernweg.subtitle':     'Founding a premium German-medium private primary school in Canton Glarus, Switzerland',
+    'lernweg.tagline':      '„Im Tal verwurzelt, in der Welt zuhause."',
+    'lernweg.stat1':        'Pupils at Capacity',
+    'lernweg.stat2':        'Establishment Budget',
+    'lernweg.stat3':        'To Opening',
+    'lernweg.stat4':        'Break-even',
+    'lernweg.role.label':   'Role',
+    'lernweg.role.value':   'Project Founder &amp; Strategic Lead',
+    'lernweg.b1': '<strong>Initiative:</strong> Designing and leading the establishment of a new state-recognised private primary school in Canton Glarus — a Lehrplan 21-aligned, German-medium day school with multi-age learning groups, full-day programme, and an average class size of 12 pupils.',
+    'lernweg.b2': '<strong>Scope:</strong> Authored the full 34-page regulatory proposal (v7.3) and companion Business Plan (v1.0) covering cantonal authorisation, pedagogical model, governance, financial projections, and investor strategy — targeting CHF 500,000 establishment capital and operating break-even by Year 3.',
+    'lernweg.b3': '<strong>Regulatory:</strong> Designed the compliance architecture against Art. 62 Federal Constitution, Glarus Volksschulgesetz, and cantonal Bewilligung requirements; coordinated pre-application engagement with Departement Bildung und Kultur, Kanton Glarus.',
+    'lernweg.b4': '<strong>Impact:</strong> First premium German-medium private primary school concept purpose-built for the Glarus market, serving the growing Zurich–Linth economic corridor; structured for 42 pupils, dual-language track (English from Year 1, French from Year 5), and inclusion of pupils with special learning profiles.',
+    'lernweg.tag1': 'Swiss Education Policy',
+    'lernweg.tag2': 'School Founding',
+    'lernweg.tag3': 'Lehrplan 21',
+    'lernweg.tag4': 'Regulatory Compliance',
+    'lernweg.tag5': 'Business Planning',
+    'lernweg.tag6': 'Canton Glarus',
+
     // Football Career
     'football.eyebrow':        'Operational Stamina &amp; Team Grit',
     'football.title':          'High-Performance Leadership',
@@ -221,6 +244,7 @@ const translations = {
     'nav.research':     'Forschung',
     'nav.skills':       'Kompetenzen',
     'nav.testimonials': 'Referenzen',
+    'nav.lernweg':      'LernWeg',
     'nav.contact':      'Kontakt',
 
     // Hero
@@ -399,6 +423,28 @@ const translations = {
     'research.label.research':     'Forschungspublikation',
     'research.label.professional': 'Berufliche Forschungspublikation, 2024',
     'research.label.switzerland':  'Berufliche Beratungsforschung, Schweiz (2025)',
+
+    // LernWeg Initiative (German)
+    'lernweg.eyebrow':      'Aktuelle Initiative · 2025–Heute',
+    'lernweg.title':        'LernWeg Primarschule',
+    'lernweg.subtitle':     'Gründung einer erstklassigen deutschsprachigen Privatprimarschule im Kanton Glarus, Schweiz',
+    'lernweg.tagline':      '„Im Tal verwurzelt, in der Welt zuhause."',
+    'lernweg.stat1':        'Schüler im Vollbetrieb',
+    'lernweg.stat2':        'Gründungsbudget',
+    'lernweg.stat3':        'Bis zur Eröffnung',
+    'lernweg.stat4':        'Break-even',
+    'lernweg.role.label':   'Funktion',
+    'lernweg.role.value':   'Projektgründer &amp; Strategische Leitung',
+    'lernweg.b1': '<strong>Initiative:</strong> Planung und Leitung der Gründung einer neuen staatlich anerkannten Privatprimarschule im Kanton Glarus — eine Lehrplan 21-konforme, deutschsprachige Tagesschule mit altersdurchmischten Lerngruppen, Ganztagsprogramm und durchschnittlich 12 Schülerinnen und Schülern pro Klasse.',
+    'lernweg.b2': '<strong>Umfang:</strong> Verfassung des vollständigen 34-seitigen Bewilligungsantrags (v7.3) und des Businessplans (v1.0) zu kantonaler Bewilligung, Pädagogik, Governance, Finanzplanung und Investorenstrategie — mit Ziel eines Gründungskapitals von CHF 500.000 und operativer Kostendeckung bis Jahr 3.',
+    'lernweg.b3': '<strong>Regulatorisch:</strong> Entwicklung der Compliance-Architektur gemäss Art. 62 Bundesverfassung, Glarner Volksschulgesetz und kantonalen Bewilligungsanforderungen; Koordination der Voranmeldung beim Departement Bildung und Kultur, Kanton Glarus.',
+    'lernweg.b4': '<strong>Wirkung:</strong> Erstes erstklassiges deutschsprachiges Privatprimarschulkonzept, das speziell für den Glarner Markt entwickelt wurde; ausgerichtet auf den wachsenden Wirtschaftskorridor Zürich–Linth; strukturiert für 42 Schülerinnen und Schüler, zweisprachige Ausrichtung (Englisch ab Klasse 1, Französisch ab Klasse 5) und Inklusion von Schülerinnen und Schülern mit besonderen Lernprofilen.',
+    'lernweg.tag1': 'Schweizer Bildungspolitik',
+    'lernweg.tag2': 'Schulgründung',
+    'lernweg.tag3': 'Lehrplan 21',
+    'lernweg.tag4': 'Regulatorische Compliance',
+    'lernweg.tag5': 'Businessplanung',
+    'lernweg.tag6': 'Kanton Glarus',
 
     // Football Career
     'football.eyebrow':        'Operative Ausdauer &amp; Teamgeist',
