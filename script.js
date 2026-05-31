@@ -374,6 +374,42 @@ loadingStyle.textContent = `
 `;
 document.head.appendChild(loadingStyle);
 
+// ── CV Download — language-aware ─────────────────────────
+const CV_LINKS = {
+    en: { href: 'assets/Consulting_Cv_2025.pdf', download: 'Perry_Gamba_CV_EN.pdf' },
+    de: { href: 'assets/German_CV_2025.pdf',     download: 'Perry_Gamba_CV_DE.pdf' }
+};
+
+function updateCvDownloadLink(lang) {
+    const btn = document.getElementById('cv-download-btn');
+    if (!btn) return;
+    const config = CV_LINKS[lang] || CV_LINKS.en;
+    btn.href     = config.href;
+    btn.download = config.download;
+}
+
+// Patch setLanguage to also swap the CV link
+(function patchSetLanguage() {
+    const _orig = window.setLanguage;
+    if (typeof _orig === 'function') {
+        window.setLanguage = function(lang) {
+            _orig(lang);
+            updateCvDownloadLink(lang);
+        };
+    } else {
+        // setLanguage not yet defined — hook after DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const _orig2 = window.setLanguage;
+            if (typeof _orig2 === 'function') {
+                window.setLanguage = function(lang) {
+                    _orig2(lang);
+                    updateCvDownloadLink(lang);
+                };
+            }
+        });
+    }
+})();
+
 // ── Experience Accordion ──────────────────────────────────
 function toggleExpItem(btn) {
     const item = btn.closest('.exp-item');
