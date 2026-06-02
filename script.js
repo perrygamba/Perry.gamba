@@ -27,15 +27,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background change on scroll
+// Navbar scroll background and padding transition
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.classList.remove('scrolled');
     }
 });
 
@@ -86,140 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(document.querySelector('.skills-grid'));
 });
 
-// Skill bar animations
-const animateSkillBars = () => {
-    const skillBars = document.querySelectorAll('.skill-progress');
-    skillBars.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0%';
-        setTimeout(() => {
-            bar.style.width = width;
-        }, 500);
-    });
-};
-
-// Observe skills section for skill bar animation
-const skillsSection = document.querySelector('.skills');
-if (skillsSection) {
-    const skillsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateSkillBars();
-                skillsObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    skillsObserver.observe(skillsSection);
-}
-
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const subject = formData.get('subject');
-        const message = formData.get('message');
-        
-        // Create mailto link
-        const mailtoLink = `mailto:perry@perrygamba.consulting?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-        
-        // Open email client
-        window.location.href = mailtoLink;
-        
-        // Show success message
-        showNotification('Thank you for your message! Your email client should open shortly.', 'success');
-        
-        // Reset form
-        this.reset();
-    });
-}
-
-// Notification system
-function showNotification(message, type = 'info') {
-    // Remove existing notifications
-    const existingNotifications = document.querySelectorAll('.notification');
-    existingNotifications.forEach(notification => notification.remove());
-    
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <div class="notification-content">
-            <span class="notification-message">${message}</span>
-            <button class="notification-close">&times;</button>
-        </div>
-    `;
-    
-    // Add styles
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        z-index: 1001;
-        max-width: 400px;
-        animation: slideInRight 0.3s ease;
-    `;
-    
-    // Add animation keyframes if not already added
-    if (!document.querySelector('#notification-styles')) {
-        const style = document.createElement('style');
-        style.id = 'notification-styles';
-        style.textContent = `
-            @keyframes slideInRight {
-                from { transform: translateX(100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-            .notification-content {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 1rem;
-            }
-            .notification-close {
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.2rem;
-                cursor: pointer;
-                padding: 0;
-                width: 20px;
-                height: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        `;
-        document.head.appendChild(style);
-    }
-    
-    // Add to page
-    document.body.appendChild(notification);
-    
-    // Add close functionality
-    const closeBtn = notification.querySelector('.notification-close');
-    closeBtn.addEventListener('click', () => {
-        notification.remove();
-    });
-    
-    // Auto remove after 5 seconds
-    setTimeout(() => {
-        if (notification.parentNode) {
-            notification.remove();
-        }
-    }, 5000);
-}
-
 // Add hover effects to cards
 document.addEventListener('DOMContentLoaded', () => {
     // Education cards hover effect
@@ -247,16 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
-    }
-});
-
 // Active navigation link highlighting
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
@@ -279,7 +133,75 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Add active class styles
+// ── Experience Accordion ──────────────────────────────────
+function toggleExpItem(btn) {
+    const item = btn.closest('.exp-item');
+    const isOpen = item.classList.contains('exp-item--open');
+    
+    // Collapse all open items and reset their aria attributes
+    document.querySelectorAll('.exp-item--open').forEach(i => {
+        i.classList.remove('exp-item--open');
+        const headerBtn = i.querySelector('.exp-item-header');
+        if (headerBtn) headerBtn.setAttribute('aria-expanded', 'false');
+    });
+    
+    // Expand clicked item if it was closed
+    if (!isOpen) {
+        item.classList.add('exp-item--open');
+        btn.setAttribute('aria-expanded', 'true');
+    } else {
+        btn.setAttribute('aria-expanded', 'false');
+    }
+}
+
+// ── Education Credential Tabs ─────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.credentials-tabs .tab-btn');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    // Initial state: show active pane, hide others
+    tabPanes.forEach(pane => {
+        if (!pane.classList.contains('active')) {
+            pane.style.display = 'none';
+        } else {
+            pane.style.display = 'block';
+            pane.style.opacity = '1';
+            pane.style.transform = 'translateY(0)';
+        }
+    });
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.dataset.tab;
+
+            // Update button states
+            tabBtns.forEach(b => b.classList.toggle('active', b === btn));
+
+            // Transition panes
+            tabPanes.forEach(pane => {
+                if (pane.id === targetId) {
+                    pane.style.display = 'block';
+                    pane.style.opacity = '0';
+                    pane.style.transform = 'translateY(15px)';
+                    pane.classList.add('active');
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            pane.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                            pane.style.opacity = '1';
+                            pane.style.transform = 'translateY(0)';
+                        });
+                    });
+                } else {
+                    pane.classList.remove('active');
+                    pane.style.transition = 'none';
+                    pane.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
+// ── Active nav link styles ────────────────────────────────
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
@@ -290,71 +212,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
-// Education Credential Tabs
-function switchCredTab(tabName) {
-    document.querySelectorAll('.edu-tab-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.tab === tabName);
-    });
-    document.querySelectorAll('.edu-tab-panel').forEach(panel => {
-        panel.classList.toggle('active', panel.id === 'tab-' + tabName);
-    });
-}
-
-document.querySelectorAll('.edu-tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => switchCredTab(btn.dataset.tab));
-});
-
-// Research Filter
-function filterResearch(category) {
-    document.querySelectorAll('.research-filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.filter === category);
-    });
-    document.querySelectorAll('.research-card-v2').forEach(entry => {
-        const cat = entry.dataset.category;
-        if (category === 'all' || cat === category) {
-            entry.classList.remove('hidden');
-        } else {
-            entry.classList.add('hidden');
-        }
-    });
-}
-
-document.querySelectorAll('.research-filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => filterResearch(btn.dataset.filter));
-});
-
-// Async contact form (Formspree / fetch-based)
-(function setupAsyncForm() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-    const successEl = form.parentElement?.querySelector('.form-success');
-
-    form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const submitBtn = form.querySelector('[type="submit"]');
-        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
-
-        try {
-            const response = await fetch(form.action || window.location.href, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            });
-            if (response.ok) {
-                form.reset();
-                if (successEl) { successEl.style.display = 'block'; form.style.display = 'none'; }
-                else showNotification('Message sent successfully!', 'success');
-            } else {
-                throw new Error('Server error');
-            }
-        } catch {
-            showNotification('Could not send message. Please email directly.', 'error');
-        } finally {
-            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send Message'; }
-        }
-    });
-})();
 
 // Loading animation
 window.addEventListener('load', () => {
@@ -373,50 +230,3 @@ loadingStyle.textContent = `
     }
 `;
 document.head.appendChild(loadingStyle);
-
-// ── CV Download — language-aware ─────────────────────────
-const CV_LINKS = {
-    en: { href: 'assets/Consulting_Cv_2025.pdf', download: 'Perry_Gamba_CV_EN.pdf' },
-    de: { href: 'assets/German_CV_2025.pdf',     download: 'Perry_Gamba_CV_DE.pdf' }
-};
-
-function updateCvDownloadLink(lang) {
-    const btn = document.getElementById('cv-download-btn');
-    if (!btn) return;
-    const config = CV_LINKS[lang] || CV_LINKS.en;
-    btn.href     = config.href;
-    btn.download = config.download;
-}
-
-// Patch setLanguage to also swap the CV link
-(function patchSetLanguage() {
-    const _orig = window.setLanguage;
-    if (typeof _orig === 'function') {
-        window.setLanguage = function(lang) {
-            _orig(lang);
-            updateCvDownloadLink(lang);
-        };
-    } else {
-        // setLanguage not yet defined — hook after DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', () => {
-            const _orig2 = window.setLanguage;
-            if (typeof _orig2 === 'function') {
-                window.setLanguage = function(lang) {
-                    _orig2(lang);
-                    updateCvDownloadLink(lang);
-                };
-            }
-        });
-    }
-})();
-
-// ── Experience Accordion ──────────────────────────────────
-function toggleExpItem(btn) {
-    const item = btn.closest('.exp-item');
-    const isOpen = item.classList.contains('exp-item--open');
-    // Collapse all open items
-    document.querySelectorAll('.exp-item--open').forEach(i => i.classList.remove('exp-item--open'));
-    // Expand clicked item if it was closed
-    if (!isOpen) item.classList.add('exp-item--open');
-}
-

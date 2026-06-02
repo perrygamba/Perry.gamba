@@ -6,56 +6,8 @@
     <title>Perry Gamba - M&E Consultant | Program Management | Data Analytics</title>
     <meta name="description" content="Perry Gamba is a PMP®-certified consultant with 15+ years of experience in M&E systems design, program management, public health, and data analytics across Africa and Europe. Based in Switzerland.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Perry Gamba",
-    "jobTitle": "M&E Consultant & Program Manager",
-    "description": "PMP®-certified consultant with 15+ years of experience in M&E systems design, program management, public health, and data analytics across Africa and Europe.",
-    "url": "https://www.perrygamba.consulting",
-    "image": "https://www.perrygamba.consulting/assets/images/Z92_0616.jpeg",
-    "telephone": "+41765156367",
-    "email": "perry@perrygamba.consulting",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Schänis",
-      "addressRegion": "SG",
-      "postalCode": "8718",
-      "addressCountry": "CH"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/perry-gamba-05147668/",
-      "https://independent.academia.edu/PerryGamba"
-    ],
-    "hasCredential": [
-      {"@type": "EducationalOccupationalCredential", "name": "PMP®, Project Management Professional", "credentialCategory": "certification"},
-      {"@type": "EducationalOccupationalCredential", "name": "MSc Data Analytics", "credentialCategory": "degree"},
-      {"@type": "EducationalOccupationalCredential", "name": "MSc Public Health", "credentialCategory": "degree"}
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Perry Gamba Consulting",
-    "image": "https://www.perrygamba.consulting/assets/images/Z92_0616.jpeg",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Schänis",
-      "addressRegion": "SG",
-      "postalCode": "8718",
-      "addressCountry": "CH"
-    },
-    "telephone": "+41765156367",
-    "url": "https://www.perrygamba.consulting",
-    "priceRange": "$$$",
-    "knowsAbout": ["Monitoring and Evaluation", "Program Management", "Data Analytics", "Public Health", "Capacity Building"]
-  }
-]
-</script>
 </head>
 <body>
     <!-- Navigation -->
@@ -78,9 +30,6 @@
                     <a href="#experience" class="nav-link" data-key="nav.experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#lernweg" class="nav-link" data-key="nav.lernweg">LernWeg</a>
-                </li>
-                <li class="nav-item">
                     <a href="#education" class="nav-link" data-key="nav.education">Education</a>
                 </li>
                 <li class="nav-item">
@@ -96,10 +45,10 @@
                     <a href="#contact" class="nav-link" data-key="nav.contact">Contact</a>
                 </li>
             </ul>
-            <div class="lang-toggle">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <span class="lang-divider">|</span>
-                <button class="lang-btn" data-lang="de">DE</button>
+            <div class="lang-toggle" role="group" aria-label="Language Selector">
+                <button class="lang-btn active" data-lang="en" aria-label="Switch language to English">EN</button>
+                <span class="lang-divider" aria-hidden="true">|</span>
+                <button class="lang-btn" data-lang="de" aria-label="Sprache auf Deutsch umstellen">DE</button>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -123,7 +72,7 @@
                     <span class="hero-subtitle" data-key="hero.subtitle">M&E Systems   Program Management   Data Analytics   Consulting</span>
                 </h1>
                 <p class="hero-description" data-key="hero.description">
-                    I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives, with 15+ years of impact across Africa and Europe.
+                    I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -143,20 +92,22 @@
                         <span class="stat-label" data-key="hero.stat4">Performance Uplift</span>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-premium-primary" data-key="hero.cta.primary">
-                        <span>Book a Strategic Consultation</span>
+                <div class="hero-buttons-v2">
+                    <a href="#contact" class="btn btn-premium-primary">
+                        <span data-key="hero.cta.primary">Book a Strategic Consultation</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <div class="hero-secondary-actions">
-                        <a id="cv-download-btn" href="assets/Consulting_Cv_2025.pdf" download="Perry_Gamba_CV_EN.pdf" class="btn btn-premium-link" target="_blank" data-key="hero.cta.cv"><i class="fas fa-file-download"></i> Download CV (PDF)</a>
-                        <a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank" rel="noopener noreferrer" class="linkedin-icon-link"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <a href="assets/Perry_Gamba_CV_2025.pdf" download="Perry_Gamba_CV_2025.pdf" class="btn btn-premium-link" target="_blank">
+                        <i class="fas fa-file-download"></i> <span data-key="hero.cta.cv">Download CV (PDF)</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank" rel="noopener noreferrer" class="linkedin-icon-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-avatar">
-                    <img src="assets/images/Z92_0616.jpeg" alt="Perry Gamba" class="hero-photo" fetchpriority="high">
+                    <img src="assets/images/Z92_0616.jpeg" alt="Perry Gamba" class="hero-photo" width="320" height="400" fetchpriority="high">
                 </div>
             </div>
         </div>
@@ -171,7 +122,7 @@
             <div class="achievements-strip-grid">
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-hospital"></i></div>
-                    <p data-key="achieve.1">Built and deployed national M&E systems for Uganda's Ministry of Defence improving accountability across <strong>50+ health facilities</strong></p>
+                    <p data-key="achieve.1">Built and deployed national M&E systems for Uganda's Ministry of Defence — improving accountability across <strong>50+ health facilities</strong></p>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-globe-africa"></i></div>
@@ -179,7 +130,7 @@
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
-                    <p data-key="achieve.3">Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making improving performance by <strong>20–40%</strong></p>
+                    <p data-key="achieve.3">Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making — improving performance by <strong>20–40%</strong></p>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-users"></i></div>
@@ -291,250 +242,181 @@
             </div>
             <div class="exp-accordion">
 
-                <div class="exp-item exp-item--open">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item exp-item--open" id="exp-item-1">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="true" aria-controls="exp-body-1" aria-label="Toggle details for Strategic Consultant position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2026</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.1.title">Strategic Consultant, Education Policy &amp; Regulatory Affairs</h3>
+                                <h3 id="exp-title-1" data-key="exp.1.title">Strategic Consultant — Education Policy &amp; Regulatory Affairs</h3>
                                 <span class="exp-item-org">Trägerverein LebeORT Innerthal, Canton Schwyz</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-1" role="region" aria-labelledby="exp-title-1">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.1.s"><strong>Situation:</strong> Canton Schwyz education department rejected a private primary school permit application (13–22 pupils).</li>
-                                <li data-key="exp.1.t"><strong>Task:</strong> Engaged as independent external strategic advisor to diagnose compliance failures and chart a resubmission path.</li>
-                                <li data-key="exp.1.a"><strong>Action:</strong> Conducted systematic compliance analysis against Art. 62 Federal Constitution, Lehrplan 21, HarmoS Concordat, and Volksschulgesetz Schwyz; identified 13 specific gaps across curriculum, governance, qualifications, safeguarding, and data protection.</li>
-                                <li data-key="exp.1.r"><strong>Result:</strong> Delivered a 9-page advisory report with a prioritised recommendation framework and 5-step resubmission action plan, equipping the founding team to approach Canton Schwyz as a credible, compliant operator.</li>
+                            <ul class="timeline-bullets" data-key="exp.1.desc">
+                                <li><strong>Strategic Advisory:</strong> Retained as external strategic advisor following Canton Schwyz Education Department's private school permit rejection.</li>
+                                <li><strong>Compliance Architecture:</strong> Performed gap analysis of concepts against Swiss Federal Constitution (Art. 62), Lehrplan 21, HarmoS Concordat, and Volksschulgesetz Schwyz.</li>
+                                <li><strong>Actionable Deliverables:</strong> Identified 13 specific regulatory gaps and delivered a 9-page resubmission roadmap and risk framework for Canton Schwyz Department of Education.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-2">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-2" aria-label="Toggle details for Project Coordinator position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2019 – Present</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.2.title">Project Coordinator</h3>
+                                <h3 id="exp-title-2" data-key="exp.2.title">Project Coordinator</h3>
                                 <span class="exp-item-org">LernRaum GmbH, Switzerland</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-2" role="region" aria-labelledby="exp-title-2">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.2.s"><strong>Situation:</strong> Swiss schools sought meaningful, measurable partnerships with East African counterparts.</li>
-                                <li data-key="exp.2.t"><strong>Task:</strong> Coordinate bilateral programs and ensure accountability for youth-leadership outcomes.</li>
-                                <li data-key="exp.2.a"><strong>Action:</strong> Designed and evaluated workshops across public and private schools; led project planning, monitoring, and performance reporting; facilitated team-building and experiential learning programs.</li>
-                                <li data-key="exp.2.r"><strong>Result:</strong> Strengthened Switzerland–East Africa intercultural collaboration and measurably improved program delivery outcomes.</li>
+                            <ul class="timeline-bullets" data-key="exp.2.desc">
+                                <li><strong>School Partnerships:</strong> Coordinated complex school partnership programs linking Switzerland and East Africa, enhancing intercultural integration.</li>
+                                <li><strong>Program Management:</strong> Designed, planned, and evaluated dynamic youth leadership workshops across Swiss public and private schools.</li>
+                                <li><strong>Performance Tracking:</strong> Led project planning, outcomes monitoring, and generated formal stakeholder impact reports for school boards.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-3">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-3" aria-label="Toggle details for Mentee/Mentor position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2019 – 2020</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.3.title">Mentee / Mentor</h3>
+                                <h3 id="exp-title-3" data-key="exp.3.title">Mentee / Mentor</h3>
                                 <span class="exp-item-org">Deloitte CARE, Zurich, Switzerland</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-3" role="region" aria-labelledby="exp-title-3">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.3.s"><strong>Situation:</strong> Refugees and migrants faced systemic barriers to professional integration in Switzerland.</li>
-                                <li data-key="exp.3.t"><strong>Task:</strong> Design and deliver targeted workshops to accelerate professional development.</li>
-                                <li data-key="exp.3.a"><strong>Action:</strong> Led project management and entrepreneurship workshops; developed training curricula; mentored participants one-on-one.</li>
-                                <li data-key="exp.3.r"><strong>Result:</strong> Strengthened professional and life skills for individuals with refugee and migrant backgrounds, supporting successful labour-market integration.</li>
+                            <ul class="timeline-bullets" data-key="exp.3.desc">
+                                <li><strong>Refugee Integration:</strong> Guided professional integration and economic enablement of refugee and migrant candidates in Switzerland.</li>
+                                <li><strong>Capacity Building:</strong> Facilitated structured project management and entrepreneurship workshops, developing practical training curricula.</li>
+                                <li><strong>Intercultural Coaching:</strong> Mentored participants to build essential Swiss workplace capabilities, soft skills, and local professional networks.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-4">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-4" aria-label="Toggle details for Trainee position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2018</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.4.title">Trainee, Integration, Consulting &amp; Research</h3>
+                                <h3 id="exp-title-4" data-key="exp.4.title">Trainee — Integration, Consulting &amp; Research</h3>
                                 <span class="exp-item-org">Deloitte, Rotterdam, Netherlands</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-4" role="region" aria-labelledby="exp-title-4">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.4.s"><strong>Situation:</strong> Deloitte ran an integration programme embedding international professionals in its consulting practice.</li>
-                                <li data-key="exp.4.t"><strong>Task:</strong> Complete intensive rotations across financial consulting, taxation, legal services, and development research.</li>
-                                <li data-key="exp.4.a"><strong>Action:</strong> Contributed analytical insights to refugee integration research and development initiatives across practice areas.</li>
-                                <li data-key="exp.4.r"><strong>Result:</strong> Delivered actionable research findings that informed programme strategy improvements.</li>
+                            <ul class="timeline-bullets" data-key="exp.4.desc">
+                                <li><strong>Consulting Training:</strong> Completed Deloitte intensive training module covering corporate tax systems, financial consulting, and corporate law.</li>
+                                <li><strong>Advisory Research:</strong> Contributed research data to support refugee integration strategy models and economic development programs.</li>
+                                <li><strong>Systems Analysis:</strong> Provided analytical data insights to refine Dutch and Swiss program coordination processes.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-5">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-5" aria-label="Toggle details for Component Manager position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2014 – 2018</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.5.title">M&amp;E / Health Component Manager (Part-Time)</h3>
+                                <h3 id="exp-title-5" data-key="exp.5.title">M&amp;E / Health Component Manager (Part-Time)</h3>
                                 <span class="exp-item-org">Uganda Rural Literacy &amp; Community Development Association</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-5" role="region" aria-labelledby="exp-title-5">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.5.s"><strong>Situation:</strong> Community health projects lacked robust M&amp;E systems and trained local facilitators.</li>
-                                <li data-key="exp.5.t"><strong>Task:</strong> Manage M&amp;E activities and build grassroots health and environmental management capacity.</li>
-                                <li data-key="exp.5.a"><strong>Action:</strong> Trained refugee and cultural leaders in public health; conducted national assessments and health camps; provided strategic recommendations for programme improvement.</li>
-                                <li data-key="exp.5.r"><strong>Result:</strong> Improved community-level M&amp;E uptake and contributed evidence-based recommendations adopted in programme redesign.</li>
+                            <ul class="timeline-bullets" data-key="exp.5.desc">
+                                <li><strong>M&E Coordination:</strong> Managed field M&E components for community health, sanitation, and social development initiatives.</li>
+                                <li><strong>Public Health Training:</strong> Educated refugee and cultural community leaders on public health, environmental hygiene, and sanitation frameworks.</li>
+                                <li><strong>Data & Assessments:</strong> Organized national health surveys, camps, and supplied strategic recommendations to executive NGO directors.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-6">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-6" aria-label="Toggle details for M&E Manager position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2009 – 2018</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.6.title">Monitoring &amp; Evaluation Manager</h3>
-                                <span class="exp-item-org">Ministry of Defence, Directorate of Medical Services, Uganda</span>
+                                <h3 id="exp-title-6" data-key="exp.6.title">Monitoring &amp; Evaluation Manager</h3>
+                                <span class="exp-item-org">Ministry of Defence — Directorate of Medical Services, Uganda</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-6" role="region" aria-labelledby="exp-title-6">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.6.s"><strong>Situation:</strong> The Ministry lacked standardised M&amp;E infrastructure and data quality systems across its health facilities.</li>
-                                <li data-key="exp.6.t"><strong>Task:</strong> Design and institutionalise a national M&amp;E framework covering 50+ military health facilities.</li>
-                                <li data-key="exp.6.a"><strong>Action:</strong> Built digital beneficiary databases and reporting tools; led performance reviews for malaria and HIV/AIDS programs; trained 300+ health workers; coordinated inter-sectoral linkages with Parliament.</li>
-                                <li data-key="exp.6.r"><strong>Result:</strong> Achieved <strong>20–40% improvement</strong> in reporting quality and programme accountability across the organisation.</li>
+                            <ul class="timeline-bullets" data-key="exp.6.desc">
+                                <li><strong>National M&E System:</strong> Designed and deployed national M&E and digital HMIS systems adopted across Uganda's Ministry of Defence Medical Directorate.</li>
+                                <li><strong>Performance tracking:</strong> Managed reporting, audits, and performance metrics across 50+ military health facilities.</li>
+                                <li><strong>Capacity & Performance:</strong> Trained 300+ community health facilitators and achieved a 20-40% measurable improvement in reporting quality.</li>
+                                <li><strong>Strategic Intersectoral Liaison:</strong> Successfully coordinated reporting between Ministry leadership, Parliament, and international donors.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-7">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-7" aria-label="Toggle details for Program Officer position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2003 – 2009</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.7.title">Program Officer</h3>
+                                <h3 id="exp-title-7" data-key="exp.7.title">Program Officer</h3>
                                 <span class="exp-item-org">USAID – Uganda Oil Seed Producers Association, Kampala</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-7" role="region" aria-labelledby="exp-title-7">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.7.s"><strong>Situation:</strong> Agricultural communities required mobilisation support and structured program management to access USAID-funded initiatives.</li>
-                                <li data-key="exp.7.t"><strong>Task:</strong> Facilitate workshops and field coordination for agricultural and social development programmes.</li>
-                                <li data-key="exp.7.a"><strong>Action:</strong> Delivered community mobilisation workshops; supported planning, reporting, and field coordination across multiple districts.</li>
-                                <li data-key="exp.7.r"><strong>Result:</strong> Improved community participation rates and strengthened program reporting quality for USAID donor requirements.</li>
+                            <ul class="timeline-bullets" data-key="exp.7.desc">
+                                <li><strong>Community Mobilisation:</strong> Facilitated field workshops and coordinated regional community mobilization for agricultural development.</li>
+                                <li><strong>Coordination & Reporting:</strong> Coordinated project timelines, tracked deliverables, and generated field reports for USAID project directors.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="exp-item">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)">
+                <div class="exp-item" id="exp-item-8">
+                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-8" aria-label="Toggle details for Accounts Assistant position">
                         <div class="exp-item-left">
                             <span class="exp-item-date">2002 – 2003</span>
                             <div class="exp-item-titles">
-                                <h3 data-key="exp.8.title">Accounts Assistant</h3>
+                                <h3 id="exp-title-8" data-key="exp.8.title">Accounts Assistant</h3>
                                 <span class="exp-item-org">Save the Children UK, Kampala, Uganda</span>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron"></i>
+                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
                     </button>
-                    <div class="exp-item-body">
+                    <div class="exp-item-body" id="exp-body-8" role="region" aria-labelledby="exp-title-8">
                         <div class="exp-item-body-inner">
-                            <ul class="star-bullets">
-                                <li data-key="exp.8.s"><strong>Situation:</strong> Save the Children required rigorous financial controls across its Uganda operations.</li>
-                                <li data-key="exp.8.t"><strong>Task:</strong> Manage financial reconciliation, cash flow, and monthly accounting reports in compliance with donor requirements.</li>
-                                <li data-key="exp.8.a"><strong>Action:</strong> Maintained accurate financial records and ensured full compliance with organisational and donor financial procedures.</li>
-                                <li data-key="exp.8.r"><strong>Result:</strong> Zero audit findings; reliable financial reporting that supported uninterrupted program delivery.</li>
-                            </ul>
+                            <ul class="timeline-bullets" data-key="exp.8.desc">
+                                <li><strong>Financial Control:</strong> Administered daily financial reconciliation, managed cash flows, and prepared monthly expenditure ledgers.</li>
+                                <li><strong>Compliance Auditing:</strong> Guaranteed strict alignment with Save the Children UK financial systems and international donor requirements.</li>
+                              </ul>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- LernWeg Initiative Section -->
-    <section id="lernweg" class="lernweg-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow" data-key="lernweg.eyebrow">Featured Initiative · 2025–Present</span>
-                <h2 class="section-title" data-key="lernweg.title">LernWeg Primarschule</h2>
-                <p class="section-subtitle" data-key="lernweg.subtitle">Founding a premium German-medium private primary school in Canton Glarus, Switzerland</p>
-            </div>
-
-            <div class="lernweg-card">
-                <div class="lernweg-identity">
-                    <div class="lernweg-logo-block">
-                        <span class="lernweg-name">LernWeg<br>Primarschule</span>
-                        <span class="lernweg-triad">Wurzeln · Wege · Weite</span>
-                        <span class="lernweg-tagline" data-key="lernweg.tagline">„Im Tal verwurzelt, in der Welt zuhause."</span>
-                    </div>
-                    <div class="lernweg-stats-row">
-                        <div class="lw-stat">
-                            <span class="lw-stat-num">42</span>
-                            <span class="lw-stat-label" data-key="lernweg.stat1">Pupils at Capacity</span>
-                        </div>
-                        <div class="lw-stat">
-                            <span class="lw-stat-num">CHF 1.5M</span>
-                            <span class="lw-stat-label" data-key="lernweg.stat2">Establishment Budget</span>
-                        </div>
-                        <div class="lw-stat">
-                            <span class="lw-stat-num">24 mo</span>
-                            <span class="lw-stat-label" data-key="lernweg.stat3">To Opening</span>
-                        </div>
-                        <div class="lw-stat">
-                            <span class="lw-stat-num">Yr 3</span>
-                            <span class="lw-stat-label" data-key="lernweg.stat4">Break-even</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lernweg-body">
-                    <div class="lernweg-role">
-                        <span class="lernweg-role-label" data-key="lernweg.role.label">Role</span>
-                        <span class="lernweg-role-value" data-key="lernweg.role.value">Project Founder &amp; Strategic Lead</span>
-                    </div>
-                    <ul class="lernweg-bullets">
-                        <li data-key="lernweg.b1"><strong>Initiative:</strong> Designing and leading the establishment of a new state-recognised private primary school in Canton Glarus, a Lehrplan 21-aligned, German-medium day school with multi-age learning groups, full-day programme, and an average class size of 12 pupils.</li>
-                        <li data-key="lernweg.b2"><strong>Scope:</strong> Authored the full 34-page regulatory proposal and companion Business Plan covering cantonal authorisation, pedagogical model, governance, financial projections, and investor strategy, targeting CHF 1.5 million establishment capital and operating break-even by Year 3.</li>
-                        <li data-key="lernweg.b3"><strong>Regulatory:</strong> Designed the compliance architecture against Art. 62 Federal Constitution, Glarus Volksschulgesetz, and cantonal Bewilligung requirements; coordinated pre-application engagement with Departement Bildung und Kultur, Kanton Glarus.</li>
-                        <li data-key="lernweg.b4"><strong>Impact:</strong> First premium German-medium private primary school concept purpose-built for the Glarus market, serving the growing Zurich–Linth economic corridor; structured for 42 pupils, dual-language track (English from Year 1, French from Year 5), and inclusion of pupils with special learning profiles.</li>
-                    </ul>
-                    <div class="lernweg-tags">
-                        <span class="lw-tag" data-key="lernweg.tag1">Swiss Education Policy</span>
-                        <span class="lw-tag" data-key="lernweg.tag2">School Founding</span>
-                        <span class="lw-tag" data-key="lernweg.tag3">Lehrplan 21</span>
-                        <span class="lw-tag" data-key="lernweg.tag4">Regulatory Compliance</span>
-                        <span class="lw-tag" data-key="lernweg.tag5">Business Planning</span>
-                        <span class="lw-tag" data-key="lernweg.tag6">Canton Glarus</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -543,148 +425,150 @@
     <section id="education" class="education">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow" data-key="education.eyebrow">Academic &amp; Professional Credentials</span>
-                <h2 class="section-title" data-key="education.title">Education &amp; Certifications</h2>
+                <span class="section-eyebrow" data-key="education.eyebrow">Academic & Professional Credentials</span>
+                <h2 class="section-title" data-key="education.title">Education & Certifications</h2>
                 <p class="section-subtitle" data-key="education.subtitle">Continuous learning and professional development</p>
             </div>
-
-            <!-- Credential Tabs -->
-            <div class="edu-tabs">
-                <button class="edu-tab-btn active" data-tab="degrees" data-key="edu.tab.degrees">Academic Degrees</button>
-                <button class="edu-tab-btn" data-tab="certifications" data-key="edu.tab.certifications">Professional Certifications</button>
-                <button class="edu-tab-btn" data-tab="specialist" data-key="edu.tab.specialist">Specialist Training</button>
-            </div>
-
-            <!-- Panel 1: Academic Degrees -->
-            <div class="edu-tab-panel active" id="tab-degrees">
-                <div class="edu-grid-v2">
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="edu-card-info">
-                            <h3>MSc Data Analytics</h3>
-                            <h4>University of Cumbria</h4>
-                            <span class="edu-card-year">2022 – 2024</span>
+            
+            <div class="credentials-tabs-container">
+                <div class="credentials-tabs">
+                    <button class="tab-btn active" data-tab="core-board" data-key="edu.tab.core">Core Board Credentials</button>
+                    <button class="tab-btn" data-tab="specialized-swiss" data-key="edu.tab.swiss">Swiss & European CAS</button>
+                    <button class="tab-btn" data-tab="academic-foundations" data-key="edu.tab.academic">Postgraduate Foundations</button>
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Tab 1: Core Credentials -->
+                    <div class="tab-pane active" id="core-board">
+                        <div class="edu-grid-v2">
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Project Management Professional (PMP)®</h3>
+                                    <h4>Project Management Institute (PMI)</h4>
+                                    <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-chart-bar"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Masters in Project Monitoring and Evaluation</h3>
+                                    <h4>Uganda Technology and Management University</h4>
+                                    <span class="edu-card-year">2015 – 2016</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>MSc Data Analytics</h3>
+                                    <h4>University of Cumbria</h4>
+                                    <span class="edu-card-year">2022 – 2024</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-heartbeat"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>MSc Public Health</h3>
+                                    <h4>Nexus International University, Uganda</h4>
+                                    <span class="edu-card-year">2014 – 2015</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-university"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>CORe – Credential of Readiness</h3>
+                                    <h4>Harvard Business School</h4>
+                                    <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-chart-bar"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Masters in Project Monitoring and Evaluation</h3>
-                            <h4>Uganda Technology and Management University</h4>
-                            <span class="edu-card-year">2015 – 2016</span>
+                    
+                    <!-- Tab 2: Swiss & European CAS -->
+                    <div class="tab-pane" id="specialized-swiss">
+                        <div class="edu-grid-v2">
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-award"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Certificate of Advanced Studies (CAS) in Big Data Analysis</h3>
+                                    <h4 data-key="edu.fhgr">University of Applied Sciences of the Grisons (FHGR)</h4>
+                                    <span class="edu-card-year">April 2026</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-utensils"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>CAS – Nutritional Crises</h3>
+                                    <h4>CERAH, Geneva</h4>
+                                    <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-award"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Executive Diploma in Advanced Research</h3>
+                                    <h4>Robert Kennedy College, Zurich</h4>
+                                    <span class="edu-card-year">2024</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-balance-scale"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Legal Empowerment for Refugees</h3>
+                                    <h4>DLA Piper</h4>
+                                    <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-heartbeat"></i></div>
-                        <div class="edu-card-info">
-                            <h3>MSc Public Health</h3>
-                            <h4>Nexus International University, Uganda</h4>
-                            <span class="edu-card-year">2014 – 2015</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-chart-bar"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Postgraduate Diploma in Monitoring &amp; Evaluation</h3>
-                            <h4>Uganda Tech &amp; Management University</h4>
-                            <span class="edu-card-year">2014 – 2015</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-heartbeat"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Postgraduate Diploma in Public Health</h3>
-                            <h4>Nexus International University</h4>
-                            <span class="edu-card-year">2012 – 2014</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-business-time"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Bachelor of Business Administration</h3>
-                            <h4>Makerere University, Uganda</h4>
-                            <span class="edu-card-year">2000 – 2003</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-balance-scale"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Diploma in Law</h3>
-                            <h4>Law Development Centre, Uganda</h4>
-                            <span class="edu-card-year">2013 – 2015</span>
+                    
+                    <!-- Tab 3: Postgraduate Foundations -->
+                    <div class="tab-pane" id="academic-foundations">
+                        <div class="edu-grid-v2">
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-business-time"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Bachelor of Business Administration</h3>
+                                    <h4>Makerere University, Uganda</h4>
+                                    <span class="edu-card-year">2000 – 2003</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-chart-bar"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Postgraduate Diploma in Monitoring & Evaluation</h3>
+                                    <h4>Uganda Tech & Management University</h4>
+                                    <span class="edu-card-year">2014 – 2015</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-heartbeat"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Postgraduate Diploma in Public Health</h3>
+                                    <h4>Nexus International University</h4>
+                                    <span class="edu-card-year">2012 – 2014</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-balance-scale"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Diploma in Law</h3>
+                                    <h4>Law Development Centre, Uganda</h4>
+                                    <span class="edu-card-year">2013 – 2015</span>
+                                </div>
+                            </div>
+                            <div class="edu-card-v2">
+                                <div class="edu-card-icon"><i class="fas fa-flask"></i></div>
+                                <div class="edu-card-info">
+                                    <h3>Systematic Reviews Training</h3>
+                                    <h4>USAID</h4>
+                                    <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Panel 2: Professional Certifications -->
-            <div class="edu-tab-panel" id="tab-certifications">
-                <div class="edu-grid-v2">
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Project Management Professional (PMP)®</h3>
-                            <h4>Project Management Institute (PMI)</h4>
-                            <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-university"></i></div>
-                        <div class="edu-card-info">
-                            <h3>CORe – Credential of Readiness</h3>
-                            <h4>Harvard Business School</h4>
-                            <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-award"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Certificate of Advanced Studies (CAS) in Big Data Analysis</h3>
-                            <h4 data-key="edu.fhgr">University of Applied Sciences of the Grisons (FHGR)</h4>
-                            <span class="edu-card-year">April 2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Panel 3: Specialist Training -->
-            <div class="edu-tab-panel" id="tab-specialist">
-                <div class="edu-grid-v2">
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-award"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Executive Diploma in Advanced Research</h3>
-                            <h4>Robert Kennedy College, Zurich</h4>
-                            <span class="edu-card-year">2024</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-utensils"></i></div>
-                        <div class="edu-card-info">
-                            <h3>CAS – Nutritional Crises</h3>
-                            <h4>CERAH, Geneva</h4>
-                            <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-balance-scale"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Legal Empowerment for Refugees</h3>
-                            <h4>DLA Piper</h4>
-                            <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
-                        </div>
-                    </div>
-                    <div class="edu-card-v2">
-                        <div class="edu-card-icon"><i class="fas fa-flask"></i></div>
-                        <div class="edu-card-info">
-                            <h3>Systematic Reviews Training</h3>
-                            <h4>USAID</h4>
-                            <span class="edu-card-year" data-key="edu.year.certified">Certified</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -692,269 +576,149 @@
     <section id="research" class="research">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow" data-key="research.eyebrow">Peer-Reviewed &amp; Published</span>
-                <h2 class="section-title" data-key="research.title">Research &amp; Publications</h2>
+                <span class="section-eyebrow" data-key="research.eyebrow">Peer-Reviewed & Published</span>
+                <h2 class="section-title" data-key="research.title">Research & Publications</h2>
                 <p class="section-subtitle" data-key="research.subtitle">Contributing to the body of knowledge in public health, digital marketing and investment strategy</p>
             </div>
-
-            <!-- Research Filter Tabs -->
-            <div class="edu-tabs research-filters">
-                <button class="edu-tab-btn research-filter-btn active" data-filter="all" data-key="research.filter.all">All</button>
-                <button class="edu-tab-btn research-filter-btn" data-filter="public-health" data-key="research.filter.health">Public Health</button>
-                <button class="edu-tab-btn research-filter-btn" data-filter="digital-marketing" data-key="research.filter.marketing">Digital Marketing</button>
-                <button class="edu-tab-btn research-filter-btn" data-filter="investment" data-key="research.filter.investment">Investment &amp; Strategy</button>
-                <button class="edu-tab-btn research-filter-btn" data-filter="me-malaria" data-key="research.filter.me">M&amp;E &amp; Malaria</button>
-                <button class="edu-tab-btn research-filter-btn" data-filter="in-progress" data-key="research.filter.inprogress">In Progress</button>
-            </div>
-
-            <div class="research-grid-v2">
-
-                <div class="research-card-v2" data-category="public-health">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2025</span>
-                        <span class="research-tag">Public Health</span>
+            <div class="research-list">
+                <div class="research-entry">
+                    <div class="research-year-col">
+                        <span class="research-year-num">2025</span>
                     </div>
-                    <h3><a href="https://www.openaccesspub.org/clinical-research-in-hiv-aids-and-prevention/article/2260#references" target="_blank" rel="noopener noreferrer" class="research-link">Factors Influencing HIV Status Disclosure Among People Living with HIV/AIDS in Mukono District, Uganda</a></h3>
-                    <p data-key="research.desc.1">Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.</p>
-                    <span class="research-journal"><em>Journal of Clinical Research in HIV AIDS and Prevention</em>, 4(3) · DOI: 10.14302/issn.2324-7339.jcrhap-25-5559</span>
-                </div>
-
-                <div class="research-card-v2" data-category="digital-marketing">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2026</span>
-                        <span class="research-tag">Digital Marketing</span>
+                    <div class="research-entry-body">
+                        <h3><a href="https://www.openaccesspub.org/clinical-research-in-hiv-aids-and-prevention/article/2260#references" target="_blank" rel="noopener noreferrer" class="research-link">Factors Influencing HIV Status Disclosure Among People Living with HIV/AIDS in Mukono District, Uganda: Beyond Health System Support</a></h3>
+                        <p data-key="research.desc.1">Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.</p>
+                        <span class="research-journal"><em>Journal of Clinical Research in HIV AIDS and Prevention</em>, 4(3). ISSN: 2324-7339 · DOI: 10.14302/issn.2324-7339.jcrhap-25-5559</span>
                     </div>
-                    <h3><a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3553" target="_blank" rel="noopener noreferrer" class="research-link">The Impact of Digital Marketing on Market Penetration: Strategic Implications for Emerging Markets</a></h3>
-                    <p data-key="research.desc.2">Investigation of digital marketing strategies and their effect on market penetration in emerging market contexts.</p>
-                    <span class="research-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
                 </div>
-
-                <div class="research-card-v2" data-category="digital-marketing">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2025</span>
-                        <span class="research-tag">Digital Marketing</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2026</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3553" target="_blank" rel="noopener noreferrer" class="research-link">The Impact of Digital Marketing on Market Penetration: Strategic Implications for Emerging Markets</a></h3>
+                        <p data-key="research.desc.2">Investigation of digital marketing strategies and their effect on market penetration in emerging market contexts</p>
+                        <span class="research-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
                     </div>
-                    <h3><a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3377" target="_blank" rel="noopener noreferrer" class="research-link">Different Forms of Digital Marketing: A Comprehensive Analysis</a></h3>
-                    <p data-key="research.desc.3">Analysis of digital marketing modalities and their strategic application across emerging and established markets.</p>
-                    <span class="research-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
                 </div>
-
-                <div class="research-card-v2" data-category="investment">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2025</span>
-                        <span class="research-tag">Investment &amp; Strategy</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2025</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3377" target="_blank" rel="noopener noreferrer" class="research-link">Different Forms of Digital Marketing: A Comprehensive Analysis</a></h3>
+                        <p data-key="research.desc.3">Analysis of digital marketing modalities and their strategic application across emerging and established markets</p>
+                        <span class="research-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
                     </div>
-                    <h3><a href="https://www.academia.edu/download/122865886/Inclusive_Investment_Strategy.pdf" target="_blank" rel="noopener noreferrer" class="research-link">Turning Risk into Reform: A Strategy for Inclusive Investment in Uganda</a></h3>
-                    <p data-key="research.desc.4">A policy and risk management strategy for Uganda's investment reform framework.</p>
-                    <span class="research-journal" data-key="research.label.academic">Academic Publication</span>
                 </div>
-
-                <div class="research-card-v2" data-category="me-malaria">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2021</span>
-                        <span class="research-tag">M&amp;E &amp; Malaria</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2025</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://www.academia.edu/download/122865886/Inclusive_Investment_Strategy.pdf" target="_blank" rel="noopener noreferrer" class="research-link">Turning Risk into Reform: A Strategy for Inclusive Investment in Uganda</a></h3>
+                        <p data-key="research.desc.4">A policy and risk management strategy for Uganda's investment reform framework</p>
+                        <span class="research-journal" data-key="research.label.academic">Academic Publication</span>
                     </div>
-                    <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/64" target="_blank" rel="noopener noreferrer" class="research-link">Community Factors and Utilization of Monitoring and Evaluation Results</a></h3>
-                    <p data-key="research.desc.5">Evidence from Malaria Control Programs' Implementation in Mukono District.</p>
-                    <span class="research-journal"><em>International Journal of Technology and Management</em>, 6.1 (2021): 1–11</span>
                 </div>
-
-                <div class="research-card-v2" data-category="me-malaria">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2020</span>
-                        <span class="research-tag">M&amp;E &amp; Malaria</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2021</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/64" target="_blank" rel="noopener noreferrer" class="research-link">Community Factors and Utilization of Monitoring and Evaluation Results</a></h3>
+                        <p data-key="research.desc.5">Evidence from Malaria Control Programs' Implementation in Mukono District</p>
+                        <span class="research-journal"><em>International Journal of Technology and Management</em>, 6.1 (2021): 1–11</span>
                     </div>
-                    <h3><a href="https://asbatlibrary.s3.eu-central-1.amazonaws.com/1d50086a-6384-4a49-ac80-98a31e151ac7-Gamba%20Perry-Factors%20Affecting%20Utilization%20of%20Monitoring%20and%20Evaluation%20Findings%20in%20Implementation%20of%20Malaria%20Control%20Programmes%20in%20Mukono%20District%2C%20Uganda.pdf" target="_blank" rel="noopener noreferrer" class="research-link">Factors Affecting the Utilization of M&amp;E Findings in Malaria Control Programmes, Mukono District</a></h3>
-                    <p data-key="research.desc.6">Examination of key determinants influencing M&amp;E findings uptake in malaria program implementation.</p>
-                    <span class="research-journal" data-key="research.label.research">Research Publication</span>
                 </div>
-
-                <div class="research-card-v2" data-category="me-malaria">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2020</span>
-                        <span class="research-tag">M&amp;E &amp; Malaria</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2020</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://asbatlibrary.s3.eu-central-1.amazonaws.com/1d50086a-6384-4a49-ac80-98a31e151ac7-Gamba%20Perry-Factors%20Affecting%20Utilization%20of%20Monitoring%20and%20Evaluation%20Findings%20in%20Implementation%20of%20Malaria%20Control%20Programmes%20in%20Mukono%20District%2C%20Uganda.pdf" target="_blank" rel="noopener noreferrer" class="research-link">Factors Affecting the Utilization of M&amp;E Findings in Malaria Control Programmes, Mukono District</a></h3>
+                        <p data-key="research.desc.6">Examination of key determinants influencing M&amp;E findings uptake in malaria program implementation</p>
+                        <span class="research-journal" data-key="research.label.research">Research Publication</span>
                     </div>
-                    <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/56" target="_blank" rel="noopener noreferrer" class="research-link">Effect of Implementation Factors on Monitoring &amp; Evaluation Results Utilization</a></h3>
-                    <p data-key="research.desc.7">Evidence from the Malaria Control Programs in Mukono District, Central Uganda.</p>
-                    <span class="research-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–8</span>
                 </div>
-
-                <div class="research-card-v2" data-category="me-malaria">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2020</span>
-                        <span class="research-tag">M&amp;E &amp; Malaria</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2020</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/56" target="_blank" rel="noopener noreferrer" class="research-link">Effect of Implementation Factors on Monitoring &amp; Evaluation Results Utilization</a></h3>
+                        <p data-key="research.desc.7">Evidence from the Malaria Control Programs in Mukono District, Central Uganda</p>
+                        <span class="research-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–8</span>
                     </div>
-                    <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/55" target="_blank" rel="noopener noreferrer" class="research-link">Decision Factors and the Utilization of Monitoring and Evaluation Findings in Programs Implementation</a></h3>
-                    <p data-key="research.desc.8">A Case of the Ugandan Malaria Control Program.</p>
-                    <span class="research-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–10</span>
                 </div>
-
-                <div class="research-card-v2" data-category="investment">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge">2024</span>
-                        <span class="research-tag">Investment &amp; Strategy</span>
+                <div class="research-entry">
+                    <div class="research-year-col"><span class="research-year-num">2020</span></div>
+                    <div class="research-entry-body">
+                        <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/55" target="_blank" rel="noopener noreferrer" class="research-link">Decision Factors and the Utilization of Monitoring and Evaluation Findings in Programs Implementation</a></h3>
+                        <p data-key="research.desc.8">A Case of the Ugandan Malaria Control Program</p>
+                        <span class="research-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–10</span>
                     </div>
-                    <h3>Insurance Practitioner Insights: Risk, Data and Accountability in Development Programs</h3>
-                    <p data-key="research.desc.9">Professional research examining insurance practitioner perspectives on risk assessment, data-driven decision-making, and accountability frameworks in public sector and development programs.</p>
-                    <span class="research-journal" data-key="research.label.professional">Professional Research Publication, 2024</span>
                 </div>
-
-                <div class="research-card-v2 research-card-v2--inprogress" data-category="in-progress">
-                    <div class="research-card-meta">
-                        <span class="research-year-badge research-year-badge--inprogress" data-key="research.inprogress">In Progress</span>
-                        <span class="research-tag">Coaching &amp; Consulting</span>
+                <div class="research-entry">
+                    <div class="research-year-col">
+                        <span class="research-year-num">2024</span>
                     </div>
-                    <h3>Körperkompass, Professional Consultation Research</h3>
-                    <p data-key="research.desc.10">Ongoing research investigating body-signal awareness frameworks and their application in professional coaching and consulting practice in Switzerland.</p>
-                    <span class="research-journal" data-key="research.label.switzerland">Professional Consultation Research, Switzerland (2025)</span>
+                    <div class="research-entry-body">
+                        <h3>Insurance Practitioner Insights: Risk, Data and Accountability in Development Programs</h3>
+                        <p data-key="research.desc.9">Professional research examining insurance practitioner perspectives on risk assessment, data-driven decision-making, and accountability frameworks in public sector and development programs.</p>
+                        <span class="research-journal" data-key="research.label.professional">Professional Research Publication, 2024</span>
+                    </div>
                 </div>
-
+                <div class="research-entry research-entry--inprogress">
+                    <div class="research-year-col">
+                        <span class="research-year-inprogress" data-key="research.inprogress">In Progress</span>
+                    </div>
+                    <div class="research-entry-body">
+                        <h3>Körperkompass — Professional Consultation Research</h3>
+                        <p data-key="research.desc.10">Ongoing research investigating body-signal awareness frameworks and their application in professional coaching and consulting practice in Switzerland.</p>
+                        <span class="research-journal" data-key="research.label.switzerland">Professional Consultation Research — Switzerland (2025)</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills competencies-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-key="skills.title">Skills &amp; Expertise</h2>
+                <h2 class="section-title" data-key="skills.title">Skills & Expertise</h2>
                 <p class="section-subtitle" data-key="skills.subtitle">Technical and professional competencies</p>
             </div>
-            <div class="skills-grid">
-
-                <!-- Technical Skills, Competency Matrix -->
-                <div class="skill-category">
-                    <h3 data-key="skills.technical">Technical Skills</h3>
-                    <div class="competency-matrix">
-                        <div class="matrix-item" data-level="expert">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-table"></i>
-                                <span class="matrix-skill-name">Advanced Excel</span>
-                            </div>
-                            <span class="matrix-level-badge expert" data-key="matrix.expert">Expert</span>
-                        </div>
-                        <div class="matrix-item" data-level="expert">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-chart-bar"></i>
-                                <span class="matrix-skill-name">SPSS / PSPP</span>
-                            </div>
-                            <span class="matrix-level-badge expert" data-key="matrix.expert">Expert</span>
-                        </div>
-                        <div class="matrix-item" data-level="expert">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-database"></i>
-                                <span class="matrix-skill-name">MySQL</span>
-                            </div>
-                            <span class="matrix-level-badge advanced" data-key="matrix.advanced">Advanced</span>
-                        </div>
-                        <div class="matrix-item" data-level="advanced">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-network-wired"></i>
-                                <span class="matrix-skill-name">HMIS / Digital Reporting</span>
-                            </div>
-                            <span class="matrix-level-badge advanced" data-key="matrix.advanced">Advanced</span>
-                        </div>
-                        <div class="matrix-item" data-level="intermediate">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-chart-pie"></i>
-                                <span class="matrix-skill-name">Tableau</span>
-                            </div>
-                            <span class="matrix-level-badge intermediate" data-key="matrix.intermediate">Intermediate</span>
-                        </div>
-                        <div class="matrix-item" data-level="intermediate">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-code"></i>
-                                <span class="matrix-skill-name">R (Statistical)</span>
-                            </div>
-                            <span class="matrix-level-badge intermediate" data-key="matrix.intermediate">Intermediate</span>
-                        </div>
-                        <div class="matrix-item" data-level="advanced">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-tasks"></i>
-                                <span class="matrix-skill-name">Asana / MS Project</span>
-                            </div>
-                            <span class="matrix-level-badge advanced" data-key="matrix.advanced">Advanced</span>
-                        </div>
-                        <div class="matrix-item" data-level="advanced">
-                            <div class="matrix-item-header">
-                                <i class="fas fa-file-alt"></i>
-                                <span class="matrix-skill-name">Donor Reporting</span>
-                            </div>
-                            <span class="matrix-level-badge advanced" data-key="matrix.advanced">Advanced</span>
-                        </div>
+            
+            <div class="competency-matrix-grid">
+                <!-- Card 1: Data Analytics & Systems -->
+                <div class="competency-matrix-card">
+                    <h3 data-key="skills.technical"><i class="fas fa-chart-line"></i> Data Analytics & Systems</h3>
+                    <div class="matrix-chips-wrapper">
+                        <span class="matrix-chip expert">SPSS / PSPP</span>
+                        <span class="matrix-chip expert">Advanced Excel (PowerQuery, Pivots)</span>
+                        <span class="matrix-chip expert">HMIS & Digital reporting</span>
+                        <span class="matrix-chip">MySQL Database</span>
+                        <span class="matrix-chip">Tableau & Dashboards</span>
+                        <span class="matrix-chip">R Language (Intermediate)</span>
                     </div>
                 </div>
-
-                <!-- Core Competencies -->
-                <div class="skill-category">
-                    <h3 data-key="skills.competencies">Core Competencies</h3>
-                    <div class="competency-grid">
-                        <div class="competency-item">
-                            <i class="fas fa-clipboard-check"></i>
-                            <span>M&amp;E Systems Design</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-tasks"></i>
-                            <span>Program Management (PMP®)</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Data Analytics</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-heartbeat"></i>
-                            <span>Public Health Systems</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-search"></i>
-                            <span>Impact Evaluation</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-globe"></i>
-                            <span>Stakeholder Management</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-users"></i>
-                            <span>Capacity Building</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-briefcase"></i>
-                            <span>Strategy &amp; Consulting</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-hands-helping"></i>
-                            <span>Refugee &amp; Community Dev.</span>
-                        </div>
-                        <div class="competency-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Process Improvement</span>
-                        </div>
+                
+                <!-- Card 2: Program Management & Systems -->
+                <div class="competency-matrix-card">
+                    <h3 data-key="skills.competencies"><i class="fas fa-tasks"></i> Program Management</h3>
+                    <div class="matrix-chips-wrapper">
+                        <span class="matrix-chip highlight">M&E Systems Design (Expert)</span>
+                        <span class="matrix-chip highlight">PMP® Project Management</span>
+                        <span class="matrix-chip">Impact Evaluation (USAID)</span>
+                        <span class="matrix-chip">Capacity Building (300+ trained)</span>
+                        <span class="matrix-chip">Process Improvement (20-40% uplift)</span>
+                        <span class="matrix-chip">Stakeholder Alignment</span>
                     </div>
                 </div>
-
-                <!-- Languages -->
-                <div class="skill-category">
-                    <h3 data-key="skills.languages">Languages</h3>
-                    <div class="language-grid">
-                        <div class="language-item">
-                            <span class="language-name" data-key="lang.english">English</span>
-                            <span class="language-level" data-key="level.fluent">Fluent</span>
-                        </div>
-                        <div class="language-item">
-                            <span class="language-name" data-key="lang.german">German</span>
-                            <span class="language-level" data-key="level.professional">Professional (B2)</span>
-                        </div>
-                        <div class="language-item">
-                            <span class="language-name" data-key="lang.swahili">Swahili</span>
-                            <span class="language-level" data-key="level.fluent">Fluent</span>
-                        </div>
-                        <div class="language-item">
-                            <span class="language-name" data-key="lang.other">10 African Languages</span>
-                            <span class="language-level" data-key="level.various">Various Levels</span>
-                        </div>
+                
+                <!-- Card 3: Compliance & Languages -->
+                <div class="competency-matrix-card">
+                    <h3><i class="fas fa-globe"></i> Compliance & Languages</h3>
+                    <div class="matrix-chips-wrapper">
+                        <span class="matrix-chip highlight" data-key="skills.swiss.compliance">Swiss School Compliance</span>
+                        <span class="matrix-chip" data-key="skills.lehrplan">Lehrplan 21 / HarmoS</span>
+                        <span class="matrix-chip" data-key="skills.refugee">Refugee Integration</span>
+                        <span class="matrix-chip expert" data-key="lang.english.level">English (Fluent)</span>
+                        <span class="matrix-chip expert" data-key="lang.german.level">German (Professional B2)</span>
+                        <span class="matrix-chip expert" data-key="lang.swahili.level">Swahili (Fluent)</span>
+                        <span class="matrix-chip" data-key="lang.other.level">10 African Languages</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -978,7 +742,7 @@
                 </div>
                 <div class="testimonial-card">
                     <span class="testimonial-quote-mark">"</span>
-                    <p class="testimonial-text" data-key="t2.text">Perry's PMP® certification is well-deserved, he brings structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.</p>
+                    <p class="testimonial-text" data-key="t2.text">Perry's PMP® certification is well-deserved — he brings structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.</p>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Sébastien Fahrni</span>
                         <span class="testimonial-role">UN Joint SDG Fund</span>
@@ -986,7 +750,7 @@
                 </div>
                 <div class="testimonial-card">
                     <span class="testimonial-quote-mark">"</span>
-                    <p class="testimonial-text" data-key="t3.text">What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity a rare combination in international development.</p>
+                    <p class="testimonial-text" data-key="t3.text">What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity — a rare combination in international development.</p>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Serge Bourbeau</span>
                         <span class="testimonial-role">Accenture / Credit Suisse</span>
@@ -996,96 +760,51 @@
         </div>
     </section>
 
-    <!-- Football Section -->
-    <section id="football" class="football">
+    <!-- High-Performance Leadership Section -->
+    <section id="football" class="football leadership-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow" data-key="football.eyebrow">Beyond the Desk</span>
-                <h2 class="section-title" data-key="football.title">Life on the Pitch</h2>
-                <p class="section-subtitle" data-key="football.subtitle">Discipline, teamwork, and strategic thinking. The same qualities that drive my consulting practice forged on the football field.</p>
+                <span class="section-eyebrow" data-key="football.eyebrow">Athletic Excellence & Corporate Grit</span>
+                <h2 class="section-title" data-key="football.title">High-Performance Leadership</h2>
+                <p class="section-subtitle" data-key="football.subtitle">Combining athletic excellence with professional achievement</p>
             </div>
-            <div class="football-content">
-                <div class="football-info">
-                    <div class="football-stats">
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-futbol"></i>
-                            </div>
-                            <h3 data-key="football.card1.title">Current Team</h3>
-                            <p>FC Weesen</p>
-                            <span class="stat-detail">Swiss 1. Liga</span>
+            
+            <div class="football-content leadership-grid-v2">
+                <div class="leadership-storytelling">
+                    <h3 data-key="football.athletic.title">Operational Stamina & Team Grit</h3>
+                    <p data-key="football.athletic.p1">
+                        Beyond my professional career in public health and analytics, I maintain an active athletic career as a forward for FC Weesen in the Swiss 1. Liga. This integration of rigorous intellectual work and high-intensity athletics demonstrates a deep commitment to maintaining peak performance, focus, and physical stamina.
+                    </p>
+                    <p data-key="football.athletic.p2">
+                        Playing football at a competitive league level in Switzerland has honed my leadership, rapid decision-making, and cross-cultural collaboration—qualities that directly translate to managing complex program architectures, aligning multicultural stakeholders, and delivering high-stakes M&E results.
+                    </p>
+                    
+                    <div class="leadership-metrics">
+                        <div class="metric-badge">
+                            <span class="metric-value">FC Weesen</span>
+                            <span class="metric-label" data-key="football.card1.title">Current Team</span>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-running"></i>
-                            </div>
-                            <h3 data-key="football.card2.title">Position</h3>
-                            <p data-key="football.pos.value">Forward</p>
-                            <span class="stat-detail" data-key="football.pos.detail">Right Wing</span>
+                        <div class="metric-badge">
+                            <span class="metric-value" data-key="football.pos.value">Forward</span>
+                            <span class="metric-label" data-key="football.pos.detail">Swiss 1. Liga</span>
                         </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-calendar"></i>
-                            </div>
-                            <h3 data-key="football.card3.title">Born</h3>
-                            <p data-key="football.born.value">April 4, 1981</p>
-                            <span class="stat-detail">Nebbi, Uganda</span>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">
-                                <i class="fas fa-flag"></i>
-                            </div>
-                            <h3 data-key="football.card4.title">Nationality</h3>
-                            <p data-key="football.nat.value">Ugandan</p>
-                            <span class="stat-detail" data-key="football.nat.detail">International</span>
-                        </div>
-                    </div>
-                    <div class="football-description">
-                        <h3 data-key="football.athletic.title">Athletic Excellence</h3>
-                        <p data-key="football.athletic.p1">
-                            Beyond my professional career in public health, I maintain an active football career as a forward in the Swiss 1. Liga. This unique combination of academic excellence and athletic achievement demonstrates my commitment to maintaining peak performance in multiple disciplines.
-                        </p>
-                        <p data-key="football.athletic.p2">
-                            Playing football at a competitive level has enhanced my leadership skills, teamwork abilities, and strategic thinking qualities that directly translate to my professional work in project management and monitoring & evaluation.
-                        </p>
-                        <div class="season-stats">
-                            <div class="stats-grid">
-                                <div class="stat-item">
-                                    <span class="stat-number">80</span>
-                                    <span class="stat-label" data-key="football.stat.apps">Appearances</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number">1. Liga</span>
-                                    <span class="stat-label" data-key="football.stat.league">League Level</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number">Forward</span>
-                                    <span class="stat-label" data-key="football.stat.pos">Primary Position</span>
-                                </div>
-                            </div>
+                        <div class="metric-badge">
+                            <span class="metric-value">21</span>
+                            <span class="metric-label" data-key="football.stat.apps">Appearances</span>
                         </div>
                     </div>
                 </div>
-                <div class="football-gallery">
-                    <h3 data-key="football.gallery.title">Football Gallery</h3>
-                    <div class="gallery-grid gallery-grid--trio">
-                        <div class="gallery-item">
-                            <img src="assets/images/IMG_5656.jpeg" alt="Perry Gamba Football Action" class="gallery-photo">
+                
+                <div class="leadership-curated-gallery">
+                    <div class="leadership-gallery-grid">
+                        <div class="gallery-item-v2 gallery-large">
+                            <img src="assets/images/IMG_5656.jpeg" alt="Perry Gamba Football Action">
                         </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/IMG_5662.jpeg" alt="Perry Gamba Match Action" class="gallery-photo">
+                        <div class="gallery-item-v2 gallery-small">
+                            <img src="assets/images/IMG_5662.jpeg" alt="Perry Gamba Team Lineup">
                         </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/football_new_1.jpeg" alt="Perry Gamba Ball Control" class="gallery-photo">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/football_new_2.jpeg" alt="Perry Gamba Match Play" class="gallery-photo">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/football_new_3.jpeg" alt="Perry Gamba In Action" class="gallery-photo">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/images/football_new_4.jpeg" alt="Perry Gamba Night Training" class="gallery-photo">
+                        <div class="gallery-item-v2 gallery-small">
+                            <img src="assets/images/IMG_7601.jpeg" alt="Perry Gamba Athlete Portrait">
                         </div>
                     </div>
                 </div>
@@ -1131,42 +850,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <!-- Async contact form -->
-                    <div class="contact-form">
-                        <h3 class="contact-form-title" data-key="contact.form.title">Send a Message</h3>
-                        <form id="contactForm" novalidate>
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Your Name" data-key="form.name" required autocomplete="name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Your Email" data-key="form.email" required autocomplete="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="subject" name="subject" placeholder="Subject" data-key="form.subject" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" rows="4" placeholder="Your Message" data-key="form.message" required></textarea>
-                            </div>
-                            <div id="form-status" class="form-status" aria-live="polite"></div>
-                            <button type="submit" class="btn btn-primary form-submit-btn" data-key="form.submit">
-                                <span class="btn-label">Send Message</span>
-                                <span class="btn-spinner" aria-hidden="true"></span>
-                            </button>
-                        </form>
-                    </div>
 
-                    <!-- Cal.com booking placeholder -->
-                    <div class="cal-booking-block">
-                        <div class="cal-booking-header">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div>
-                                <h4 data-key="contact.cal.title">Book a Strategy Call</h4>
-                                <p data-key="contact.cal.subtitle">Schedule a 30-minute consultation directly in my calendar.</p>
+                <div class="booking-calendar-wrapper">
+                    <div class="booking-header">
+                        <h3 data-key="contact.booking.title">Schedule a Consultation</h3>
+                        <p data-key="contact.booking.subtitle">Select an engagement method below to connect instantly</p>
+                    </div>
+                    <div class="booking-options">
+                        <a href="mailto:perry@perrygamba.consulting?subject=15-Min%20Discovery%20Call%20Request" class="booking-slot">
+                            <div class="booking-slot-info">
+                                <h4 data-key="contact.slot1.title">15-Min Strategic Discovery Call</h4>
+                                <p data-key="contact.slot1.desc">Ideal for scoping initial M&amp;E and project needs</p>
                             </div>
-                        </div>
-                        <a href="https://cal.com/perrygamba" target="_blank" rel="noopener noreferrer" class="btn btn-cal" data-key="contact.cal.cta">
-                            <i class="fas fa-calendar-check"></i> Book via Cal.com
+                            <div class="booking-slot-action">
+                                <span data-key="contact.book">Book Call</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:perry@perrygamba.consulting?subject=Detailed%20Consulting%20Proposal%20Request" class="booking-slot">
+                            <div class="booking-slot-info">
+                                <h4 data-key="contact.slot2.title">Detailed Proposal Request</h4>
+                                <p data-key="contact.slot2.desc">Request pricing, compliance analysis, or timeline terms</p>
+                            </div>
+                            <div class="booking-slot-action">
+                                <span data-key="contact.request">Request</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
