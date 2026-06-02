@@ -529,11 +529,11 @@ function setLanguage(lang) {
   const cvBtn = document.getElementById('cv-download-btn');
   if (cvBtn) {
     if (lang === 'de') {
-      cvBtn.setAttribute('href', 'assets/German_CV_2025.pdf');
+      cvBtn.setAttribute('href', 'assets/Perry_Gamba_CV_DE.pdf');
       cvBtn.setAttribute('download', 'Perry_Gamba_CV_DE.pdf');
     } else {
-      cvBtn.setAttribute('href', 'assets/Perry_Gamba_CV_2025.pdf');
-      cvBtn.setAttribute('download', 'Perry_Gamba_CV_2025.pdf');
+      cvBtn.setAttribute('href', 'assets/Perry_Gamba_CV_EN.pdf');
+      cvBtn.setAttribute('download', 'Perry_Gamba_CV_EN.pdf');
     }
   }
 }
