@@ -19,7 +19,7 @@ const translations = {
     'hero.eyebrow':     'PMP® Certified Consultant · Schänis, Switzerland',
     'hero.availability':'Available for new engagements',
     'hero.subtitle':    'M&E Systems   Program Management   Data Analytics   Consulting',
-    'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.',
+    'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives, with 15+ years of impact across Africa and Europe.',
     'hero.stat1':       'Years Experience',
     'hero.stat2':       'Health Facilities',
     'hero.stat3':       'People Trained',
@@ -32,9 +32,9 @@ const translations = {
     'about.eyebrow':  'The Person Behind the Work',
     'about.title':    'About Me',
     'about.subtitle': 'Passionate about evidence-based solutions that improve lives',
-    'about.intro':    'PMP®-certified consultant with 15+ years delivering complex public health, M&E, and social development programs across Africa and Europe — for government ministries, NGOs, and international organisations.',
+    'about.intro':    'PMP®-certified consultant with 15+ years delivering complex public health, M&E, and social development programs across Africa and Europe for government ministries, NGOs, and international organisations.',
     'about.p1':       'I specialise in designing and implementing national M&E systems, leading multi-country programs, and applying data analytics to drive accountability and performance improvement. My work has directly strengthened health service delivery across 50+ facilities, improved reporting and performance by 20–40%, and built lasting capacity in organisations across Uganda, Switzerland, and beyond.',
-    'about.p2':       'With an MSc in Data Analytics, Masters in Project M&E, MSc in Public Health, and credentials from Harvard Business School and PMI, I bring both strategic depth and hands-on delivery experience to every engagement. I work fluently across English, German, and Swahili — essential for multicultural stakeholder environments.',
+    'about.p2':       'With an MSc in Data Analytics, Masters in Project M&E, MSc in Public Health, and credentials from Harvard Business School and PMI, I bring both strategic depth and hands-on delivery experience to every engagement. I work fluently across English, German, and Swahili, essential for multicultural stakeholder environments.',
     'about.h1':       'Multi-Country Programs',
     'about.h2':       'Evidence-Based Impact',
     'about.h3':       'PMP® Certified',
@@ -43,13 +43,13 @@ const translations = {
     'services.title':    'Services',
     'services.subtitle': 'Practical expertise, delivered from strategy through to implementation',
     's1.title': 'M&E Systems Design & Implementation',
-    's1.desc':  'Design and deploy national and organisational M&E frameworks, data quality systems, HMIS infrastructure, and reporting tools — built to last and drive accountability.',
+    's1.desc':  'Design and deploy national and organisational M&E frameworks, data quality systems, HMIS infrastructure, and reporting tools, built to last and drive accountability.',
     's2.title': 'Program Evaluation & Impact Assessment',
     's2.desc':  'Rigorous evaluation of public health, social development, and education programs using qualitative and quantitative methods, including systematic reviews and USAID frameworks.',
     's3.title': 'Data Analytics & Reporting',
     's3.desc':  'Transform raw program data into actionable insight using SPSS, R, MySQL, Advanced Excel, and Tableau. Build dashboards and reporting systems that inform strategic decisions.',
     's4.title': 'Public Health Program Management',
-    's4.desc':  'End-to-end PMP®-certified management of complex multi-country health and development programs — from planning and stakeholder coordination through to delivery and performance review.',
+    's4.desc':  'End-to-end PMP®-certified management of complex multi-country health and development programs, from planning and stakeholder coordination through to delivery and performance review.',
     's5.title': 'Capacity Building & Training',
     's5.desc':  'Design and deliver M&E, public health, and project management training for government staff, community health workers, NGO teams, and refugee community leaders.',
     's6.title': 'Strategy & Development Consulting',
@@ -60,6 +60,9 @@ const translations = {
     // Experience & Timelines
     'experience.title':    'Professional Experience',
     'experience.subtitle': 'A journey of impact across continents',
+    'exp.tab.consulting':  'Consulting & Management',
+    'exp.tab.me':          'Monitoring & Evaluation',
+    'exp.tab.development': 'Development & Foundations',
     
     // Education Tabs
     'education.eyebrow':  'Academic & Professional Credentials',
@@ -71,18 +74,21 @@ const translations = {
     'edu.year.certified': 'Certified',
     'edu.fhgr':           'University of Applied Sciences of the Grisons (FHGR)',
 
-    // Research
+    // Research & Research Tabs
     'research.eyebrow':  'Peer-Reviewed & Published',
     'research.title':    'Research & Publications',
     'research.subtitle': 'Contributing to the body of knowledge in public health, digital marketing and investment strategy',
+    'research.tab.health': 'Public Health Research',
+    'research.tab.marketing': 'Digital Marketing Innovation',
+    'research.tab.investment': 'Investment & Risk Strategy',
 
     // Testimonials
     'testimonials.eyebrow': 'What Colleagues Say',
     'testimonials.title':   'Testimonials',
     'testimonials.subtitle':'Reflections from colleagues and supervisors across international organisations',
     't1.text': 'Perry demonstrates an exceptional work ethic and a remarkable ability to integrate into new cultural environments. His dedication, reliability, and professional approach make him an outstanding collaborator in any international setting.',
-    't2.text': 'Perry\'s PMP® certification is well-deserved — he brings structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.',
-    't3.text': 'What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity — a rare combination in international development.',
+    't2.text': 'Perry\'s PMP® certification is well-deserved, bringing structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.',
+    't3.text': 'What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity, a rare combination in international development.',
 
     // Skills Matrix Custom Keys
     'skills.title':       'Skills & Expertise',
@@ -128,29 +134,29 @@ const translations = {
 
     // Key Achievements
     'achieve.eyebrow': 'Key Achievements',
-    'achieve.1': 'Built and deployed national M&E systems for Uganda\'s Ministry of Defence — improving accountability across <strong>50+ health facilities</strong>',
+    'achieve.1': 'Built and deployed national M&E systems for Uganda\'s Ministry of Defence, improving accountability across <strong>50+ health facilities</strong>',
     'achieve.2': 'Managed <strong>multi-country</strong> public health and refugee integration programs across Africa and Europe',
-    'achieve.3': 'Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making — improving performance by <strong>20–40%</strong>',
+    'achieve.3': 'Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making, improving performance by <strong>20–40%</strong>',
     'achieve.4': 'Trained <strong>300+ health workers</strong>, educators, refugees, and community leaders in M&E, public health, and project management',
     'achieve.5': 'Strengthened <strong>Switzerland–East Africa</strong> partnerships through program coordination, intercultural collaboration, and performance tracking',
 
     // Professional Experience (STAR Outcome Bullets)
-    'exp.1.title': 'Strategic Consultant — Education Policy & Regulatory Affairs',
+    'exp.1.title': 'Strategic Consultant, Education Policy & Regulatory Affairs',
     'exp.1.desc':  `<li><strong>Strategic Advisory:</strong> Retained as external strategic advisor following Canton Schwyz Education Department's private school permit rejection.</li>
                     <li><strong>Compliance Architecture:</strong> Performed gap analysis of concepts against Swiss Federal Constitution (Art. 62), Lehrplan 21, HarmoS Concordat, and Volksschulgesetz Schwyz.</li>
-                    <li><strong>Actionable Deliverables:</strong> Identified 13 specific regulatory gaps and delivered a 9-page resubmission roadmap and risk framework for Canton Schwyz Department of Education.</li>`,
+                    <li><strong>Actionable Deliverables:</strong> Identified 13 specific regulatory gaps and delivered a 9-page resubmission roadmap and risk framework.</li>`,
     
     'exp.2.title': 'Project Coordinator',
     'exp.2.desc':  `<li><strong>School Partnerships:</strong> Coordinated complex school partnership programs linking Switzerland and East Africa, enhancing intercultural integration.</li>
                     <li><strong>Program Management:</strong> Designed, planned, and evaluated dynamic youth leadership workshops across Swiss public and private schools.</li>
-                    <li><strong>Performance Tracking:</strong> Led project planning, outcomes monitoring, and generated formal stakeholder impact reports for school boards.</li>`,
+                    <li><strong>Performance Tracking:</strong> Led project planning, outcomes monitoring, and generated formal stakeholder impact reports.</li>`,
     
     'exp.3.title': 'Mentee / Mentor',
     'exp.3.desc':  `<li><strong>Refugee Integration:</strong> Guided professional integration and economic enablement of refugee and migrant candidates in Switzerland.</li>
                     <li><strong>Capacity Building:</strong> Facilitated structured project management and entrepreneurship workshops, developing practical training curricula.</li>
                     <li><strong>Intercultural Coaching:</strong> Mentored participants to build essential Swiss workplace capabilities, soft skills, and local professional networks.</li>`,
     
-    'exp.4.title': 'Trainee — Integration, Consulting & Research',
+    'exp.4.title': 'Trainee, Integration, Consulting & Research',
     'exp.4.desc':  `<li><strong>Consulting Training:</strong> Completed Deloitte intensive training module covering corporate tax systems, financial consulting, and corporate law.</li>
                     <li><strong>Advisory Research:</strong> Contributed research data to support refugee integration strategy models and economic development programs.</li>
                     <li><strong>Systems Analysis:</strong> Provided analytical data insights to refine Dutch and Swiss program coordination processes.</li>`,
@@ -158,13 +164,13 @@ const translations = {
     'exp.5.title': 'M&E / Health Component Manager (Part-Time)',
     'exp.5.desc':  `<li><strong>M&E Coordination:</strong> Managed field M&E components for community health, sanitation, and social development initiatives.</li>
                     <li><strong>Public Health Training:</strong> Educated refugee and cultural community leaders on public health, environmental hygiene, and sanitation frameworks.</li>
-                    <li><strong>Data & Assessments:</strong> Organized national health surveys, camps, and supplied strategic recommendations to executive NGO directors.</li>`,
+                    <li><strong>Data & Assessments:</strong> Organized national health surveys, camps, and supplied strategic recommendations to executive directors.</li>`,
     
     'exp.6.title': 'Monitoring & Evaluation Manager',
     'exp.6.desc':  `<li><strong>National M&E System:</strong> Designed and deployed national M&E and digital HMIS systems adopted across Uganda's Ministry of Defence Medical Directorate.</li>
                     <li><strong>Performance tracking:</strong> Managed reporting, audits, and performance metrics across 50+ military health facilities.</li>
                     <li><strong>Capacity & Performance:</strong> Trained 300+ community health facilitators and achieved a 20-40% measurable improvement in reporting quality.</li>
-                    <li><strong>Strategic Intersectoral Liaison:</strong> Successfully coordinated reporting between Ministry leadership, Parliament, and international donors.</li>`,
+                    <li><strong>Strategic Liaison:</strong> Successfully coordinated reporting between Ministry leadership, Parliament, and international donors.</li>`,
     
     'exp.7.title': 'Program Officer',
     'exp.7.desc':  `<li><strong>Community Mobilisation:</strong> Facilitated field workshops and coordinated regional community mobilization for agricultural development.</li>
@@ -189,7 +195,7 @@ const translations = {
     'research.label.academic':     'Academic Publication',
     'research.label.research':     'Research Publication',
     'research.label.professional': 'Professional Research Publication, 2024',
-    'research.label.switzerland':  'Professional Consultation Research — Switzerland (2025)',
+    'research.label.switzerland':  'Professional Consultation Research, Switzerland (2025)',
 
     // Football Career (Reframed Heading translations)
     'football.eyebrow':        'Athletic Excellence & Corporate Grit',
@@ -206,7 +212,7 @@ const translations = {
     'football.nat.detail':     'International',
     'football.athletic.title': 'Operational Stamina & Team Grit',
     'football.athletic.p1':    'Beyond my professional career in public health and analytics, I maintain an active athletic career as a forward for FC Weesen in the Swiss 1. Liga. This integration of rigorous intellectual work and high-intensity athletics demonstrates a deep commitment to maintaining peak performance, focus, and physical stamina.',
-    'football.athletic.p2':    'Playing football at a competitive league level in Switzerland has honed my leadership, rapid decision-making, and cross-cultural collaboration—qualities that directly translate to managing complex program architectures, aligning multicultural stakeholders, and delivering high-stakes M&E results.',
+    'football.athletic.p2':    'Playing football at a competitive league level in Switzerland has honed my leadership, rapid decision-making, and cross-cultural collaboration, qualities that directly translate to managing complex program architectures, aligning multicultural stakeholders, and delivering high-stakes M&E results.',
     'football.season.title':   '2022/2023 Season Statistics',
     'football.stat.apps':      'Appearances',
     'football.stat.league':    'League Level',
@@ -234,7 +240,7 @@ const translations = {
     'hero.eyebrow':     'PMP®-zertifizierter Berater · Schänis, Schweiz',
     'hero.availability':'Offen für neue Projekte',
     'hero.subtitle':    'M&E-Systeme   Programmmanagement   Datenanalyse   Beratung',
-    'hero.description': 'Ich helfe Regierungen, NGOs und internationalen Organisationen, evidenzbasierte M&E-Systeme zu gestalten, komplexe Programme zu managen und Daten in Entscheidungen umzuwandeln – mit über 15 Jahren Wirkung in Afrika und Europa.',
+    'hero.description': 'Ich helfe Regierungen, NGOs und internationalen Organisationen, evidenzbasierte M&E-Systeme zu gestalten, komplexe Programme zu managen und Daten in Entscheidungen umzuwandeln, mit über 15 Jahren Wirkung in Afrika und Europa.',
     'hero.stat1':       'Jahre Erfahrung',
     'hero.stat2':       'Gesundheitseinrichtungen',
     'hero.stat3':       'Ausgebildete Personen',
@@ -247,7 +253,7 @@ const translations = {
     'about.eyebrow':  'Die Person hinter der Arbeit',
     'about.title':    'Über mich',
     'about.subtitle': 'Leidenschaft für evidenzbasierte Lösungen, die Leben verbessern',
-    'about.intro':    'PMP®-zertifizierter Berater mit über 15 Jahren Erfahrung in der Umsetzung komplexer Projekte in öffentlicher Gesundheit, M&E und sozialer Entwicklung – für Regierungsministerien, NGOs und internationale Organisationen in Afrika und Europa.',
+    'about.intro':    'PMP®-zertifizierter Berater mit über 15 Jahren Erfahrung in der Umsetzung komplexer Projekte in öffentlicher Gesundheit, M&E und sozialer Entwicklung für Regierungsministerien, NGOs und internationale Organisationen in Afrika und Europa.',
     'about.p1':       'Ich bin spezialisiert auf die Konzeption und Implementierung nationaler M&E-Systeme, die Leitung länderübergreifender Programme und die Anwendung von Datenanalysen zur Stärkung von Rechenschaftspflicht und Leistung. Meine Arbeit hat die Gesundheitsversorgung in über 50 Einrichtungen gestärkt, die Berichtsqualität um 20–40 % verbessert und nachhaltige Kapazitäten in Organisationen in Uganda, der Schweiz und darüber hinaus aufgebaut.',
     'about.p2':       'Mit einem MSc in Datenanalyse, einem Master in Projekt-M&E, einem MSc in Public Health sowie Abschlüssen der Harvard Business School und des PMI bringe ich strategische Tiefe und praktische Umsetzungserfahrung in jedes Projekt. Ich arbeite fliessend auf Englisch, Deutsch und Swahili.',
     'about.h1':       'Internationale Programme',
@@ -275,6 +281,9 @@ const translations = {
     // Experience
     'experience.title':    'Berufserfahrung',
     'experience.subtitle': 'Wirkungsvolle Arbeit über Kontinente hinweg',
+    'exp.tab.consulting':  'Beratung & Management',
+    'exp.tab.me':          'Monitoring & Evaluation',
+    'exp.tab.development': 'Entwicklung & Grundlagen',
 
     // Education
     'education.eyebrow':  'Akademische & berufliche Qualifikationen',
@@ -290,14 +299,17 @@ const translations = {
     'research.eyebrow':  'Peer-reviewed & publiziert',
     'research.title':    'Forschung & Publikationen',
     'research.subtitle': 'Beiträge zur Wissensbasis in öffentlicher Gesundheit, digitalem Marketing und Investitionsstrategie',
+    'research.tab.health': 'Gesundheitsforschung',
+    'research.tab.marketing': 'Digitales Marketing & Innovation',
+    'research.tab.investment': 'Investition & Risikostrategie',
 
     // Testimonials
     'testimonials.eyebrow': 'Was Kollegen sagen',
     'testimonials.title':   'Referenzen',
     'testimonials.subtitle':'Stimmen von Kollegen und Vorgesetzten aus internationalen Organisationen',
     't1.text': 'Perry zeigt eine aussergewöhnliche Arbeitsmoral und eine bemerkenswerte Fähigkeit, sich in neue kulturelle Umgebungen zu integrieren. Seine Hingabe, Zuverlässigkeit und professionelle Haltung machen ihn zu einem herausragenden Mitarbeiter in jedem internationalen Umfeld.',
-    't2.text': 'Perrys PMP®-Zertifizierung ist wohlverdient – er bringt strukturiertes, diszipliniertes Projektmanagement in jedes Engagement. Seine Beiträge zur Programmabwicklung und zu Monitoring-Rahmen haben stets messbaren professionellen Mehrwert geschaffen.',
-    't3.text': 'Was Perry auszeichnet, ist seine intellektuelle Neugier kombiniert mit tadellosem professionellem Verhalten. Er geht komplexe Probleme mit analytischer Strenge an und kommuniziert seine Erkenntnisse mit Klarheit – eine seltene Kombination in der internationalen Entwicklung.',
+    't2.text': 'Perrys PMP®-Zertifizierung ist wohlverdient, er bringt strukturiertes, diszipliniertes Projektmanagement in jedes Engagement. Seine Beiträge zur Programmabwicklung und zu Monitoring-Rahmen haben stets messbaren professionellen Mehrwert geschaffen.',
+    't3.text': 'Was Perry auszeichnet, ist seine intellektuelle Neugier kombiniert mit tadellosem professionellem Verhalten. Er geht komplexe Probleme mit analytischer Strenge an und kommuniziert seine Erkenntnisse mit Klarheit, eine seltene Kombination in der internationalen Entwicklung.',
 
     // Skills Matrix Custom Keys
     'skills.title':       'Fähigkeiten & Expertise',
@@ -343,14 +355,14 @@ const translations = {
 
     // Key Achievements
     'achieve.eyebrow': 'Wichtigste Leistungen',
-    'achieve.1': 'Nationales M&amp;E-System für das ugandische Verteidigungsministerium aufgebaut und eingeführt — Rechenschaftspflicht in <strong>50+ Gesundheitseinrichtungen</strong> verbessert',
+    'achieve.1': 'Nationales M&amp;E-System für das ugandische Verteidigungsministerium aufgebaut und eingeführt, wodurch die Rechenschaftspflicht in <strong>50+ Gesundheitseinrichtungen</strong> verbessert wurde',
     'achieve.2': '<strong>Länderübergreifende</strong> öffentliche Gesundheits- und Flüchtlingsintegrationsprogramme in Afrika und Europa geleitet',
-    'achieve.3': 'Fortgeschrittene Analytik (SPSS, R, MSc) eingesetzt, um evidenzbasierte Entscheidungsfindung zu stärken — Leistungsverbesserung um <strong>20–40%</strong>',
+    'achieve.3': 'Fortgeschrittene Analytik (SPSS, R, MSc) eingesetzt, um evidenzbasierte Entscheidungsfindung zu stärken, mit einer Leistungsverbesserung um <strong>20–40%</strong>',
     'achieve.4': '<strong>300+ Gesundheitsfachkräfte</strong>, Pädagogen, Flüchtlinge und Gemeindevertreter in M&amp;E, öffentlicher Gesundheit und Projektmanagement ausgebildet',
     'achieve.5': '<strong>Schweiz–Ostafrika</strong>-Partnerschaften durch Programmkoordination, interkulturelle Zusammenarbeit und Leistungsverfolgung gestärkt',
 
     // Professional Experience (STAR German Outcomes)
-    'exp.1.title': 'Strategischer Berater — Bildungspolitik & Regulierung',
+    'exp.1.title': 'Strategischer Berater, Bildungspolitik & Regulierung',
     'exp.1.desc':  `<li><strong>Strategische Beratung:</strong> Als unabhängiger externer Strategieberater tätig nach Ablehnung eines Bewilligungsantrags durch das Bildungsdepartement Kanton Schwyz.</li>
                     <li><strong>Compliance-Architektur:</strong> Systematische Gap-Analyse des Schulkonzepts gegenüber der Schweizer Bundesverfassung (Art. 62), Lehrplan 21, HarmoS und dem Schwyzer Volksschulgesetz.</li>
                     <li><strong>Ergebnis &amp; Masterplan:</strong> Identifizierung von 13 spezifischen Compliance-Lücken und Erstellung eines strukturierten 9-seitigen Neueinreichungsplans.</li>`,
@@ -361,11 +373,11 @@ const translations = {
                     <li><strong>Leistungsberichte:</strong> Projektplanung, Wirkungsbeobachtung und Erstellung formeller Evaluationsberichte für Schulbehörden.</li>`,
     
     'exp.3.title': 'Mentee / Mentor',
-    'exp.3.desc':  `<li><strong>Flüchtlingsintegration:</strong> Unterstützung bei der beruflichen und sozialen Integration von Personen mit Flüchtlings- und Migrationshintergrund in der Schweiz.</li>
+    'exp.3.desc':  `<li><strong>Flüchtlingsintegration:</strong> Unterstützung bei der beruflichen und sozialen Inklusion von Personen mit Flüchtlings- und Migrationshintergrund in der Schweiz.</li>
                     <li><strong>Qualifikations-Aufbau:</strong> Durchführung praxisnaher Projektmanagement- und Existenzgründungskursen inklusive Lehrplanentwicklung.</li>
                     <li><strong>Interkulturelles Coaching:</strong> Mentoring zur Ausbildung Schweizer Arbeitsplatz-Kompetenzen und zum Aufbau lokaler Netzwerke.</li>`,
     
-    'exp.4.title': 'Trainee — Integration, Beratung & Forschung',
+    'exp.4.title': 'Trainee, Integration, Beratung & Forschung',
     'exp.4.desc':  `<li><strong>Beratungs-Training:</strong> Absolvierung eines intensiven Deloitte-Ausbildungsmoduls für Steuerberatung, Finanzberatung und Wirtschaftsrecht.</li>
                     <li><strong>Forschungsbeiträge:</strong> Datenaufbereitung zur Unterstützung nationaler Flüchtlingsintegrationsmodelle und regionaler Entwicklungsprogramme.</li>
                     <li><strong>Prozessanalyse:</strong> Erstellung analytischer Einblicke zur Optimierung der Programmdurchführung in den Niederlanden und der Schweiz.</li>`,
@@ -379,7 +391,7 @@ const translations = {
     'exp.6.desc':  `<li><strong>Nationales M&amp;E-System:</strong> Konzeption und Einführung nationaler M&amp;E- und digitaler HMIS-Berichtsstrukturen für das ugandische Verteidigungsministerium.</li>
                     <li><strong>Qualitätssicherung:</strong> Steuerung des Reportings, Qualitätsaudits und der Leistungskennzahlen in 50+ militärischen Gesundheitseinrichtungen.</li>
                     <li><strong>Kapazitäten &amp; Ergebnisse:</strong> Schulung von 300+ Gesundheitsberatern zur Qualitätsverbesserung der Dokumentation um 20-40%.</li>
-                    <li><strong>Strategisches Schnittstellenmanagement:</strong> Koordination der Berichterstattung zwischen Ministerium, Parlament und internationalen Gebern.</li>`,
+                    <li><strong>Schnittstellenmanagement:</strong> Koordination der Berichterstattung zwischen Ministerium, Parlament und internationalen Gebern.</li>`,
     
     'exp.7.title': 'Programmbeauftragter',
     'exp.7.desc':  `<li><strong>Gemeindemobilisierung:</strong> Durchführung regionaler Feldworkshops zur Einbindung der ländlichen Bevölkerung in Agrarprojekte.</li>
@@ -404,7 +416,7 @@ const translations = {
     'research.label.academic':     'Akademische Publikation',
     'research.label.research':     'Forschungspublikation',
     'research.label.professional': 'Berufliche Forschungspublikation, 2024',
-    'research.label.switzerland':  'Berufliche Beratungsforschung — Schweiz (2025)',
+    'research.label.switzerland':  'Berufliche Beratungsforschung, Schweiz (2025)',
 
     // Football Career
     'football.eyebrow':        'Athletische Exzellenz & Professionelle Beharrlichkeit',
@@ -421,7 +433,7 @@ const translations = {
     'football.nat.detail':     'International',
     'football.athletic.title': 'Operative Ausdauer & sportlicher Biss',
     'football.athletic.p1':    'Neben meiner beruflichen Tätigkeit im öffentlichen Gesundheitswesen und der Datenanalyse pflege ich als Stürmer beim FC Weesen in der Schweizer 1. Liga eine aktive sportliche Laufbahn. Diese Synthese aus anspruchsvoller analytischer Arbeit und Leistungssport zeigt meinen Willen zu ständiger Höchstleistung, hoher Konzentrationsfähigkeit und physischer Belastbarkeit.',
-    'football.athletic.p2':    'Das Fussballspielen auf Wettbewerbsniveau in der Schweiz hat meine Führungsqualitäten, meine schnelle Entscheidungsfindung und meine interkulturelle Teamfähigkeit geschärft — Qualitäten, die direkt in das Management komplexer Programme und das Erreichen strategischer M&amp;E-Ergebnisse einfliessen.',
+    'football.athletic.p2':    'Das Fussballspielen auf Wettbewerbsniveau in der Schweiz hat meine Führungsqualitäten, meine schnelle Entscheidungsfindung und meine interkulturelle Teamfähigkeit geschärft, Qualitäten, die direkt in das Management komplexer Programme und das Erreichen strategischer M&amp;E-Ergebnisse einfliessen.',
     'football.season.title':   'Statistiken Saison 2022/2023',
     'football.stat.apps':      'Einsätze',
     'football.stat.league':    'Liga',
@@ -466,6 +478,18 @@ function setLanguage(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
+
+  // Dynamically update CV download link based on language
+  const cvBtn = document.getElementById('cv-download-btn');
+  if (cvBtn) {
+    if (lang === 'de') {
+      cvBtn.setAttribute('href', 'assets/German_CV_2025.pdf');
+      cvBtn.setAttribute('download', 'Perry_Gamba_CV_DE.pdf');
+    } else {
+      cvBtn.setAttribute('href', 'assets/Perry_Gamba_CV_2025.pdf');
+      cvBtn.setAttribute('download', 'Perry_Gamba_CV_2025.pdf');
+    }
+  }
 }
 
 function initLanguage() {

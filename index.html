@@ -8,6 +8,72 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Perry Gamba - M&E Consultant | Program Management | Data Analytics">
+    <meta property="og:description" content="PMP®-certified consultant with 15+ years of experience in M&E systems design, program management, public health, and data analytics across Africa and Europe. Based in Switzerland.">
+    <meta property="og:image" content="https://www.perrygamba.consulting/assets/images/Z92_0616.jpeg">
+    <meta property="og:url" content="https://www.perrygamba.consulting/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Perry Gamba - M&E Consultant | Program Management">
+    <meta name="twitter:description" content="15+ years experience in public health program management, M&E systems design, and data analytics.">
+    <meta name="twitter:image" content="https://www.perrygamba.consulting/assets/images/Z92_0616.jpeg">
+
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0e1a%22/><text y=%22.75em%22 x=%22.18em%22 font-family=%22serif%22 font-size=%2260%22 fill=%22%23c9a84c%22 font-weight=%22bold%22>PG</text></svg>">
+    
+    <!-- JSON-LD Structured Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Perry Gamba",
+        "jobTitle": "M&E Consultant & Program Manager",
+        "description": "PMP®-certified consultant with 15+ years of experience in M&E systems design, program management, public health, and data analytics across Africa and Europe.",
+        "url": "https://www.perrygamba.consulting",
+        "image": "https://www.perrygamba.consulting/assets/images/Z92_0616.jpeg",
+        "telephone": "+41765156367",
+        "email": "perry@perrygamba.consulting",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Schänis",
+          "addressRegion": "SG",
+          "postalCode": "8718",
+          "addressCountry": "CH"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/perry-gamba-05147668/",
+          "https://independent.academia.edu/PerryGamba"
+        ],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "name": "PMP®, Project Management Professional", "credentialCategory": "certification"},
+          {"@type": "EducationalOccupationalCredential", "name": "MSc Data Analytics", "credentialCategory": "degree"},
+          {"@type": "EducationalOccupationalCredential", "name": "MSc Public Health", "credentialCategory": "degree"}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Perry Gamba Consulting",
+        "image": "https://www.perrygamba.consulting/assets/images/Z92_0616.jpeg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Schänis",
+          "addressRegion": "SG",
+          "postalCode": "8718",
+          "addressCountry": "CH"
+        },
+        "telephone": "+41765156367",
+        "url": "https://www.perrygamba.consulting",
+        "priceRange": "$$$",
+        "knowsAbout": ["Monitoring and Evaluation", "Program Management", "Data Analytics", "Public Health", "Capacity Building"]
+      }
+    ]
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -72,7 +138,7 @@
                     <span class="hero-subtitle" data-key="hero.subtitle">M&E Systems   Program Management   Data Analytics   Consulting</span>
                 </h1>
                 <p class="hero-description" data-key="hero.description">
-                    I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives — with 15+ years of impact across Africa and Europe.
+                    I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives, with 15+ years of impact across Africa and Europe.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -97,7 +163,7 @@
                         <span data-key="hero.cta.primary">Book a Strategic Consultation</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="assets/Perry_Gamba_CV_2025.pdf" download="Perry_Gamba_CV_2025.pdf" class="btn btn-premium-link" target="_blank">
+                    <a id="cv-download-btn" href="assets/Perry_Gamba_CV_2025.pdf" download="Perry_Gamba_CV_2025.pdf" class="btn btn-premium-link" target="_blank">
                         <i class="fas fa-file-download"></i> <span data-key="hero.cta.cv">Download CV (PDF)</span>
                     </a>
                     <a href="https://www.linkedin.com/in/perry-gamba-05147668/" target="_blank" rel="noopener noreferrer" class="linkedin-icon-link">
@@ -122,7 +188,7 @@
             <div class="achievements-strip-grid">
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-hospital"></i></div>
-                    <p data-key="achieve.1">Built and deployed national M&E systems for Uganda's Ministry of Defence — improving accountability across <strong>50+ health facilities</strong></p>
+                    <p data-key="achieve.1">Built and deployed national M&E systems for Uganda's Ministry of Defence, improving accountability across <strong>50+ health facilities</strong></p>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-globe-africa"></i></div>
@@ -130,7 +196,7 @@
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
-                    <p data-key="achieve.3">Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making — improving performance by <strong>20–40%</strong></p>
+                    <p data-key="achieve.3">Applied advanced analytics (SPSS, R, MSc) to strengthen evidence-based decision-making, improving performance by <strong>20–40%</strong></p>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon"><i class="fas fa-users"></i></div>
@@ -240,183 +306,133 @@
                 <h2 class="section-title" data-key="experience.title">Professional Experience</h2>
                 <p class="section-subtitle" data-key="experience.subtitle">A journey of impact across continents</p>
             </div>
-            <div class="exp-accordion">
-
-                <div class="exp-item exp-item--open" id="exp-item-1">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="true" aria-controls="exp-body-1" aria-label="Toggle details for Strategic Consultant position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2026</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-1" data-key="exp.1.title">Strategic Consultant — Education Policy &amp; Regulatory Affairs</h3>
-                                <span class="exp-item-org">Trägerverein LebeORT Innerthal, Canton Schwyz</span>
+            
+            <div class="experience-tabs-container">
+                <div class="experience-tabs">
+                    <button class="tab-btn active" data-tab="exp-consulting" data-key="exp.tab.consulting">Consulting &amp; Management</button>
+                    <button class="tab-btn" data-tab="exp-me" data-key="exp.tab.me">Monitoring &amp; Evaluation</button>
+                    <button class="tab-btn" data-tab="exp-development" data-key="exp.tab.development">Development &amp; Foundations</button>
+                </div>
+                
+                <div class="tab-content">
+                    <!-- Tab 1: Consulting & Management -->
+                    <div class="tab-pane active" id="exp-consulting">
+                        <div class="exp-grid">
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2026</span>
+                                    <h3 class="exp-card-title" data-key="exp.1.title">Strategic Consultant, Education Policy &amp; Regulatory Affairs</h3>
+                                    <span class="exp-card-org">Trägerverein LebeORT Innerthal, Canton Schwyz</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.1.desc">
+                                    <li><strong>Strategic Advisory:</strong> Retained as external strategic advisor following Canton Schwyz Education Department's private school permit rejection.</li>
+                                    <li><strong>Compliance Architecture:</strong> Performed gap analysis of concepts against Swiss Federal Constitution (Art. 62), Lehrplan 21, HarmoS Concordat, and Volksschulgesetz Schwyz.</li>
+                                    <li><strong>Actionable Deliverables:</strong> Identified 13 specific regulatory gaps and delivered a 9-page resubmission roadmap and risk framework.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2019 – Present</span>
+                                    <h3 class="exp-card-title" data-key="exp.2.title">Project Coordinator</h3>
+                                    <span class="exp-card-org">LernRaum GmbH, Switzerland</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.2.desc">
+                                    <li><strong>School Partnerships:</strong> Coordinated complex school partnership programs linking Switzerland and East Africa, enhancing intercultural integration.</li>
+                                    <li><strong>Program Management:</strong> Designed, planned, and evaluated dynamic youth leadership workshops across Swiss public and private schools.</li>
+                                    <li><strong>Performance Tracking:</strong> Led project planning, outcomes monitoring, and generated formal stakeholder impact reports.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2018</span>
+                                    <h3 class="exp-card-title" data-key="exp.4.title">Trainee, Integration, Consulting &amp; Research</h3>
+                                    <span class="exp-card-org">Deloitte, Rotterdam, Netherlands</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.4.desc">
+                                    <li><strong>Consulting Training:</strong> Completed Deloitte intensive training module covering corporate tax systems, financial consulting, and corporate law.</li>
+                                    <li><strong>Advisory Research:</strong> Contributed research data to support refugee integration strategy models and economic development programs.</li>
+                                    <li><strong>Systems Analysis:</strong> Provided analytical data insights to refine Dutch and Swiss program coordination processes.</li>
+                                </ul>
                             </div>
                         </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-1" role="region" aria-labelledby="exp-title-1">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.1.desc">
-                                <li><strong>Strategic Advisory:</strong> Retained as external strategic advisor following Canton Schwyz Education Department's private school permit rejection.</li>
-                                <li><strong>Compliance Architecture:</strong> Performed gap analysis of concepts against Swiss Federal Constitution (Art. 62), Lehrplan 21, HarmoS Concordat, and Volksschulgesetz Schwyz.</li>
-                                <li><strong>Actionable Deliverables:</strong> Identified 13 specific regulatory gaps and delivered a 9-page resubmission roadmap and risk framework for Canton Schwyz Department of Education.</li>
-                            </ul>
+                    </div>
+                    
+                    <!-- Tab 2: Monitoring & Evaluation -->
+                    <div class="tab-pane" id="exp-me">
+                        <div class="exp-grid">
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2014 – 2018</span>
+                                    <h3 class="exp-card-title" data-key="exp.5.title">M&amp;E / Health Component Manager (Part-Time)</h3>
+                                    <span class="exp-card-org">Uganda Rural Literacy &amp; Community Development Association</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.5.desc">
+                                    <li><strong>M&amp;E Coordination:</strong> Managed field M&amp;E components for community health, sanitation, and social development initiatives.</li>
+                                    <li><strong>Public Health Training:</strong> Educated refugee and cultural community leaders on public health, environmental hygiene, and sanitation frameworks.</li>
+                                    <li><strong>Data &amp; Assessments:</strong> Organized national health surveys, camps, and supplied strategic recommendations to executive directors.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2009 – 2018</span>
+                                    <h3 class="exp-card-title" data-key="exp.6.title">Monitoring &amp; Evaluation Manager</h3>
+                                    <span class="exp-card-org">Ministry of Defence, Directorate of Medical Services, Uganda</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.6.desc">
+                                    <li><strong>National M&amp;E System:</strong> Designed and deployed national M&amp;E and digital HMIS systems adopted across Uganda's Ministry of Defence Medical Directorate.</li>
+                                    <li><strong>Performance tracking:</strong> Managed reporting, audits, and performance metrics across 50+ military health facilities.</li>
+                                    <li><strong>Capacity &amp; Performance:</strong> Trained 300+ community health facilitators and achieved a 20-40% measurable improvement in reporting quality.</li>
+                                    <li><strong>Strategic Liaison:</strong> Successfully coordinated reporting between Ministry leadership, Parliament, and international donors.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab 3: Development & Foundations -->
+                    <div class="tab-pane" id="exp-development">
+                        <div class="exp-grid">
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2019 – 2020</span>
+                                    <h3 class="exp-card-title" data-key="exp.3.title">Mentee / Mentor</h3>
+                                    <span class="exp-card-org">Deloitte CARE, Zurich, Switzerland</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.3.desc">
+                                    <li><strong>Refugee Integration:</strong> Guided professional integration and economic enablement of refugee and migrant candidates in Switzerland.</li>
+                                    <li><strong>Capacity Building:</strong> Facilitated structured project management and entrepreneurship workshops, developing practical training curricula.</li>
+                                    <li><strong>Intercultural Coaching:</strong> Mentored participants to build essential Swiss workplace capabilities, soft skills, and local professional networks.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2003 – 2009</span>
+                                    <h3 class="exp-card-title" data-key="exp.7.title">Program Officer</h3>
+                                    <span class="exp-card-org">USAID, Uganda Oil Seed Producers Association, Kampala</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.7.desc">
+                                    <li><strong>Community Mobilisation:</strong> Facilitated field workshops and coordinated regional community mobilization for agricultural development.</li>
+                                    <li><strong>Coordination &amp; Reporting:</strong> Coordinated project timelines, tracked deliverables, and generated field reports for USAID project directors.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exp-card-v2">
+                                <div class="exp-card-header">
+                                    <span class="exp-card-date">2002 – 2003</span>
+                                    <h3 class="exp-card-title" data-key="exp.8.title">Accounts Assistant</h3>
+                                    <span class="exp-card-org">Save the Children UK, Kampala, Uganda</span>
+                                </div>
+                                <ul class="exp-card-bullets" data-key="exp.8.desc">
+                                    <li><strong>Financial Control:</strong> Administered daily financial reconciliation, managed cash flows, and prepared monthly expenditure ledgers.</li>
+                                    <li><strong>Compliance Auditing:</strong> Guaranteed strict alignment with Save the Children UK financial systems and international donor requirements.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="exp-item" id="exp-item-2">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-2" aria-label="Toggle details for Project Coordinator position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2019 – Present</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-2" data-key="exp.2.title">Project Coordinator</h3>
-                                <span class="exp-item-org">LernRaum GmbH, Switzerland</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-2" role="region" aria-labelledby="exp-title-2">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.2.desc">
-                                <li><strong>School Partnerships:</strong> Coordinated complex school partnership programs linking Switzerland and East Africa, enhancing intercultural integration.</li>
-                                <li><strong>Program Management:</strong> Designed, planned, and evaluated dynamic youth leadership workshops across Swiss public and private schools.</li>
-                                <li><strong>Performance Tracking:</strong> Led project planning, outcomes monitoring, and generated formal stakeholder impact reports for school boards.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-item" id="exp-item-3">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-3" aria-label="Toggle details for Mentee/Mentor position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2019 – 2020</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-3" data-key="exp.3.title">Mentee / Mentor</h3>
-                                <span class="exp-item-org">Deloitte CARE, Zurich, Switzerland</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-3" role="region" aria-labelledby="exp-title-3">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.3.desc">
-                                <li><strong>Refugee Integration:</strong> Guided professional integration and economic enablement of refugee and migrant candidates in Switzerland.</li>
-                                <li><strong>Capacity Building:</strong> Facilitated structured project management and entrepreneurship workshops, developing practical training curricula.</li>
-                                <li><strong>Intercultural Coaching:</strong> Mentored participants to build essential Swiss workplace capabilities, soft skills, and local professional networks.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-item" id="exp-item-4">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-4" aria-label="Toggle details for Trainee position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2018</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-4" data-key="exp.4.title">Trainee — Integration, Consulting &amp; Research</h3>
-                                <span class="exp-item-org">Deloitte, Rotterdam, Netherlands</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-4" role="region" aria-labelledby="exp-title-4">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.4.desc">
-                                <li><strong>Consulting Training:</strong> Completed Deloitte intensive training module covering corporate tax systems, financial consulting, and corporate law.</li>
-                                <li><strong>Advisory Research:</strong> Contributed research data to support refugee integration strategy models and economic development programs.</li>
-                                <li><strong>Systems Analysis:</strong> Provided analytical data insights to refine Dutch and Swiss program coordination processes.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-item" id="exp-item-5">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-5" aria-label="Toggle details for Component Manager position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2014 – 2018</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-5" data-key="exp.5.title">M&amp;E / Health Component Manager (Part-Time)</h3>
-                                <span class="exp-item-org">Uganda Rural Literacy &amp; Community Development Association</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-5" role="region" aria-labelledby="exp-title-5">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.5.desc">
-                                <li><strong>M&E Coordination:</strong> Managed field M&E components for community health, sanitation, and social development initiatives.</li>
-                                <li><strong>Public Health Training:</strong> Educated refugee and cultural community leaders on public health, environmental hygiene, and sanitation frameworks.</li>
-                                <li><strong>Data & Assessments:</strong> Organized national health surveys, camps, and supplied strategic recommendations to executive NGO directors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-item" id="exp-item-6">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-6" aria-label="Toggle details for M&E Manager position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2009 – 2018</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-6" data-key="exp.6.title">Monitoring &amp; Evaluation Manager</h3>
-                                <span class="exp-item-org">Ministry of Defence — Directorate of Medical Services, Uganda</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-6" role="region" aria-labelledby="exp-title-6">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.6.desc">
-                                <li><strong>National M&E System:</strong> Designed and deployed national M&E and digital HMIS systems adopted across Uganda's Ministry of Defence Medical Directorate.</li>
-                                <li><strong>Performance tracking:</strong> Managed reporting, audits, and performance metrics across 50+ military health facilities.</li>
-                                <li><strong>Capacity & Performance:</strong> Trained 300+ community health facilitators and achieved a 20-40% measurable improvement in reporting quality.</li>
-                                <li><strong>Strategic Intersectoral Liaison:</strong> Successfully coordinated reporting between Ministry leadership, Parliament, and international donors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-item" id="exp-item-7">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-7" aria-label="Toggle details for Program Officer position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2003 – 2009</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-7" data-key="exp.7.title">Program Officer</h3>
-                                <span class="exp-item-org">USAID – Uganda Oil Seed Producers Association, Kampala</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-7" role="region" aria-labelledby="exp-title-7">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.7.desc">
-                                <li><strong>Community Mobilisation:</strong> Facilitated field workshops and coordinated regional community mobilization for agricultural development.</li>
-                                <li><strong>Coordination & Reporting:</strong> Coordinated project timelines, tracked deliverables, and generated field reports for USAID project directors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exp-item" id="exp-item-8">
-                    <button class="exp-item-header" onclick="toggleExpItem(this)" aria-expanded="false" aria-controls="exp-body-8" aria-label="Toggle details for Accounts Assistant position">
-                        <div class="exp-item-left">
-                            <span class="exp-item-date">2002 – 2003</span>
-                            <div class="exp-item-titles">
-                                <h3 id="exp-title-8" data-key="exp.8.title">Accounts Assistant</h3>
-                                <span class="exp-item-org">Save the Children UK, Kampala, Uganda</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-chevron-down exp-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="exp-item-body" id="exp-body-8" role="region" aria-labelledby="exp-title-8">
-                        <div class="exp-item-body-inner">
-                            <ul class="timeline-bullets" data-key="exp.8.desc">
-                                <li><strong>Financial Control:</strong> Administered daily financial reconciliation, managed cash flows, and prepared monthly expenditure ledgers.</li>
-                                <li><strong>Compliance Auditing:</strong> Guaranteed strict alignment with Save the Children UK financial systems and international donor requirements.</li>
-                              </ul>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -576,95 +592,170 @@
     <section id="research" class="research">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow" data-key="research.eyebrow">Peer-Reviewed & Published</span>
-                <h2 class="section-title" data-key="research.title">Research & Publications</h2>
+                <span class="section-eyebrow" data-key="research.eyebrow">Peer-Reviewed &amp; Published</span>
+                <h2 class="section-title" data-key="research.title">Research &amp; Publications</h2>
                 <p class="section-subtitle" data-key="research.subtitle">Contributing to the body of knowledge in public health, digital marketing and investment strategy</p>
             </div>
-            <div class="research-list">
-                <div class="research-entry">
-                    <div class="research-year-col">
-                        <span class="research-year-num">2025</span>
-                    </div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://www.openaccesspub.org/clinical-research-in-hiv-aids-and-prevention/article/2260#references" target="_blank" rel="noopener noreferrer" class="research-link">Factors Influencing HIV Status Disclosure Among People Living with HIV/AIDS in Mukono District, Uganda: Beyond Health System Support</a></h3>
-                        <p data-key="research.desc.1">Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.</p>
-                        <span class="research-journal"><em>Journal of Clinical Research in HIV AIDS and Prevention</em>, 4(3). ISSN: 2324-7339 · DOI: 10.14302/issn.2324-7339.jcrhap-25-5559</span>
-                    </div>
+            
+            <div class="research-tabs-container">
+                <div class="research-tabs">
+                    <button class="tab-btn active" data-tab="res-health" data-key="research.tab.health">Public Health Research</button>
+                    <button class="tab-btn" data-tab="res-marketing" data-key="research.tab.marketing">Digital Marketing Innovation</button>
+                    <button class="tab-btn" data-tab="res-investment" data-key="research.tab.investment">Investment &amp; Risk Strategy</button>
                 </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2026</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3553" target="_blank" rel="noopener noreferrer" class="research-link">The Impact of Digital Marketing on Market Penetration: Strategic Implications for Emerging Markets</a></h3>
-                        <p data-key="research.desc.2">Investigation of digital marketing strategies and their effect on market penetration in emerging market contexts</p>
-                        <span class="research-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
+                
+                <div class="tab-content">
+                    <!-- Tab 1: Public Health Research -->
+                    <div class="tab-pane active" id="res-health">
+                        <div class="research-grid">
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2025</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://www.openaccesspub.org/clinical-research-in-hiv-aids-and-prevention/article/2260#references" target="_blank" rel="noopener noreferrer">
+                                            Factors Influencing HIV Status Disclosure Among People Living with HIV/AIDS in Mukono District, Uganda: Beyond Health System Support
+                                        </a>
+                                    </h3>
+                                    <span class="research-card-journal"><em>Journal of Clinical Research in HIV AIDS and Prevention</em>, 4(3). ISSN: 2324-7339 · DOI: 10.14302/issn.2324-7339.jcrhap-25-5559</span>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.1">Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.</p>
+                                <div class="research-card-meta" data-key="research.label.academic">Academic Publication</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2021</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/64" target="_blank" rel="noopener noreferrer">
+                                            Community Factors and Utilization of Monitoring and Evaluation Results
+                                        </a>
+                                    </h3>
+                                    <span class="research-card-journal"><em>International Journal of Technology and Management</em>, 6.1 (2021): 1–11</span>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.5">Evidence from Malaria Control Programs' Implementation in Mukono District</p>
+                                <div class="research-card-meta" data-key="research.label.academic">Academic Publication</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2020</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://asbatlibrary.s3.eu-central-1.amazonaws.com/1d50086a-6384-4a49-ac80-98a31e151ac7-Gamba%20Perry-Factors%20Affecting%20Utilization%20of%20Monitoring%20and%20Evaluation%20Findings%20in%20Implementation%20of%20Malaria%20Control%20Programmes%20in%20Mukono%20District%2C%20Uganda.pdf" target="_blank" rel="noopener noreferrer">
+                                            Factors Affecting the Utilization of M&amp;E Findings in Malaria Control Programmes, Mukono District
+                                        </a>
+                                    </h3>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.6">Examination of key determinants influencing M&amp;E findings uptake in malaria program implementation</p>
+                                <div class="research-card-meta" data-key="research.label.research">Research Publication</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2020</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/56" target="_blank" rel="noopener noreferrer">
+                                            Effect of Implementation Factors on Monitoring &amp; Evaluation Results Utilization
+                                        </a>
+                                    </h3>
+                                    <span class="research-card-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–8</span>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.7">Evidence from the Malaria Control Programs in Mukono District, Central Uganda</p>
+                                <div class="research-card-meta" data-key="research.label.research">Research Publication</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2020</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/55" target="_blank" rel="noopener noreferrer">
+                                            Decision Factors and the Utilization of Monitoring and Evaluation Findings in Programs Implementation
+                                        </a>
+                                    </h3>
+                                    <span class="research-card-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–10</span>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.8">A Case of the Ugandan Malaria Control Program</p>
+                                <div class="research-card-meta" data-key="research.label.research">Research Publication</div>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2025</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3377" target="_blank" rel="noopener noreferrer" class="research-link">Different Forms of Digital Marketing: A Comprehensive Analysis</a></h3>
-                        <p data-key="research.desc.3">Analysis of digital marketing modalities and their strategic application across emerging and established markets</p>
-                        <span class="research-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
+                    
+                    <!-- Tab 2: Digital Marketing Innovation -->
+                    <div class="tab-pane" id="res-marketing">
+                        <div class="research-grid">
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2026</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3553" target="_blank" rel="noopener noreferrer">
+                                            The Impact of Digital Marketing on Market Penetration: Strategic Implications for Emerging Markets
+                                        </a>
+                                    </h3>
+                                    <span class="research-card-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.2">Investigation of digital marketing strategies and their effect on market penetration in emerging market contexts</p>
+                                <div class="research-card-meta" data-key="research.label.research">Research Publication</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2025</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://journals.researchsynergypress.com/index.php/ijmadic/article/view/3377" target="_blank" rel="noopener noreferrer">
+                                            Different Forms of Digital Marketing: A Comprehensive Analysis
+                                        </a>
+                                    </h3>
+                                    <span class="research-card-journal"><em>International Journal of Marketing and Digital Innovation</em></span>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.3">Analysis of digital marketing modalities and their strategic application across emerging and established markets</p>
+                                <div class="research-card-meta" data-key="research.label.research">Research Publication</div>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2025</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://www.academia.edu/download/122865886/Inclusive_Investment_Strategy.pdf" target="_blank" rel="noopener noreferrer" class="research-link">Turning Risk into Reform: A Strategy for Inclusive Investment in Uganda</a></h3>
-                        <p data-key="research.desc.4">A policy and risk management strategy for Uganda's investment reform framework</p>
-                        <span class="research-journal" data-key="research.label.academic">Academic Publication</span>
-                    </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2021</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/64" target="_blank" rel="noopener noreferrer" class="research-link">Community Factors and Utilization of Monitoring and Evaluation Results</a></h3>
-                        <p data-key="research.desc.5">Evidence from Malaria Control Programs' Implementation in Mukono District</p>
-                        <span class="research-journal"><em>International Journal of Technology and Management</em>, 6.1 (2021): 1–11</span>
-                    </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2020</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://asbatlibrary.s3.eu-central-1.amazonaws.com/1d50086a-6384-4a49-ac80-98a31e151ac7-Gamba%20Perry-Factors%20Affecting%20Utilization%20of%20Monitoring%20and%20Evaluation%20Findings%20in%20Implementation%20of%20Malaria%20Control%20Programmes%20in%20Mukono%20District%2C%20Uganda.pdf" target="_blank" rel="noopener noreferrer" class="research-link">Factors Affecting the Utilization of M&amp;E Findings in Malaria Control Programmes, Mukono District</a></h3>
-                        <p data-key="research.desc.6">Examination of key determinants influencing M&amp;E findings uptake in malaria program implementation</p>
-                        <span class="research-journal" data-key="research.label.research">Research Publication</span>
-                    </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2020</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/56" target="_blank" rel="noopener noreferrer" class="research-link">Effect of Implementation Factors on Monitoring &amp; Evaluation Results Utilization</a></h3>
-                        <p data-key="research.desc.7">Evidence from the Malaria Control Programs in Mukono District, Central Uganda</p>
-                        <span class="research-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–8</span>
-                    </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col"><span class="research-year-num">2020</span></div>
-                    <div class="research-entry-body">
-                        <h3><a href="https://ijotm.utamu.ac.ug/index.php/ijotm/article/view/55" target="_blank" rel="noopener noreferrer" class="research-link">Decision Factors and the Utilization of Monitoring and Evaluation Findings in Programs Implementation</a></h3>
-                        <p data-key="research.desc.8">A Case of the Ugandan Malaria Control Program</p>
-                        <span class="research-journal"><em>International Journal of Technology and Management</em>, 5.2 (2020): 1–10</span>
-                    </div>
-                </div>
-                <div class="research-entry">
-                    <div class="research-year-col">
-                        <span class="research-year-num">2024</span>
-                    </div>
-                    <div class="research-entry-body">
-                        <h3>Insurance Practitioner Insights: Risk, Data and Accountability in Development Programs</h3>
-                        <p data-key="research.desc.9">Professional research examining insurance practitioner perspectives on risk assessment, data-driven decision-making, and accountability frameworks in public sector and development programs.</p>
-                        <span class="research-journal" data-key="research.label.professional">Professional Research Publication, 2024</span>
-                    </div>
-                </div>
-                <div class="research-entry research-entry--inprogress">
-                    <div class="research-year-col">
-                        <span class="research-year-inprogress" data-key="research.inprogress">In Progress</span>
-                    </div>
-                    <div class="research-entry-body">
-                        <h3>Körperkompass — Professional Consultation Research</h3>
-                        <p data-key="research.desc.10">Ongoing research investigating body-signal awareness frameworks and their application in professional coaching and consulting practice in Switzerland.</p>
-                        <span class="research-journal" data-key="research.label.switzerland">Professional Consultation Research — Switzerland (2025)</span>
+                    
+                    <!-- Tab 3: Investment & Risk Strategy -->
+                    <div class="tab-pane" id="res-investment">
+                        <div class="research-grid">
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2025</span>
+                                    <h3 class="research-card-title">
+                                        <a href="https://www.academia.edu/download/122865886/Inclusive_Investment_Strategy.pdf" target="_blank" rel="noopener noreferrer">
+                                            Turning Risk into Reform: A Strategy for Inclusive Investment in Uganda
+                                        </a>
+                                    </h3>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.4">A policy and risk management strategy for Uganda's investment reform framework</p>
+                                <div class="research-card-meta" data-key="research.label.academic">Academic Publication</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year">2024</span>
+                                    <h3 class="research-card-title">
+                                        Insurance Practitioner Insights: Risk, Data and Accountability in Development Programs
+                                    </h3>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.9">Professional research examining insurance practitioner perspectives on risk assessment, data-driven decision-making, and accountability frameworks in public sector and development programs.</p>
+                                <div class="research-card-meta" data-key="research.label.professional">Professional Research Publication, 2024</div>
+                            </div>
+                            
+                            <div class="research-card-v3">
+                                <div class="research-card-header">
+                                    <span class="research-card-year research-year-inprogress" data-key="research.inprogress">In Progress</span>
+                                    <h3 class="research-card-title">
+                                        Körperkompass, Professional Consultation Research
+                                    </h3>
+                                </div>
+                                <p class="research-card-desc" data-key="research.desc.10">Ongoing research investigating body-signal awareness frameworks and their application in professional coaching and consulting practice in Switzerland.</p>
+                                <div class="research-card-meta" data-key="research.label.switzerland">Professional Consultation Research, Switzerland (2025)</div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -742,7 +833,7 @@
                 </div>
                 <div class="testimonial-card">
                     <span class="testimonial-quote-mark">"</span>
-                    <p class="testimonial-text" data-key="t2.text">Perry's PMP® certification is well-deserved — he brings structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.</p>
+                    <p class="testimonial-text" data-key="t2.text">Perry's PMP® certification is well-deserved; he brings structured, disciplined project management to every engagement. His contributions to program delivery and monitoring frameworks have consistently added measurable professional value.</p>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Sébastien Fahrni</span>
                         <span class="testimonial-role">UN Joint SDG Fund</span>
@@ -750,7 +841,7 @@
                 </div>
                 <div class="testimonial-card">
                     <span class="testimonial-quote-mark">"</span>
-                    <p class="testimonial-text" data-key="t3.text">What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity — a rare combination in international development.</p>
+                    <p class="testimonial-text" data-key="t3.text">What sets Perry apart is his intellectual curiosity combined with impeccable professional conduct. He approaches complex problems with analytical rigour and communicates his findings with clarity, a rare combination in international development.</p>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Serge Bourbeau</span>
                         <span class="testimonial-role">Accenture / Credit Suisse</span>
@@ -771,12 +862,12 @@
             
             <div class="football-content leadership-grid-v2">
                 <div class="leadership-storytelling">
-                    <h3 data-key="football.athletic.title">Operational Stamina & Team Grit</h3>
+                    <h3 data-key="football.athletic.title">Operational Stamina &amp; Team Grit</h3>
                     <p data-key="football.athletic.p1">
                         Beyond my professional career in public health and analytics, I maintain an active athletic career as a forward for FC Weesen in the Swiss 1. Liga. This integration of rigorous intellectual work and high-intensity athletics demonstrates a deep commitment to maintaining peak performance, focus, and physical stamina.
                     </p>
                     <p data-key="football.athletic.p2">
-                        Playing football at a competitive league level in Switzerland has honed my leadership, rapid decision-making, and cross-cultural collaboration—qualities that directly translate to managing complex program architectures, aligning multicultural stakeholders, and delivering high-stakes M&E results.
+                        Playing football at a competitive league level in Switzerland has honed my leadership, rapid decision-making, and cross-cultural collaboration, qualities that directly translate to managing complex program architectures, aligning multicultural stakeholders, and delivering high-stakes M&E results.
                     </p>
                     
                     <div class="leadership-metrics">

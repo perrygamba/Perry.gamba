@@ -133,72 +133,63 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ── Experience Accordion ──────────────────────────────────
-function toggleExpItem(btn) {
-    const item = btn.closest('.exp-item');
-    const isOpen = item.classList.contains('exp-item--open');
-    
-    // Collapse all open items and reset their aria attributes
-    document.querySelectorAll('.exp-item--open').forEach(i => {
-        i.classList.remove('exp-item--open');
-        const headerBtn = i.querySelector('.exp-item-header');
-        if (headerBtn) headerBtn.setAttribute('aria-expanded', 'false');
-    });
-    
-    // Expand clicked item if it was closed
-    if (!isOpen) {
-        item.classList.add('exp-item--open');
-        btn.setAttribute('aria-expanded', 'true');
-    } else {
-        btn.setAttribute('aria-expanded', 'false');
-    }
-}
+// ── Unified Tab Switcher Handler ──────────────────────────
+function setupTabs(tabContainerSelector, btnSelector, paneSelector) {
+    const containers = document.querySelectorAll(tabContainerSelector);
+    containers.forEach(container => {
+        const btns = container.querySelectorAll(btnSelector);
+        const parentSection = container.closest('section');
+        if (!parentSection) return;
+        const panes = parentSection.querySelectorAll(paneSelector);
 
-// ── Education Credential Tabs ─────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-    const tabBtns = document.querySelectorAll('.credentials-tabs .tab-btn');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+        // Hide non-active panes initially
+        panes.forEach(pane => {
+            if (!pane.classList.contains('active')) {
+                pane.style.display = 'none';
+            } else {
+                pane.style.display = 'block';
+                pane.style.opacity = '1';
+                pane.style.transform = 'translateY(0)';
+            }
+        });
 
-    // Initial state: show active pane, hide others
-    tabPanes.forEach(pane => {
-        if (!pane.classList.contains('active')) {
-            pane.style.display = 'none';
-        } else {
-            pane.style.display = 'block';
-            pane.style.opacity = '1';
-            pane.style.transform = 'translateY(0)';
-        }
-    });
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.dataset.tab;
 
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetId = btn.dataset.tab;
+                // Update buttons active state
+                btns.forEach(b => b.classList.toggle('active', b === btn));
 
-            // Update button states
-            tabBtns.forEach(b => b.classList.toggle('active', b === btn));
-
-            // Transition panes
-            tabPanes.forEach(pane => {
-                if (pane.id === targetId) {
-                    pane.style.display = 'block';
-                    pane.style.opacity = '0';
-                    pane.style.transform = 'translateY(15px)';
-                    pane.classList.add('active');
-                    requestAnimationFrame(() => {
+                // Switch pane states with smooth animations
+                panes.forEach(pane => {
+                    if (pane.id === targetId) {
+                        pane.style.display = 'block';
+                        pane.style.opacity = '0';
+                        pane.style.transform = 'translateY(15px)';
+                        pane.classList.add('active');
                         requestAnimationFrame(() => {
-                            pane.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                            pane.style.opacity = '1';
-                            pane.style.transform = 'translateY(0)';
+                            requestAnimationFrame(() => {
+                                pane.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                                pane.style.opacity = '1';
+                                pane.style.transform = 'translateY(0)';
+                            });
                         });
-                    });
-                } else {
-                    pane.classList.remove('active');
-                    pane.style.transition = 'none';
-                    pane.style.display = 'none';
-                }
+                    } else {
+                        pane.classList.remove('active');
+                        pane.style.transition = 'none';
+                        pane.style.display = 'none';
+                    }
+                });
             });
         });
     });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize tabbed components
+    setupTabs('.credentials-tabs-container', '.tab-btn', '.tab-pane');
+    setupTabs('.experience-tabs-container', '.tab-btn', '.tab-pane');
+    setupTabs('.research-tabs-container', '.tab-btn', '.tab-pane');
 });
 
 // ── Active nav link styles ────────────────────────────────
