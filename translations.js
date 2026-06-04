@@ -152,6 +152,7 @@ const translations = {
     'skills.credly.desc':  'Verify my professional credentials and endorsed skills.',
     'skills.credly.view':  'View Credly Profile',
     'edu.verify.badge':    'Verify Badge',
+    'edu.verify.certificate': 'Verify Certificate',
 
     // Contact Booking
     'contact.title':    'Get In Touch',
@@ -422,6 +423,7 @@ const translations = {
     'skills.credly.desc':  'Verifizieren Sie meine beruflichen Qualifikationen und bestätigten Kompetenzen.',
     'skills.credly.view':  'Credly-Profil ansehen',
     'edu.verify.badge':    'Badge verifizieren',
+    'edu.verify.certificate': 'Zertifikat verifizieren',
 
     // Contact Booking
     'contact.title':    'Kontakt aufnehmen',
