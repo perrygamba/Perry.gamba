@@ -76,12 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Add fade-in animation to about content
-    document.querySelector('.about-content')?.classList.add('fade-in');
-    observer.observe(document.querySelector('.about-content'));
+    const aboutContent = document.querySelector('.about-content');
+    if (aboutContent) {
+        aboutContent.classList.add('fade-in');
+        observer.observe(aboutContent);
+    }
 
     // Add fade-in animation to skills grid
-    document.querySelector('.skills-grid')?.classList.add('fade-in');
-    observer.observe(document.querySelector('.skills-grid'));
+    const skillsGrid = document.querySelector('.skills-grid');
+    if (skillsGrid) {
+        skillsGrid.classList.add('fade-in');
+        observer.observe(skillsGrid);
+    }
 });
 
 // Add hover effects to cards
