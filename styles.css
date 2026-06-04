@@ -3095,79 +3095,38 @@ section { padding: 6rem 0; }
 }
 
 /* Credly Badges Grid Tab Styling */
-.credly-badges-grid {
+.credly-embeds-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
+    justify-items: center;
 }
 
-.credly-badge-card {
+.credly-embed-wrapper {
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 1.8rem 1.2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 172px;
+    height: 292px;
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    text-decoration: none;
     box-shadow: 0 4px 15px rgba(10, 14, 26, 0.02);
 }
 
-.credly-badge-card:hover {
+.credly-embed-wrapper:hover {
     transform: translateY(-5px);
     border-color: var(--gold);
     box-shadow: 0 10px 25px rgba(10, 14, 26, 0.05), 0 0 18px rgba(212, 175, 55, 0.15);
 }
 
-.badge-card-graphic {
-    width: 80px;
-    height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.2rem;
-    transition: transform 0.3s ease;
+.credly-embed-wrapper iframe {
+    border: none;
+    border-radius: 8px;
 }
 
-.credly-badge-card:hover .badge-card-graphic {
-    transform: scale(1.08);
-}
-
-.badge-card-info {
-    width: 100%;
-}
-
-.badge-card-info h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-    min-height: 2.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.badge-card-issuer {
-    font-size: 0.8rem;
-    color: var(--muted);
-    margin-bottom: 0.6rem;
-}
-
-.badge-card-date {
-    font-size: 0.76rem;
-    font-weight: 600;
-    color: var(--gold);
-    background: rgba(212, 175, 55, 0.08);
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    display: inline-block;
-}
 
 
 
