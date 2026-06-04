@@ -192,14 +192,63 @@ function setupTabs(tabContainerSelector, btnSelector, paneSelector) {
 
 // Dynamic Credly Badge Embed Loader
 function loadCredlyEmbeds() {
-    if (!document.getElementById('credly-embed-script')) {
-        const script = document.createElement('script');
-        script.id = 'credly-embed-script';
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
-        document.body.appendChild(script);
-    }
+    const container = document.getElementById('credly-badges-container');
+    if (!container || container.dataset.loaded === 'true') return;
+
+    // Mark as loaded to prevent duplicate insertion
+    container.dataset.loaded = 'true';
+
+    // List of badge IDs from the user's verified list
+    const badgeIds = [
+        '7785c1aa-7a5a-4d22-8b78-0c8151384ef6', // Agile Metrics for Success
+        '8585bd92-64d7-4f7b-817a-4c539f059ee7', // Data Landscape of GenAI for Project Managers
+        '4ab1824e-e1b6-4616-b6dc-28e1cbc8b81f', // Generative AI Overview for Project Managers
+        'f10c2311-2141-4806-8278-e5bf1b66c77a', // Introduction to Cognitive Project Management in AI (CPMAI)™
+        'd283d9fb-b2ce-4c9b-9cca-55cf20cb9772', // PMI Citizen Developer™ Practitioner Skills
+        'e679bb79-635c-457b-b4b4-b4508c48eb92', // PMI® Essentials: Seven AI Project Patterns
+        '2e95f929-1b76-4bfd-8945-51434c9a7168', // Practical Application of Gen AI for Project Managers
+        '24941b6f-34c8-475a-8c75-5030cdcf263e'  // Talking to AI: Prompt Engineering for Project Managers
+    ];
+
+    // Generate wrappers dynamically
+    badgeIds.forEach(id => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'credly-embed-wrapper';
+        
+        const badgeDiv = document.createElement('div');
+        badgeDiv.setAttribute('data-iframe-width', '150');
+        badgeDiv.setAttribute('data-iframe-height', '270');
+        badgeDiv.setAttribute('data-share-badge-id', id);
+        badgeDiv.setAttribute('data-share-badge-host', 'https://www.credly.com');
+        
+        // Add a fallback link in case the script is blocked
+        const fallbackLink = document.createElement('a');
+        fallbackLink.href = `https://www.credly.com/badges/${id}`;
+        fallbackLink.target = '_blank';
+        fallbackLink.rel = 'noopener noreferrer';
+        fallbackLink.className = 'credly-fallback-link';
+        
+        const fallbackIcon = document.createElement('i');
+        fallbackIcon.className = 'fas fa-award';
+        
+        const fallbackText = document.createElement('span');
+        fallbackText.className = 'credly-fallback-text';
+        fallbackText.textContent = 'Verify Credentials';
+        
+        fallbackLink.appendChild(fallbackIcon);
+        fallbackLink.appendChild(fallbackText);
+        badgeDiv.appendChild(fallbackLink);
+        wrapper.appendChild(badgeDiv);
+        container.appendChild(wrapper);
+    });
+
+    // Load the Credly script dynamically
+    const script = document.createElement('script');
+    script.id = 'credly-embed-script';
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+    document.body.appendChild(script);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
