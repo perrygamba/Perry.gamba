@@ -3061,46 +3061,43 @@ section { padding: 6rem 0; }
     filter: drop-shadow(0 6px 12px rgba(212, 175, 55, 0.25));
 }
 
-.visual-badges-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-    margin: 1.8rem 0;
-    background: rgba(10, 14, 26, 0.02);
-    padding: 1.2rem;
+.skills-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+    justify-items: center;
+    background: rgba(10, 14, 26, 0.01);
+    padding: 1rem;
     border-radius: 12px;
-    border: 1px dashed rgba(10, 14, 26, 0.08);
+    border: 1px solid var(--border);
 }
 
-.visual-badge-item {
+.skills-badge-item {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-decoration: none;
-    gap: 0.5rem;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.badge-wrapper {
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+.skills-badge-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+    transition: all 0.3s ease;
 }
 
-.visual-badge-item:hover .badge-wrapper {
-    transform: translateY(-6px) scale(1.1);
-    filter: drop-shadow(0 8px 16px rgba(212, 175, 55, 0.35));
+.skills-badge-item:hover img {
+    transform: translateY(-4px) scale(1.1);
+    filter: drop-shadow(0 8px 16px rgba(212, 175, 55, 0.3));
 }
 
-.badge-item-label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--navy);
-    transition: color 0.3s ease;
-}
-
-.visual-badge-item:hover .badge-item-label {
-    color: var(--gold);
+@media (prefers-color-scheme: dark) {
+    .skills-badges-grid {
+        background: rgba(255, 255, 255, 0.01);
+        border-color: rgba(255, 255, 255, 0.08);
+    }
 }
 
 .verified-check {
