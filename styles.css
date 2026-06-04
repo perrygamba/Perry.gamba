@@ -2918,3 +2918,181 @@ section { padding: 6rem 0; }
     }
 }
 
+/* ============================================================
+   CREDLY BADGES & SKILLS INTEGRATION
+   ============================================================ */
+
+.credly-icon-link {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.credly-icon-link:hover {
+    background: #ff6b00;
+    border-color: #ff6b00;
+    color: var(--white);
+    transform: translateY(-3px) rotate(360deg);
+}
+
+.edu-card-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.edu-verify-link {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--teal);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.25s ease;
+}
+
+.edu-verify-link:hover {
+    color: var(--gold);
+}
+
+.credly-card {
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+    background: linear-gradient(135deg, var(--ivory) 0%, rgba(212, 175, 55, 0.05) 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.credly-card::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(212, 175, 55, 0.15);
+    border-radius: 50%;
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+.credly-card-desc {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.credly-action-wrapper {
+    margin-top: 1.8rem;
+    display: flex;
+}
+
+.btn-credly {
+    background: var(--navy);
+    color: var(--white) !important;
+    border: 1px solid var(--navy);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-credly:hover {
+    background: var(--gold);
+    color: var(--navy) !important;
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+@media (max-width: 768px) {
+    .credly-icon-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Visual Badge Layouts & Hover Animations */
+.edu-badge-graphic {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+    transition: all 0.3s ease;
+}
+
+.edu-card-v2:hover .edu-badge-graphic {
+    transform: scale(1.08) rotate(5deg);
+    filter: drop-shadow(0 6px 12px rgba(212, 175, 55, 0.25));
+}
+
+.visual-badges-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.8rem 0;
+    background: rgba(10, 14, 26, 0.02);
+    padding: 1.2rem;
+    border-radius: 12px;
+    border: 1px dashed rgba(10, 14, 26, 0.08);
+}
+
+.visual-badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.badge-wrapper {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visual-badge-item:hover .badge-wrapper {
+    transform: translateY(-6px) scale(1.1);
+    filter: drop-shadow(0 8px 16px rgba(212, 175, 55, 0.35));
+}
+
+.badge-item-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--navy);
+    transition: color 0.3s ease;
+}
+
+.visual-badge-item:hover .badge-item-label {
+    color: var(--gold);
+}
+
+.verified-check {
+    font-size: 0.85rem;
+}
+
+
+

@@ -126,6 +126,10 @@ const translations = {
     'lang.german.level':  'German (Professional B2)',
     'lang.swahili.level': 'Swahili (Fluent)',
     'lang.other.level':   '10 African Languages',
+    'skills.credly.title': 'Credly Badge Wallet',
+    'skills.credly.desc':  'Verify my professional credentials and endorsed skills.',
+    'skills.credly.view':  'View Credly Profile',
+    'edu.verify.badge':    'Verify Badge',
 
     // Contact Booking
     'contact.title':    'Get In Touch',
@@ -370,6 +374,10 @@ const translations = {
     'lang.german.level':  'Deutsch (Beruflich B2)',
     'lang.swahili.level': 'Swahili (Fliessend)',
     'lang.other.level':   '10 Afrikanische Sprachen',
+    'skills.credly.title': 'Credly Badge-Wallet',
+    'skills.credly.desc':  'Verifizieren Sie meine beruflichen Qualifikationen und bestätigten Kompetenzen.',
+    'skills.credly.view':  'Credly-Profil ansehen',
+    'edu.verify.badge':    'Badge verifizieren',
 
     // Contact Booking
     'contact.title':    'Kontakt aufnehmen',
