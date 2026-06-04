@@ -174,6 +174,11 @@ function setupTabs(tabContainerSelector, btnSelector, paneSelector) {
                                 pane.style.transform = 'translateY(0)';
                             });
                         });
+
+                        // Dynamically load Credly widget script if transitioning to the credly-badges tab
+                        if (targetId === 'credly-badges') {
+                            loadCredlyEmbeds();
+                        }
                     } else {
                         pane.classList.remove('active');
                         pane.style.transition = 'none';
@@ -185,11 +190,28 @@ function setupTabs(tabContainerSelector, btnSelector, paneSelector) {
     });
 }
 
+// Dynamic Credly Badge Embed Loader
+function loadCredlyEmbeds() {
+    if (!document.getElementById('credly-embed-script')) {
+        const script = document.createElement('script');
+        script.id = 'credly-embed-script';
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+        document.body.appendChild(script);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize tabbed components
     setupTabs('.credentials-tabs-container', '.tab-btn', '.tab-pane');
     setupTabs('.experience-tabs-container', '.tab-btn', '.tab-pane');
     setupTabs('.research-tabs-container', '.tab-btn', '.tab-pane');
+
+    // Trigger load if credly-badges is the active tab initially
+    if (document.querySelector('.tab-pane.active#credly-badges')) {
+        loadCredlyEmbeds();
+    }
 });
 
 // ── Active nav link styles ────────────────────────────────
