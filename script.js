@@ -267,25 +267,88 @@ function updateDescriptionToggles() {
         }
     });
 }
-
-// Observe language changes on <html> (lang attribute) to trigger updateDescriptionToggles
+// Observe language changes on <html> (lang attribute) to trigger updates
 const langObserver = new MutationObserver((mutations) => {
     mutations.forEach(mutation => {
         if (mutation.attributeName === 'lang') {
             // Delay slightly to allow the DOM to render the new language content before measuring heights
-            setTimeout(updateDescriptionToggles, 30);
+            setTimeout(() => {
+                updateDescriptionToggles();
+                updateSkillsToggles();
+            }, 30);
         }
     });
 });
 langObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 
+// ── Skill Chips Truncation & Toggle Button ────────────────
+function updateSkillsToggles() {
+    const cards = document.querySelectorAll('.competency-matrix-card:not(.credly-card)');
+    
+    cards.forEach(card => {
+        const wrapper = card.querySelector('.matrix-chips-wrapper');
+        if (!wrapper) return;
+        
+        const chips = Array.from(wrapper.querySelectorAll('.matrix-chip:not(.matrix-chip-toggle)'));
+        if (chips.length <= 8) {
+            // Remove any existing toggle button
+            const existingToggle = wrapper.querySelector('.matrix-chip-toggle');
+            if (existingToggle) existingToggle.remove();
+            
+            // Make sure all chips are visible
+            chips.forEach(chip => chip.classList.remove('hidden-chip'));
+            return;
+        }
+        
+        // Find or create toggle button
+        let toggleBtn = wrapper.querySelector('.matrix-chip-toggle');
+        if (!toggleBtn) {
+            toggleBtn = document.createElement('button');
+            toggleBtn.className = 'matrix-chip-toggle';
+            wrapper.appendChild(toggleBtn);
+        }
+        
+        const currentLang = document.documentElement.getAttribute('lang') || 'en';
+        const isExpanded = wrapper.getAttribute('data-expanded') === 'true';
+        
+        if (isExpanded) {
+            chips.forEach(chip => chip.classList.remove('hidden-chip'));
+            toggleBtn.innerHTML = currentLang === 'de' ? 'Weniger anzeigen' : 'Show less';
+        } else {
+            chips.forEach((chip, index) => {
+                if (index >= 6) {
+                    chip.classList.add('hidden-chip');
+                } else {
+                    chip.classList.remove('hidden-chip');
+                }
+            });
+            const hiddenCount = chips.length - 6;
+            toggleBtn.innerHTML = currentLang === 'de' ? `+ ${hiddenCount} weitere` : `+ ${hiddenCount} more`;
+        }
+        
+        toggleBtn.onclick = (e) => {
+            e.preventDefault();
+            const nowExpanded = wrapper.getAttribute('data-expanded') !== 'true';
+            wrapper.setAttribute('data-expanded', nowExpanded ? 'true' : 'false');
+            updateSkillsToggles();
+            
+            if (!nowExpanded) {
+                card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        };
+    });
+}
+
 // Initialize on DOMContentLoaded and Resize
 document.addEventListener('DOMContentLoaded', () => {
-    // Run initial toggle check
-    setTimeout(updateDescriptionToggles, 100);
+    // Run initial toggle checks
+    setTimeout(() => {
+        updateDescriptionToggles();
+        updateSkillsToggles();
+    }, 100);
 });
 
 window.addEventListener('resize', () => {
     updateDescriptionToggles();
+    updateSkillsToggles();
 });
-
