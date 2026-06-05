@@ -213,7 +213,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     background: linear-gradient(150deg, var(--navy) 0%, #0f4c75 60%, var(--teal) 100%);
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 110px;
     position: relative;
     overflow: hidden;
 }
