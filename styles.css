@@ -163,6 +163,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     border: 1.5px solid var(--border);
     border-radius: 20px;
     padding: 0.2rem 0.6rem;
+    flex-shrink: 0;
 }
 
 .lang-btn {
@@ -1714,14 +1715,19 @@ section { padding: 6rem 0; }
 }
 
 /* ── Responsive ──────────────────────────────────────────── */
-@media (max-width: 1024px) {
-    .hero-container { grid-template-columns: 1fr 360px; gap: 3rem; }
-    .hero-name { font-size: 3.2rem; }
-    .achievements-strip-grid { grid-template-columns: repeat(3, 1fr); }
-    .achievements-strip-grid .achievement-item:nth-child(4) { border-left: none; }
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+    .nav-link {
+        font-size: 0.8rem;
+    }
+    .nav-container {
+        padding: 0 16px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hamburger { display: flex; }
 
     .nav-menu {
@@ -1741,6 +1747,18 @@ section { padding: 6rem 0; }
 
     .nav-menu.active { left: 0; }
 
+    .lang-toggle {
+        margin-left: auto;
+        margin-right: 1.2rem;
+    }
+
+    .hero-container { grid-template-columns: 1fr 360px; gap: 3rem; }
+    .hero-name { font-size: 3.2rem; }
+    .achievements-strip-grid { grid-template-columns: repeat(3, 1fr); }
+    .achievements-strip-grid .achievement-item:nth-child(4) { border-left: none; }
+}
+
+@media (max-width: 768px) {
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
