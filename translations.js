@@ -233,7 +233,7 @@ const translations = {
     // Research descriptions & labels
     'research.desc.1':  'Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.',
     'research.desc.2':  'A comprehensive study examining how digital channels reshape customer engagement and overcome market barriers in emerging economies, with a focus on Uganda\'s insurance sector, detailing the opportunities of data-driven targeting alongside challenges like the digital divide.',
-    'research.desc.3':  'Analysis of digital marketing modalities and their strategic application across emerging and established markets',
+    'research.desc.3':  'A detailed analysis identifying five core digital marketing modalities (SEO, social media, email, content marketing, and PPC) and their strategic deployment, offering actionable frameworks to optimize content workflows and performance in emerging market ecosystems.',
     'research.desc.4':  'A policy and risk management strategy for Uganda\'s investment reform framework',
     'research.desc.5':  'Evidence from Malaria Control Programs\' Implementation in Mukono District',
     'research.desc.6':  'Examination of key determinants influencing M&E findings uptake in malaria program implementation',
@@ -505,7 +505,7 @@ const translations = {
     // Research descriptions & labels
     'research.desc.1':  'Peer-Review-Studie zu soziostrukturellen und individuellen Faktoren, die HIV-Offenlegungsentscheidungen beeinflussen, mit Implikationen für gemeindebasiertes Gesundheitsprogrammdesign.',
     'research.desc.2':  'Eine umfassende Studie darüber, wie digitale Kanäle die Kundenbindung neu gestalten und Marktbarrieren in Schwellenländern überwinden, mit Fokus auf den ugandischen Versicherungssektor. Sie beleuchtet die Chancen datengestützter Zielgruppenansprache sowie Herausforderungen wie die digitale Kluft.',
-    'research.desc.3':  'Analyse digitaler Marketingmodalitäten und ihrer strategischen Anwendung in Schwellen- und etablierten Märkten',
+    'research.desc.3':  'Eine detaillierte Analyse der fünf digitalen Marketing-Kernbereiche (SEO, Social Media, E-Mail, Content-Marketing und PPC) und deren strategischem Einsatz, mit praxisnahen Leitfäden zur Optimierung von Workflows und Performance in Schwellenmärkten.',
     'research.desc.4':  'Eine strategie- und risikomanagementbezogene Publikation zum ugandischen Investitionsreformrahmen',
     'research.desc.5':  'Erkenntnisse aus der Umsetzung von Malaria-Bekämpfungsprogrammen im Distrikt Mukono',
     'research.desc.6':  'Untersuchung zentraler Determinanten für die Nutzung von M&amp;E-Ergebnissen in der Malaria-Programmimplementierung',
