@@ -232,7 +232,7 @@ const translations = {
 
     // Research descriptions & labels
     'research.desc.1':  'Peer-reviewed study examining socio-structural and individual factors shaping HIV disclosure decisions, with implications for community-based health program design.',
-    'research.desc.2':  'Investigation of digital marketing strategies and their effect on market penetration in emerging market contexts',
+    'research.desc.2':  'A comprehensive study examining how digital channels reshape customer engagement and overcome market barriers in emerging economies, with a focus on Uganda\'s insurance sector, detailing the opportunities of data-driven targeting alongside challenges like the digital divide.',
     'research.desc.3':  'Analysis of digital marketing modalities and their strategic application across emerging and established markets',
     'research.desc.4':  'A policy and risk management strategy for Uganda\'s investment reform framework',
     'research.desc.5':  'Evidence from Malaria Control Programs\' Implementation in Mukono District',
@@ -504,7 +504,7 @@ const translations = {
 
     // Research descriptions & labels
     'research.desc.1':  'Peer-Review-Studie zu soziostrukturellen und individuellen Faktoren, die HIV-Offenlegungsentscheidungen beeinflussen, mit Implikationen für gemeindebasiertes Gesundheitsprogrammdesign.',
-    'research.desc.2':  'Untersuchung digitaler Marketingstrategien und ihrer Auswirkung auf die Marktdurchdringung in Schwellenmärkten',
+    'research.desc.2':  'Eine umfassende Studie darüber, wie digitale Kanäle die Kundenbindung neu gestalten und Marktbarrieren in Schwellenländern überwinden, mit Fokus auf den ugandischen Versicherungssektor. Sie beleuchtet die Chancen datengestützter Zielgruppenansprache sowie Herausforderungen wie die digitale Kluft.',
     'research.desc.3':  'Analyse digitaler Marketingmodalitäten und ihrer strategischen Anwendung in Schwellen- und etablierten Märkten',
     'research.desc.4':  'Eine strategie- und risikomanagementbezogene Publikation zum ugandischen Investitionsreformrahmen',
     'research.desc.5':  'Erkenntnisse aus der Umsetzung von Malaria-Bekämpfungsprogrammen im Distrikt Mukono',
