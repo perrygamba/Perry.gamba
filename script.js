@@ -159,6 +159,11 @@ function setupTabs(tabContainerSelector, btnSelector, paneSelector) {
                 panes.forEach(pane => {
                     pane.classList.toggle('active', pane.id === targetId);
                 });
+
+                // Recalculate heights for descriptions in the newly opened tab
+                if (typeof updateDescriptionToggles === 'function') {
+                    updateDescriptionToggles();
+                }
             });
         });
     });
@@ -200,3 +205,87 @@ loadingStyle.textContent = `
     }
 `;
 document.head.appendChild(loadingStyle);
+
+
+// ── Description Truncation & Toggle Button ────────────────
+function updateDescriptionToggles() {
+    const cards = document.querySelectorAll('.research-card-v3');
+    
+    cards.forEach(card => {
+        const desc = card.querySelector('.research-card-desc');
+        if (!desc) return;
+        
+        // Check if description is currently expanded
+        const isCurrentlyExpanded = desc.classList.contains('expanded');
+        
+        // Remove existing button to avoid duplicates
+        let btn = card.querySelector('.read-more-btn');
+        if (btn) {
+            btn.remove();
+        }
+        
+        // Remove expanded class to check natural clamped height
+        desc.classList.remove('expanded');
+        
+        // Check if the scrollHeight is greater than clientHeight
+        // ClientHeight under line-clamp will be limited to 3 lines (max-height)
+        if (desc.scrollHeight > desc.clientHeight + 6) {
+            btn = document.createElement('button');
+            btn.className = 'read-more-btn';
+            
+            const currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const seeMoreText = currentLang === 'de' ? '... (mehr anzeigen)' : '... (see more)';
+            const seeLessText = currentLang === 'de' ? ' (weniger anzeigen)' : ' (see less)';
+            
+            if (isCurrentlyExpanded) {
+                desc.classList.add('expanded');
+                btn.innerHTML = seeLessText;
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                btn.innerHTML = seeMoreText;
+                btn.setAttribute('aria-expanded', 'false');
+            }
+            
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (desc.classList.contains('expanded')) {
+                    desc.classList.remove('expanded');
+                    btn.innerHTML = seeMoreText;
+                    btn.setAttribute('aria-expanded', 'false');
+                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    desc.classList.add('expanded');
+                    btn.innerHTML = seeLessText;
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+            
+            desc.after(btn);
+        } else if (isCurrentlyExpanded) {
+            // If it doesn't overflow anymore, remove expanded state
+            desc.classList.remove('expanded');
+        }
+    });
+}
+
+// Observe language changes on <html> (lang attribute) to trigger updateDescriptionToggles
+const langObserver = new MutationObserver((mutations) => {
+    mutations.forEach(mutation => {
+        if (mutation.attributeName === 'lang') {
+            // Delay slightly to allow the DOM to render the new language content before measuring heights
+            setTimeout(updateDescriptionToggles, 30);
+        }
+    });
+});
+langObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+// Initialize on DOMContentLoaded and Resize
+document.addEventListener('DOMContentLoaded', () => {
+    // Run initial toggle check
+    setTimeout(updateDescriptionToggles, 100);
+});
+
+window.addEventListener('resize', () => {
+    updateDescriptionToggles();
+});
+
