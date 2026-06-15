@@ -80,6 +80,15 @@
             transform: translateY(-1px);
         }
 
+        /* Override global section padding for capability statement layout */
+        .capability-body section {
+            padding: 1.5rem 0;
+        }
+        .capability-body section.cap-header {
+            padding-top: 0;
+            padding-bottom: 1.5rem;
+        }
+
         .cap-container {
             max-width: 900px;
             margin: 3rem auto;
@@ -97,11 +106,11 @@
             margin-bottom: 2.5rem;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
         }
 
         .cap-title-area {
-            max-width: 65%;
+            max-width: 70%;
         }
 
         .cap-title-area h1 {
@@ -143,9 +152,9 @@
             font-family: 'Playfair Display', Georgia, serif;
             font-size: 1.45rem;
             color: #0a0e1a;
-            border-bottom: 1px solid #cbd5e1;
+            border-bottom: 2px solid #cbd5e1;
             padding-bottom: 0.5rem;
-            margin-top: 2.5rem;
+            margin-top: 2rem;
             margin-bottom: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 0.03em;
@@ -162,7 +171,84 @@
         .cap-grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            gap: 1.75rem;
+        }
+
+        .cap-overview-text {
+            font-size: 0.95rem;
+            color: #475569;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Clean independent card styles for Capability Statement */
+        .cap-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-top: 3px solid #10b981;
+            border-radius: 6px;
+            padding: 1.5rem;
+            box-shadow: none;
+            transition: all 0.3s ease;
+        }
+
+        .cap-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(10,14,26,0.05);
+            border-color: #cbd5e1;
+        }
+
+        .cap-card.gold-border {
+            border-top-color: #d4af37;
+        }
+
+        .cap-card h4 {
+            margin: 0 0 0.5rem 0;
+            color: #0a0e1a;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .cap-card p {
+            font-size: 0.88rem;
+            color: #475569;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .srv-meta {
+            display: block;
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            line-height: 1.45;
+        }
+
+        .srv-meta strong {
+            color: #475569;
+        }
+
+        .differentiators-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-size: 0.92rem;
+            color: #475569;
+        }
+
+        .differentiators-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        .differentiators-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
         }
 
         .cap-past-perf-list {
@@ -179,19 +265,32 @@
         .cap-perf-item h4 {
             margin: 0 0 0.4rem 0;
             color: #0a0e1a;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
+            font-weight: 600;
         }
 
         .cap-perf-item p {
-            margin: 0;
+            margin: 0 0 0.4rem 0;
             font-size: 0.92rem;
             color: #475569;
+            line-height: 1.5;
+        }
+
+        .cap-perf-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cap-perf-item strong {
+            color: #0a0e1a;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         .cap-info-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+            gap: 1rem 2rem;
             font-size: 0.9rem;
             background: #f8fafc;
             padding: 1.5rem;
@@ -199,27 +298,40 @@
             border: 1px solid #e2e8f0;
         }
 
+        .info-cell {
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 0.4rem;
+        }
+
         .info-cell strong {
             color: #0a0e1a;
+            display: inline-block;
+            width: 100px;
         }
 
-        .differentiators-list {
-            padding-left: 1.2rem;
-            margin: 0;
-            font-size: 0.92rem;
-            color: #475569;
+        .info-cell.full-width {
+            grid-column: span 2;
+            border-bottom: none;
+            padding-bottom: 0;
         }
 
-        .differentiators-list li {
-            margin-bottom: 0.6rem;
+        .info-cell.full-width strong {
+            width: auto;
+            margin-right: 0.5rem;
         }
 
         /* Print formatting */
         @media print {
+            @page {
+                size: A4 portrait;
+                margin: 15mm;
+            }
+
             body.capability-body {
-                background: #ffffff;
-                color: #000000;
-                font-size: 11pt;
+                background: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10pt !important;
+                line-height: 1.45 !important;
             }
 
             .cap-navbar, .btn-print, .btn-cap-back, .lang-toggle {
@@ -227,31 +339,119 @@
             }
 
             .cap-container {
-                box-shadow: none;
-                margin: 0;
-                padding: 0;
-                border-top: none;
-                max-width: 100%;
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                border-top: none !important;
+                max-width: 100% !important;
+                background: #ffffff !important;
+            }
+
+            .capability-body section {
+                padding: 0.75rem 0 !important;
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            .capability-body section.cap-header {
+                padding-top: 0 !important;
+                padding-bottom: 0.75rem !important;
+                border-bottom: 2px solid #0a0e1a !important;
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+            }
+
+            .cap-title-area h1 {
+                font-size: 2rem !important;
+                margin-bottom: 0.2rem !important;
+            }
+
+            .cap-subtitle {
+                font-size: 0.95rem !important;
+                margin-bottom: 0.4rem !important;
+            }
+
+            .cap-tagline {
+                font-size: 0.85rem !important;
+            }
+
+            .cap-badge-img {
+                width: 70px !important;
+                height: 70px !important;
             }
 
             .cap-section-title {
-                margin-top: 20pt;
-                page-break-inside: avoid;
+                margin-top: 1rem !important;
+                margin-bottom: 0.75rem !important;
+                font-size: 1.15rem !important;
+                border-bottom: 1.5px solid #0a0e1a !important;
+                padding-bottom: 0.3rem !important;
             }
 
-            .cap-past-perf-list {
-                page-break-inside: avoid;
+            .cap-section-title i {
+                display: none !important;
             }
 
-            .cap-info-grid {
-                background: none !important;
-                border: 1px solid #94a3b8 !important;
+            .cap-grid-2 {
+                gap: 1.25rem !important;
+            }
+
+            .cap-card {
+                padding: 1rem !important;
+                border: 1px solid #cbd5e1 !important;
+                border-top: 3px solid #10b981 !important;
+                background: #ffffff !important;
                 page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            .cap-card.gold-border {
+                border-top-color: #d4af37 !important;
+            }
+
+            .differentiators-list li {
+                margin-bottom: 0.4rem !important;
             }
 
             /* Direct page break before Past Performance to guarantee perfect 2-page budget */
             .page-break-print {
-                page-break-before: always;
+                page-break-before: always !important;
+                break-before: page !important;
+                padding-top: 0.5rem !important;
+            }
+
+            .cap-past-perf-list {
+                gap: 0.75rem !important;
+            }
+
+            .cap-perf-item {
+                border-left: 3px solid #10b981 !important;
+                padding-left: 1rem !important;
+                margin-bottom: 0 !important;
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            .cap-info-grid {
+                background: #f8fafc !important;
+                border: 1px solid #cbd5e1 !important;
+                padding: 1rem !important;
+                gap: 0.5rem 1.5rem !important;
+                page-break-inside: avoid;
+                break-inside: avoid;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .info-cell {
+                border-bottom: 1px solid #cbd5e1 !important;
+                padding-bottom: 0.3rem !important;
+            }
+
+            .info-cell.full-width {
+                border-bottom: none !important;
+                padding-bottom: 0 !important;
             }
         }
     </style>
@@ -298,18 +498,18 @@
         <!-- Core Capabilities Section -->
         <section>
             <h3 class="cap-section-title"><i class="fas fa-sliders-h"></i> <span data-key="capability.overview">Core Capabilities</span></h3>
-            <p data-key="capability.overview.desc" style="font-size: 0.95rem; color: #475569; margin-bottom: 1.5rem;">
+            <p data-key="capability.overview.desc" class="cap-overview-text">
                 Highly qualified consultant with 15+ years of experience in M&amp;E systems, public health, data analytics, and educational compliance. Proven track record of improving reporting quality and program outcomes by 20–40% in international and Swiss environments.
             </p>
             
             <div class="cap-grid-2">
-                <div class="service-card" style="padding: 1.5rem; border-top: 3px solid #10b981; box-shadow: none; border-bottom: 1px solid #e2e8f0;">
-                    <h4 data-key="s1.title" style="margin: 0 0 0.5rem 0; color: #0a0e1a; font-size: 1.05rem;">Evidence &amp; M&amp;E Systems Architecture</h4>
-                    <p data-key="s1.desc" style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin: 0;"></p>
+                <div class="cap-card">
+                    <h4 data-key="s1.title">Evidence &amp; M&amp;E Systems Architecture</h4>
+                    <p data-key="s1.desc"></p>
                 </div>
-                <div class="service-card" style="padding: 1.5rem; border-top: 3px solid #10b981; box-shadow: none; border-bottom: 1px solid #e2e8f0;">
-                    <h4 data-key="s2.title" style="margin: 0 0 0.5rem 0; color: #0a0e1a; font-size: 1.05rem;">Program Evaluation &amp; Impact Assessment</h4>
-                    <p data-key="s2.desc" style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin: 0;"></p>
+                <div class="cap-card">
+                    <h4 data-key="s2.title">Program Evaluation &amp; Impact Assessment</h4>
+                    <p data-key="s2.desc"></p>
                 </div>
             </div>
         </section>
@@ -326,9 +526,9 @@
                         <li><strong>Crossover Leadership:</strong> Swiss 1. Liga competitive athlete bringing operational stamina and team discipline.</li>
                     </ul>
                 </div>
-                <div class="service-card" style="padding: 1.5rem; border-top: 3px solid #d4af37; box-shadow: none; border-bottom: 1px solid #e2e8f0;">
-                    <h4 data-key="s3.title" style="margin: 0 0 0.5rem 0; color: #0a0e1a; font-size: 1.05rem;">Swiss Education Compliance &amp; Advisory</h4>
-                    <p data-key="s3.desc" style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin: 0;"></p>
+                <div class="cap-card gold-border">
+                    <h4 data-key="s3.title">Swiss Education Compliance &amp; Advisory</h4>
+                    <p data-key="s3.desc"></p>
                 </div>
             </div>
         </section>
@@ -340,17 +540,17 @@
                 <div class="cap-perf-item">
                     <h4 data-key="case.mod.title">Uganda MoD - HMIS &amp; M&amp;E Framework</h4>
                     <p><strong data-key="case.mod.challenge.title">Challenge:</strong> <span data-key="case.mod.challenge.desc">Disconnected reporting and data inconsistencies across 50+ military medical facilities.</span></p>
-                    <p style="margin-top: 0.3rem;"><strong data-key="case.mod.results.title">Results:</strong> <span data-key="case.mod.results.desc">Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.</span></p>
+                    <p><strong data-key="case.mod.results.title">Results:</strong> <span data-key="case.mod.results.desc">Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.</span></p>
                 </div>
                 <div class="cap-perf-item">
                     <h4 data-key="case.compliance.title">Canton Schwyz - School Permit Compliance</h4>
                     <p><strong data-key="case.compliance.challenge.title">Challenge:</strong> <span data-key="case.compliance.challenge.desc">A private school project faced permit rejection from the Schwyz Education Department.</span></p>
-                    <p style="margin-top: 0.3rem;"><strong data-key="case.compliance.results.title">Results:</strong> <span data-key="case.compliance.results.desc">Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.</span></p>
+                    <p><strong data-key="case.compliance.results.title">Results:</strong> <span data-key="case.compliance.results.desc">Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.</span></p>
                 </div>
                 <div class="cap-perf-item">
                     <h4 data-key="case.lernraum.title">Swiss-East Africa - School Partnerships</h4>
                     <p><strong data-key="case.lernraum.challenge.title">Challenge:</strong> <span data-key="case.lernraum.challenge.desc">Coordinating cross-cultural youth leadership workshops across Swiss public/private schools.</span></p>
-                    <p style="margin-top: 0.3rem;"><strong data-key="case.lernraum.results.title">Results:</strong> <span data-key="case.lernraum.results.desc">Successfully managed multi-country program timelines and delivered reports for donor evaluation.</span></p>
+                    <p><strong data-key="case.lernraum.results.title">Results:</strong> <span data-key="case.lernraum.results.desc">Successfully managed multi-country program timelines and delivered reports for donor evaluation.</span></p>
                 </div>
             </div>
         </section>
@@ -360,19 +560,19 @@
             <h3 class="cap-section-title"><i class="fas fa-info-circle"></i> <span data-key="capability.corporate.data">Corporate Data &amp; Contact</span></h3>
             <div class="cap-info-grid">
                 <div class="info-cell">
-                    <strong>Email:</strong> perry@perrygamba.consulting
+                    <strong data-key="contact.email">Email</strong><span>perry@perrygamba.consulting</span>
                 </div>
                 <div class="info-cell">
-                    <strong>Phone:</strong> +41 765156367
+                    <strong data-key="contact.phone">Phone</strong><span>+41 765156367</span>
                 </div>
                 <div class="info-cell">
-                    <strong>Location:</strong> Schänis, SG, Switzerland
+                    <strong data-key="contact.location">Location</strong><span>Schänis, SG, Switzerland</span>
                 </div>
                 <div class="info-cell">
-                    <strong>Languages:</strong> EN, DE (B2), Swahili, 10 African languages
+                    <strong data-key="capability.languages">Languages</strong><span>EN, DE (B2), Swahili, 10 African languages</span>
                 </div>
-                <div class="info-cell" style="grid-column: span 2;">
-                    <strong data-key="capability.codes">Contracting Codes:</strong> Available on request
+                <div class="info-cell full-width" data-key="capability.codes">
+                    DUNS / UEI / Contracting Codes: Available on Request
                 </div>
             </div>
         </section>

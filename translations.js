@@ -325,6 +325,7 @@ const translations = {
     'capability.download':            'Download Capability Statement (PDF)',
     'capability.print':               'Print / Save as PDF',
     'capability.back':                'Back to Website',
+    'capability.languages':           'Languages',
   },
 
   de: {
@@ -654,6 +655,7 @@ const translations = {
     'capability.download':            'Capability Statement herunterladen (PDF)',
     'capability.print':               'Drucken / Als PDF speichern',
     'capability.back':                'Zurück zur Website',
+    'capability.languages':           'Sprachen',
   }
 };
 
