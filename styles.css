@@ -3643,3 +3643,52 @@ section { padding: 6rem 0; }
     }
 }
 
+/* ── Large Screen and Wide Aspect Ratio Layouts ─────────────────────────── */
+@media (min-width: 1440px) {
+    .container, 
+    .nav-container, 
+    .hero-container, 
+    .experience-tabs-container, 
+    .research-tabs-container,
+    .case-studies-tabs-container,
+    .research-list {
+        max-width: 1360px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .container, 
+    .nav-container, 
+    .hero-container, 
+    .experience-tabs-container, 
+    .research-tabs-container,
+    .case-studies-tabs-container,
+    .research-list {
+        max-width: 1560px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container, 
+    .nav-container, 
+    .hero-container, 
+    .experience-tabs-container, 
+    .research-tabs-container,
+    .case-studies-tabs-container,
+    .research-list {
+        max-width: 1760px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container, 
+    .nav-container, 
+    .hero-container, 
+    .experience-tabs-container, 
+    .research-tabs-container,
+    .case-studies-tabs-container,
+    .research-list {
+        max-width: 2300px;
+    }
+}
+
