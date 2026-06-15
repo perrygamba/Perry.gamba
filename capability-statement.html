@@ -90,37 +90,63 @@
         }
 
         .cap-container {
-            max-width: 900px;
-            margin: 3rem auto;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1rem 0;
+        }
+
+        /* Styled A4 Sheet for Screen Mode */
+        .cap-print-page {
             background: #ffffff;
-            padding: 3.5rem;
+            max-width: 900px;
+            min-height: 1200px;
+            margin: 3rem auto;
+            padding: 4.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 30px rgba(10,14,26,0.05);
             border-top: 6px solid #0a0e1a;
             position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
 
+        /* Section Layouts within A4 Page */
+        .cap-print-page section {
+            padding: 1.75rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .cap-print-page section:last-of-type {
+            border-bottom: none;
+        }
+        .cap-print-page section.cap-header {
+            padding-top: 0;
+            border-bottom: 2px solid #0a0e1a;
+            padding-bottom: 1.5rem;
+        }
+
+        /* Header Positioning */
         .cap-header {
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 2rem;
-            margin-bottom: 2.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .cap-title-area {
-            max-width: 70%;
+            max-width: 75%;
         }
 
         .cap-title-area h1 {
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             color: #0a0e1a;
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.4rem 0;
+            font-weight: 800;
+            letter-spacing: -0.02em;
         }
 
         .cap-subtitle {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: #10b981;
             font-weight: 600;
             margin: 0 0 0.8rem 0;
@@ -132,6 +158,7 @@
             font-size: 0.95rem;
             color: #64748b;
             margin: 0;
+            font-weight: 500;
         }
 
         .cap-badge-area {
@@ -148,14 +175,15 @@
             object-fit: contain;
         }
 
+        /* Page Section Title */
         .cap-section-title {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.45rem;
+            font-size: 1.4rem;
             color: #0a0e1a;
             border-bottom: 2px solid #cbd5e1;
             padding-bottom: 0.5rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
+            margin-top: 0;
+            margin-bottom: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 0.03em;
             display: flex;
@@ -165,14 +193,15 @@
 
         .cap-section-title i {
             color: #d4af37;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
         }
 
-        /* Two column layout for Page 1 */
+        /* Page 1 Grid: 2 Columns */
         .cap-page-1-grid {
             display: grid;
-            grid-template-columns: 1fr 1.25fr;
+            grid-template-columns: 1fr 1.15fr;
             gap: 2.5rem;
+            flex-grow: 1;
         }
 
         @media (max-width: 768px) {
@@ -185,24 +214,25 @@
         .cap-overview-text {
             font-size: 0.95rem;
             color: #475569;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             line-height: 1.6;
         }
 
-        /* Clean independent card styles for Capability Statement */
+        /* Practice Area Cards */
         .cap-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
             border-top: 3px solid #10b981;
             border-radius: 6px;
-            padding: 1.5rem;
+            padding: 1.25rem;
             box-shadow: none;
             transition: all 0.3s ease;
+            margin-bottom: 1rem;
         }
 
         .cap-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(10,14,26,0.05);
+            box-shadow: 0 6px 20px rgba(10,14,26,0.04);
             border-color: #cbd5e1;
         }
 
@@ -211,10 +241,10 @@
         }
 
         .cap-card h4 {
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.4rem 0;
             color: #0a0e1a;
             font-size: 1.05rem;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .cap-card p {
@@ -228,7 +258,7 @@
             display: block;
             font-size: 0.8rem;
             color: #64748b;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
             line-height: 1.45;
         }
 
@@ -236,6 +266,7 @@
             color: #475569;
         }
 
+        /* Differentiators & Lists */
         .differentiators-list {
             list-style: none;
             padding-left: 0;
@@ -259,7 +290,6 @@
             font-weight: bold;
         }
 
-        /* Credentials List Style */
         .credentials-list {
             list-style: none;
             padding-left: 0;
@@ -270,49 +300,102 @@
 
         .credentials-list li {
             position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.6rem;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
             line-height: 1.4;
         }
 
         .credentials-list li::before {
             content: "•";
             position: absolute;
-            left: 0.5rem;
+            left: 0.25rem;
             color: #d4af37;
             font-weight: bold;
             font-size: 1.2rem;
             line-height: 1;
         }
 
-        /* Case Studies Styles */
+        /* Impact Snapshot Dashboard */
+        .cap-snapshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .cap-snapshot-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        .cap-snapshot-val {
+            display: block;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        .cap-snapshot-lbl {
+            font-size: 0.78rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-top: 0.15rem;
+            line-height: 1.3;
+        }
+
+        /* Client Sectors List layout */
+        .cap-sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.4rem 1.5rem;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .cap-sectors-grid li {
+            position: relative;
+            padding-left: 1.25rem;
+            font-size: 0.9rem;
+            color: #475569;
+            line-height: 1.4;
+        }
+
+        .cap-sectors-grid li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Case Studies Expanded styling */
         .cap-case-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
             border-left: 4px solid #10b981;
             border-radius: 6px;
-            padding: 1.5rem;
+            padding: 1.25rem;
             margin-bottom: 1rem;
             box-shadow: none;
-            transition: all 0.3s ease;
-        }
-
-        .cap-case-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(10,14,26,0.04);
-            border-color: #cbd5e1;
         }
 
         .cap-case-card h4 {
             margin: 0 0 0.5rem 0;
             color: #0a0e1a;
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1.15rem;
+            font-weight: 700;
         }
 
         .cap-case-card p {
-            margin: 0 0 0.4rem 0;
-            font-size: 0.92rem;
+            margin: 0 0 0.5rem 0;
+            font-size: 0.9rem;
             color: #475569;
             line-height: 1.5;
         }
@@ -323,18 +406,46 @@
 
         .cap-case-card strong {
             color: #0a0e1a;
-            font-size: 0.8rem;
+            font-size: 0.82rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
-        /* Styled Corporate footer box */
+        /* Publications block */
+        .cap-pub-item {
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 0.6rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .cap-pub-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .cap-pub-title {
+            font-size: 0.9rem;
+            color: #0a0e1a;
+            font-weight: 600;
+            margin: 0 0 0.2rem 0;
+            line-height: 1.4;
+        }
+
+        .cap-pub-desc {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Corporate Footer Card */
         .cap-footer-card {
             background: #0a0e1a;
             color: #ffffff;
             border-radius: 8px;
-            padding: 2.2rem;
-            margin-top: 1.5rem;
+            padding: 2rem;
+            margin-top: 1rem;
         }
 
         .cap-footer-card .cap-section-title {
@@ -348,7 +459,7 @@
         .cap-footer-card .cap-info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.25rem 2.5rem;
+            gap: 1rem 2.5rem;
             font-size: 0.9rem;
             background: transparent;
             border: none;
@@ -382,6 +493,33 @@
             margin-right: 0.5rem;
         }
 
+        /* QR Code vector styling */
+        .cap-qrcode-area {
+            text-align: center;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cap-qrcode-img {
+            width: 130px;
+            height: 130px;
+            border: 1px solid #334155;
+            padding: 0.6rem;
+            background: #ffffff;
+            border-radius: 6px;
+        }
+
+        .cap-qrcode-lbl {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-top: 0.2rem;
+        }
+
         /* Print formatting */
         @media print {
             @page {
@@ -409,13 +547,35 @@
                 background: #ffffff !important;
             }
 
-            .capability-body section {
-                padding: 0.5rem 0 !important;
+            .cap-print-page {
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                border-top: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+                min-height: 0 !important;
+                height: auto !important;
+                box-sizing: border-box !important;
+                page-break-before: always !important;
+                break-before: page !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: flex-start !important;
+            }
+
+            .cap-print-page:first-child {
+                page-break-before: avoid !important;
+                break-before: avoid !important;
+            }
+
+            .cap-print-page section {
+                padding: 0.75rem 0 !important;
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
 
-            .capability-body section.cap-header {
+            .cap-print-page section.cap-header {
                 padding-top: 0 !important;
                 padding-bottom: 0.75rem !important;
                 border-bottom: 2px solid #0a0e1a !important;
@@ -444,7 +604,7 @@
             }
 
             .cap-section-title {
-                margin-top: 1rem !important;
+                margin-top: 0 !important;
                 margin-bottom: 0.6rem !important;
                 font-size: 1.15rem !important;
                 border-bottom: 1.5px solid #0a0e1a !important;
@@ -462,10 +622,11 @@
             }
 
             .cap-card {
-                padding: 1rem !important;
+                padding: 0.8rem !important;
                 border: 1px solid #cbd5e1 !important;
                 border-top: 3px solid #10b981 !important;
                 background: #ffffff !important;
+                margin-bottom: 0.6rem !important;
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
@@ -522,6 +683,13 @@
                 border-bottom: none !important;
                 padding-bottom: 0 !important;
             }
+
+            .cap-qrcode-img {
+                width: 100px !important;
+                height: 100px !important;
+                border: 1px solid #334155 !important;
+                padding: 0.4rem !important;
+            }
         }
     </style>
 </head>
@@ -550,16 +718,15 @@
     </header>
 
     <!-- Capability Page Container -->
-    <!-- Capability Page Container -->
     <main class="cap-container">
         
-        <!-- Page 1 Content Area -->
-        <div class="cap-page-1">
+        <!-- ================= PAGE 1 ================= -->
+        <div class="cap-print-page">
             <!-- Header Section -->
             <section class="cap-header">
                 <div class="cap-title-area">
-                    <h1 data-key="capability.title">Capability Statement</h1>
-                    <p class="cap-subtitle" data-key="capability.subtitle">Perry Gamba - Senior Consultant &amp; Evidence Systems Advisor</p>
+                    <h1 data-key="capability.pos.title">PERRY GAMBA, PMP®</h1>
+                    <p class="cap-subtitle" data-key="capability.pos.subtitle">Senior International Development, Evidence Systems &amp; Education Advisor</p>
                     <p class="cap-tagline" data-key="hero.eyebrow">PMP® Certified Consultant · Schänis, Switzerland</p>
                 </div>
                 <div class="cap-badge-area">
@@ -567,54 +734,55 @@
                 </div>
             </section>
 
-            <!-- Grid Layout for Page 1 -->
-            <div class="cap-page-1-grid">
-                <!-- Left Column: Bio, Differentiators, Credentials -->
-                <div class="cap-col-left">
-                    <section style="padding-top: 0;">
+            <!-- Page 1 Grid -->
+            <div class="cap-page-1-grid" style="margin-top: 1.5rem;">
+                <!-- Left Column: About & Client Sectors -->
+                <div class="cap-col-left" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <section style="padding: 0; border: none;">
                         <h3 class="cap-section-title"><i class="fas fa-user-tie"></i> <span data-key="nav.about">About Me</span></h3>
-                        <p data-key="capability.overview.desc" class="cap-overview-text">
-                            Highly qualified consultant with 15+ years of experience in M&amp;E systems, public health, data analytics, and educational compliance. Proven track record of improving reporting quality and program outcomes by 20–40% in international and Swiss environments.
-                        </p>
+                        <p data-key="capability.about.p1" class="cap-overview-text" style="margin-bottom: 0.8rem;"></p>
+                        <p data-key="capability.about.p2" class="cap-overview-text" style="margin-bottom: 0.8rem;"></p>
+                        <p data-key="capability.about.p3" class="cap-overview-text" style="margin-bottom: 0;"></p>
                     </section>
 
-                    <section>
-                        <h3 class="cap-section-title"><i class="fas fa-award"></i> <span data-key="capability.differentiators">Key Differentiators</span></h3>
-                        <ul class="differentiators-list" data-key="capability.differentiators.list">
-                            <li><strong>PMP® Certified:</strong> Disciplined project management and Agile execution.</li>
-                            <li><strong>Multilingual:</strong> English, German (B2), Swahili, and 10 African languages.</li>
-                            <li><strong>Evidence-Based:</strong> Published researcher in peer-reviewed public health and digital marketing journals.</li>
-                            <li><strong>Crossover Leadership:</strong> Swiss 1. Liga competitive athlete bringing operational stamina and team discipline.</li>
-                        </ul>
-                    </section>
-
-                    <section style="padding-bottom: 0;">
-                        <h3 class="cap-section-title"><i class="fas fa-graduation-cap"></i> <span data-key="nav.education">Key Credentials</span></h3>
-                        <ul class="credentials-list">
-                            <li data-key="capability.edu1">PMP® Certification</li>
-                            <li data-key="capability.edu2">MSc in Data Analytics</li>
-                            <li data-key="capability.edu3">MSc in Public Health</li>
-                            <li data-key="capability.edu4">Masters in Project M&E</li>
-                        </ul>
+                    <section style="padding: 0; border: none;">
+                        <h3 class="cap-section-title"><i class="fas fa-users"></i> <span data-key="capability.sectors.title">Client Sectors</span></h3>
+                        <ul class="cap-sectors-grid" data-key="capability.sectors.list"></ul>
                     </section>
                 </div>
 
-                <!-- Right Column: Core Capabilities Stack -->
-                <div class="cap-col-right">
-                    <section style="padding-top: 0; padding-bottom: 0;">
-                        <h3 class="cap-section-title"><i class="fas fa-sliders-h"></i> <span data-key="capability.overview">Core Capabilities</span></h3>
-                        <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
-                            <div class="cap-card">
-                                <h4 data-key="s1.title">Evidence &amp; M&amp;E Systems Architecture</h4>
-                                <p data-key="s1.desc"></p>
+                <!-- Right Column: Impact Snapshot -->
+                <div class="cap-col-right" style="display: flex; flex-direction: column;">
+                    <section style="padding: 0; border: none;">
+                        <h3 class="cap-section-title"><i class="fas fa-chart-line"></i> <span data-key="capability.snapshot.title">Impact Snapshot</span></h3>
+                        <div class="cap-snapshot-grid">
+                            <div class="cap-snapshot-item">
+                                <span class="cap-snapshot-val">15+</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric1.lbl">Years Experience</span>
                             </div>
-                            <div class="cap-card">
-                                <h4 data-key="s2.title">Program Evaluation &amp; Impact Assessment</h4>
-                                <p data-key="s2.desc"></p>
+                            <div class="cap-snapshot-item">
+                                <span class="cap-snapshot-val">50+</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric2.lbl">Health Facilities Supported</span>
                             </div>
-                            <div class="cap-card gold-border">
-                                <h4 data-key="s3.title">Swiss Education Compliance &amp; Advisory</h4>
-                                <p data-key="s3.desc"></p>
+                            <div class="cap-snapshot-item">
+                                <span class="cap-snapshot-val">300+</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric3.lbl">Professionals Trained</span>
+                            </div>
+                            <div class="cap-snapshot-item">
+                                <span class="cap-snapshot-val">20–40%</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric4.lbl">Performance Improvement Achieved</span>
+                            </div>
+                            <div class="cap-snapshot-item">
+                                <span class="cap-snapshot-val">3</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric5.lbl">Master's Degrees</span>
+                            </div>
+                            <div class="cap-snapshot-item">
+                                <span class="cap-snapshot-val">2</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric6.lbl">Continents Served</span>
+                            </div>
+                            <div class="cap-snapshot-item" style="grid-column: span 2;">
+                                <span class="cap-snapshot-val">1</span>
+                                <span class="cap-snapshot-lbl" data-key="capability.snapshot.metric7.lbl">Private School Founded</span>
                             </div>
                         </div>
                     </section>
@@ -622,40 +790,164 @@
             </div>
         </div>
 
-        <!-- Page 2 Content Area -->
-        <div class="cap-page-2 page-break-print">
-            <!-- Featured Case Studies -->
-            <section class="cap-cases-section" style="padding-top: 0;">
-                <h3 class="cap-section-title"><i class="fas fa-history"></i> <span data-key="case.title">Featured Case Studies</span></h3>
-                <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.25rem;">
-                    <!-- Case Study 1 -->
-                    <div class="cap-case-card">
-                        <h4 data-key="case.mod.title">Uganda MoD - HMIS &amp; M&amp;E Framework</h4>
-                        <p><strong data-key="case.mod.challenge.title">Challenge:</strong> <span data-key="case.mod.challenge.desc">Disconnected reporting and data inconsistencies across 50+ military medical facilities.</span></p>
-                        <p><strong data-key="case.mod.results.title">Results:</strong> <span data-key="case.mod.results.desc">Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.</span></p>
+        <!-- ================= PAGE 2 ================= -->
+        <div class="cap-print-page">
+            <h3 class="cap-section-title" style="border-bottom: 2px solid #0a0e1a; padding-bottom: 0.6rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-briefcase"></i> <span data-key="capability.practice.title">Consulting Practice Areas</span>
+            </h3>
+            
+            <div class="cap-page-1-grid" style="flex-grow: 1;">
+                <!-- Left Column: Health, Systems & M&E -->
+                <div class="cap-col-left">
+                    <div class="cap-card" style="margin-bottom: 1.25rem;">
+                        <h4 data-key="capability.practice.1.title">Evidence Systems &amp; Monitoring Architecture</h4>
+                        <p data-key="capability.practice.1.desc" style="margin-bottom: 0.5rem;"></p>
+                        <span class="srv-meta" data-key="capability.practice.1.deliv"></span>
                     </div>
-                    <!-- Case Study 2 -->
-                    <div class="cap-case-card">
-                        <h4 data-key="case.compliance.title">Canton Schwyz - School Permit Compliance</h4>
-                        <p><strong data-key="case.compliance.challenge.title">Challenge:</strong> <span data-key="case.compliance.challenge.desc">A private school project faced permit rejection from the Schwyz Education Department.</span></p>
-                        <p><strong data-key="case.compliance.results.title">Results:</strong> <span data-key="case.compliance.results.desc">Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.</span></p>
+
+                    <div class="cap-card" style="margin-bottom: 1.25rem;">
+                        <h4 data-key="capability.practice.2.title">Data Analytics &amp; Performance Intelligence</h4>
+                        <p data-key="capability.practice.2.desc" style="margin-bottom: 0.5rem;"></p>
+                        <span class="srv-meta" data-key="capability.practice.2.deliv"></span>
                     </div>
-                    <!-- Case Study 3 -->
-                    <div class="cap-case-card">
-                        <h4 data-key="case.lernraum.title">Swiss-East Africa - School Partnerships</h4>
-                        <p><strong data-key="case.lernraum.challenge.title">Challenge:</strong> <span data-key="case.lernraum.challenge.desc">Coordinating cross-cultural youth leadership workshops across Swiss public/private schools.</span></p>
-                        <p><strong data-key="case.lernraum.results.title">Results:</strong> <span data-key="case.lernraum.results.desc">Successfully managed multi-country program timelines and delivered reports for donor evaluation.</span></p>
+
+                    <div class="cap-card" style="margin-bottom: 0;">
+                        <h4 data-key="capability.practice.3.title">Programme Evaluation &amp; Impact Assessment</h4>
+                        <p data-key="capability.practice.3.desc" style="margin-bottom: 0.5rem;"></p>
+                        <span class="srv-meta" data-key="capability.practice.3.deliv"></span>
                     </div>
                 </div>
-            </section>
 
-            <!-- Company Data & Contact Section -->
-            <section style="padding-bottom: 0;">
+                <!-- Right Column: Education, Project Leadership & Credentials -->
+                <div class="cap-col-right" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div class="cap-card gold-border" style="margin-bottom: 0;">
+                        <h4 data-key="capability.practice.4.title">Education Development &amp; Regulatory Compliance</h4>
+                        <p data-key="capability.practice.4.desc" style="margin-bottom: 0.5rem;"></p>
+                        <span class="srv-meta" data-key="capability.practice.4.deliv"></span>
+                    </div>
+
+                    <div class="cap-card" style="margin-bottom: 0;">
+                        <h4 data-key="capability.practice.5.title">Project &amp; Programme Leadership</h4>
+                        <p data-key="capability.practice.5.desc" style="margin-bottom: 0.5rem;"></p>
+                        <span class="srv-meta" data-key="capability.practice.5.deliv"></span>
+                    </div>
+
+                    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.25rem;">
+                        <h4 data-key="capability.credentials.title" style="margin: 0 0 0.75rem 0; font-size: 1rem; color: #0a0e1a; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Qualifications &amp; Credentials</h4>
+                        
+                        <h5 data-key="capability.credentials.cert.title" style="margin: 0 0 0.4rem 0; font-size: 0.85rem; color: #10b981; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;">Professional Certifications</h5>
+                        <ul class="credentials-list" data-key="capability.credentials.cert.list" style="margin-bottom: 0.75rem;"></ul>
+
+                        <h5 data-key="capability.credentials.acad.title" style="margin: 0 0 0.4rem 0; font-size: 0.85rem; color: #10b981; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;">Academic Qualifications</h5>
+                        <ul class="credentials-list" data-key="capability.credentials.acad.list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= PAGE 3 ================= -->
+        <div class="cap-print-page">
+            <h3 class="cap-section-title" style="border-bottom: 2px solid #0a0e1a; padding-bottom: 0.6rem; margin-bottom: 1.5rem;">
+                <i class="fas fa-history"></i> <span data-key="case.title">Featured Case Studies</span>
+            </h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <!-- Case Study 1 -->
+                <div class="cap-case-card">
+                    <h4 data-key="case.mod.title">Uganda Ministry of Defence – National HMIS &amp; M&amp;E System</h4>
+                    <p><strong data-key="case.mod.challenge.title">Challenge</strong><br><span data-key="case.mod.challenge.desc"></span></p>
+                    <p><strong data-key="case.mod.approach.title">Approach</strong><br><span data-key="case.mod.approach.desc"></span></p>
+                    <p style="margin-bottom: 0;"><strong data-key="case.mod.results.title">Results</strong><br><span data-key="case.mod.results.desc"></span></p>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="cap-case-card">
+                    <h4 data-key="case.compliance.title">Canton Schwyz Private School Compliance Advisory</h4>
+                    <p><strong data-key="case.compliance.challenge.title">Challenge</strong><br><span data-key="case.compliance.challenge.desc"></span></p>
+                    <p><strong data-key="case.compliance.approach.title">Approach</strong><br><span data-key="case.compliance.approach.desc"></span></p>
+                    <p style="margin-bottom: 0;"><strong data-key="case.compliance.results.title">Results</strong><br><span data-key="case.compliance.results.desc"></span></p>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="cap-case-card">
+                    <h4 data-key="case.lernraum.title">Switzerland–East Africa School Partnerships</h4>
+                    <p><strong data-key="case.lernraum.challenge.title">Challenge</strong><br><span data-key="case.lernraum.challenge.desc"></span></p>
+                    <p><strong data-key="case.lernraum.approach.title">Approach</strong><br><span data-key="case.lernraum.approach.desc"></span></p>
+                    <p style="margin-bottom: 0;"><strong data-key="case.lernraum.results.title">Results</strong><br><span data-key="case.lernraum.results.desc"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= PAGE 4 ================= -->
+        <div class="cap-print-page">
+            <div class="cap-page-1-grid" style="flex-grow: 1;">
+                <!-- Left Column: Education Advisory & Recent Engagements -->
+                <div class="cap-col-left" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <section style="padding: 0; border: none;">
+                        <h3 class="cap-section-title"><i class="fas fa-graduation-cap"></i> <span data-key="nav.lernweg">Education Advisory Practice</span></h3>
+                        <p data-key="lernweg.subtitle" style="font-size: 0.92rem; color: #475569; line-height: 1.5; margin-bottom: 0.8rem; font-weight: 500;"></p>
+                        <p data-key="lernweg.b1" style="font-size: 0.88rem; color: #475569; line-height: 1.5; margin-bottom: 0.6rem;"></p>
+                        <p data-key="lernweg.b2" style="font-size: 0.88rem; color: #475569; line-height: 1.5; margin-bottom: 0;"></p>
+                    </section>
+
+                    <section style="padding: 0; border: none;">
+                        <h3 class="cap-section-title"><i class="fas fa-tasks"></i> <span data-key="capability.engagements.title">Recent Advisory Engagements</span></h3>
+                        
+                        <div style="margin-bottom: 0.8rem;">
+                            <h5 data-key="capability.engagements.lernweg.title" style="margin: 0 0 0.25rem 0; font-size: 0.9rem; color: #0a0e1a; font-weight: 600;">LernWeg Glarus</h5>
+                            <ul class="credentials-list" data-key="capability.engagements.lernweg.desc" style="font-size: 0.82rem;"></ul>
+                        </div>
+
+                        <div style="margin-bottom: 0.8rem;">
+                            <h5 data-key="capability.engagements.lebeort.title" style="margin: 0 0 0.25rem 0; font-size: 0.9rem; color: #0a0e1a; font-weight: 600;">LebeORT Innerthal</h5>
+                            <ul class="credentials-list" data-key="capability.engagements.lebeort.desc" style="font-size: 0.82rem;"></ul>
+                        </div>
+
+                        <div>
+                            <h5 data-key="capability.engagements.eastafrica.title" style="margin: 0 0 0.25rem 0; font-size: 0.9rem; color: #0a0e1a; font-weight: 600;">School Partnerships</h5>
+                            <ul class="credentials-list" data-key="capability.engagements.eastafrica.desc" style="font-size: 0.82rem;"></ul>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Selected Publications -->
+                <div class="cap-col-right" style="display: flex; flex-direction: column;">
+                    <section style="padding: 0; border: none;">
+                        <h3 class="cap-section-title"><i class="fas fa-book-open"></i> <span data-key="capability.publications.title">Selected Publications &amp; Research</span></h3>
+                        
+                        <div class="cap-pub-item">
+                            <h5 class="cap-pub-title" data-key="capability.publications.1.title"></h5>
+                            <p class="cap-pub-desc" data-key="capability.publications.1.desc"></p>
+                        </div>
+
+                        <div class="cap-pub-item">
+                            <h5 class="cap-pub-title" data-key="capability.publications.2.title"></h5>
+                            <p class="cap-pub-desc" data-key="capability.publications.2.desc"></p>
+                        </div>
+
+                        <div class="cap-pub-item">
+                            <h5 class="cap-pub-title" data-key="capability.publications.3.title"></h5>
+                            <p class="cap-pub-desc" data-key="capability.publications.3.desc"></p>
+                        </div>
+
+                        <div class="cap-pub-item">
+                            <h5 class="cap-pub-title" data-key="capability.publications.4.title"></h5>
+                            <p class="cap-pub-desc" data-key="capability.publications.4.desc"></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= PAGE 5 ================= -->
+        <div class="cap-print-page" style="justify-content: space-between; min-height: 1100px;">
+            <div>
+                <!-- Contact info container -->
                 <div class="cap-footer-card">
                     <h3 class="cap-section-title"><i class="fas fa-info-circle"></i> <span data-key="capability.corporate.data">Corporate Data &amp; Contact</span></h3>
                     <div class="cap-info-grid">
                         <div class="info-cell">
-                            <strong data-key="contact.email">Email</strong><span>perry@perrygamba.consulting</span>
+                            <strong data-key="capability.connect.email">Email</strong><span>perry@perrygamba.consulting</span>
                         </div>
                         <div class="info-cell">
                             <strong data-key="contact.phone">Phone</strong><span>+41 765156367</span>
@@ -671,7 +963,72 @@
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <!-- References Note -->
+                <p style="text-align: center; font-size: 0.95rem; color: #64748b; font-style: italic; margin-top: 2rem;" data-key="capability.references.desc">
+                    Professional references available upon request.
+                </p>
+            </div>
+
+            <!-- Connect QR Section -->
+            <div class="cap-qrcode-area">
+                <h3 data-key="capability.connect.title" style="font-size: 1rem; color: #0a0e1a; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin: 0;">Connect</h3>
+                
+                <!-- Scalable Mock Vector QR Code representing perrygamba.consulting -->
+                <svg class="cap-qrcode-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="QR Code link to www.perrygamba.consulting">
+                    <rect width="100" height="100" fill="white"/>
+                    <!-- Finder top-left -->
+                    <rect x="10" y="10" width="30" height="30" fill="#0a0e1a"/>
+                    <rect x="15" y="15" width="20" height="20" fill="white"/>
+                    <rect x="20" y="20" width="10" height="10" fill="#0a0e1a"/>
+                    <!-- Finder top-right -->
+                    <rect x="60" y="10" width="30" height="30" fill="#0a0e1a"/>
+                    <rect x="65" y="15" width="20" height="20" fill="white"/>
+                    <rect x="70" y="20" width="10" height="10" fill="#0a0e1a"/>
+                    <!-- Finder bottom-left -->
+                    <rect x="10" y="60" width="30" height="30" fill="#0a0e1a"/>
+                    <rect x="15" y="65" width="20" height="20" fill="white"/>
+                    <rect x="20" y="70" width="10" height="10" fill="#0a0e1a"/>
+                    <!-- Alignment bottom-right -->
+                    <rect x="70" y="70" width="10" height="10" fill="#0a0e1a"/>
+                    <rect x="73" y="73" width="4" height="4" fill="white"/>
+                    <rect x="74" y="74" width="2" height="2" fill="#0a0e1a"/>
+                    <!-- QR Bits -->
+                    <rect x="45" y="10" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="50" y="15" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="45" y="25" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="50" y="30" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="10" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="20" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="30" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="35" y="50" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="45" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="55" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="65" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="75" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="85" y="45" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="15" y="50" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="25" y="50" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="40" y="55" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="50" y="50" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="60" y="50" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="70" y="55" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="80" y="50" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="45" y="60" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="55" y="65" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="45" y="75" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="50" y="80" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="55" y="85" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="60" y="80" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="85" y="60" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="80" y="65" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="85" y="75" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="80" y="80" width="5" height="5" fill="#0a0e1a"/>
+                    <rect x="85" y="85" width="5" height="5" fill="#0a0e1a"/>
+                </svg>
+                
+                <span class="cap-qrcode-lbl">www.perrygamba.consulting</span>
+            </div>
         </div>
 
     </main>
