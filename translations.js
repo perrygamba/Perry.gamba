@@ -1,15 +1,16 @@
 const translations = {
   en: {
     // Meta Metadata
-    'meta.title':       'Perry Gamba - M&E Consultant | Program Management | Data Analytics',
-    'meta.desc':        'Perry Gamba is a PMP®-certified consultant with 15+ years of experience in M&E systems design, program management, public health, and data analytics across Africa and Europe. Based in Switzerland.',
+    'meta.title':       'Perry Gamba - Senior International Development & Evidence Systems Consultant',
+    'meta.desc':        'Perry Gamba is a PMP®-certified senior consultant with 15+ years of experience in M&E systems, program evaluation, data analytics, and public health across Africa and Europe. Based in Switzerland.',
 
     // Navigation
     'nav.home':         'Home',
     'nav.about':        'About',
-    'nav.services':     'Services',
+    'nav.services':     'Services & Packages',
+    'nav.cases':        'Case Studies',
     'nav.experience':   'Experience',
-    'nav.lernweg':      'LernWeg',
+    'nav.lernweg':      'Education Advisory',
     'nav.education':    'Education',
     'nav.research':     'Research',
     'nav.skills':       'Skills',
@@ -19,14 +20,14 @@ const translations = {
     // Hero
     'hero.eyebrow':     'PMP® Certified Consultant · Schänis, Switzerland',
     'hero.availability':'Available for new engagements',
-    'hero.subtitle':    'M&E Systems   Program Management   Data Analytics   Consulting',
-    'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, manage complex programs, and turn data into decisions that improve lives, with 15+ years of impact across Africa and Europe.',
+    'hero.subtitle':    'Senior International Development & Evidence Systems Consultant',
+    'hero.description': 'I help governments, NGOs, and international organisations design evidence-based M&E systems, evaluate program impact, and turn complex data into decisions that improve lives.',
     'hero.stat1':       'Years Experience',
     'hero.stat2':       'Health Facilities',
     'hero.stat3':       'People Trained',
     'hero.stat4':       'Performance Uplift',
-    'hero.cta.primary': 'Book a Strategic Consultation',
-    'hero.cta.secondary': 'View Services',
+    'hero.cta.primary': 'Schedule Discovery Call',
+    'hero.cta.secondary': 'Capability Statement',
     'hero.cta.cv':      'Download CV (PDF)',
 
     // About
@@ -41,22 +42,22 @@ const translations = {
     'about.h3':       'PMP® Certified',
 
     // Services
-    'services.title':    'Services',
-    'services.subtitle': 'Practical expertise, delivered from strategy through to implementation',
-    's1.title': 'M&E Systems Design & Implementation',
-    's1.desc':  'Design and deploy national and organisational M&E frameworks, data quality systems, HMIS infrastructure, and reporting tools, built to last and drive accountability.',
+    'services.title':    'Services & Solutions',
+    'services.subtitle': 'Structured, outcome-focused packages tailored for international development, NGOs, and education sectors.',
+    's1.title': 'Evidence & M&E Systems Architecture',
+    's1.desc':  'Design and deploy robust national or organizational M&E frameworks and digital HMIS systems that satisfy international donor standards.<br><span class="srv-meta"><strong>Deliverables:</strong> Custom Framework, Indicators Catalog, Dashboards, SOPs</span><br><span class="srv-meta"><strong>Duration:</strong> 8–12 weeks</span><br><span class="srv-meta"><strong>Expected Outcome:</strong> 100% reporting compliance and evidence-based donor accountability</span>',
     's2.title': 'Program Evaluation & Impact Assessment',
-    's2.desc':  'Rigorous evaluation of public health, social development, and education programs using qualitative and quantitative methods, including systematic reviews and USAID frameworks.',
-    's3.title': 'Data Analytics & Reporting',
-    's3.desc':  'Transform raw program data into actionable insight using SPSS, R, MySQL, Advanced Excel, and Tableau. Build dashboards and reporting systems that inform strategic decisions.',
-    's4.title': 'Public Health Program Management',
-    's4.desc':  'End-to-end PMP®-certified management of complex multi-country health and development programs, from planning and stakeholder coordination through to delivery and performance review.',
+    's2.desc':  'Rigorous evaluation of public health, social development, and education programs using qualitative and quantitative methods, including systematic reviews and USAID frameworks.<br><span class="srv-meta"><strong>Deliverables:</strong> Mid-term/End-line Reports, Impact Metrics, Qualitative Analysis</span><br><span class="srv-meta"><strong>Duration:</strong> 6–10 weeks</span><br><span class="srv-meta"><strong>Expected Outcome:</strong> Verified program outcomes and actionable policy insights</span>',
+    's3.title': 'Swiss Education Compliance & Advisory',
+    's3.desc':  'Advisory support for private schools and education projects navigating cantonal permitting, pedagogical compliance, and Lehrplan 21/HarmoS regulatory frameworks.<br><span class="srv-meta"><strong>Deliverables:</strong> Permit Dossier, Compliance Audit, Pedagogical Concept, Risk Framework</span><br><span class="srv-meta"><strong>Duration:</strong> Project-dependent</span><br><span class="srv-meta"><strong>Expected Outcome:</strong> Successful cantonal licensing and state-recognized school operations</span>',
+    's4.title': 'Data Analytics & Reporting',
+    's4.desc':  'Transform raw program data into actionable insight using SPSS, R, MySQL, Advanced Excel, and Tableau. Build dashboards and reporting systems that inform strategic decisions.',
     's5.title': 'Capacity Building & Training',
     's5.desc':  'Design and deliver M&E, public health, and project management training for government staff, community health workers, NGO teams, and refugee community leaders.',
-    's6.title': 'Strategy & Development Consulting',
-    's6.desc':  'Advisory support for organisations entering African markets, designing development initiatives, navigating refugee integration programs, or strengthening ESG and public-sector accountability frameworks.',
+    's6.title': 'Cross-Border Program Management',
+    's6.desc':  'End-to-end PMP®-certified management of complex multi-country health, social development, and intercultural partnership programs from strategy through to execution.',
     'services.cta.text':   'Ready to discuss your project?',
-    'services.cta.button': 'Book a Consultation',
+    'services.cta.button': 'Book a Discovery Call',
 
     // Experience & Timelines
     'experience.title':    'Professional Experience',
@@ -65,10 +66,9 @@ const translations = {
     'exp.tab.me':          'Monitoring & Evaluation',
     'exp.tab.development': 'Development & Foundations',
     
-    // LernWeg Initiative
-    'lernweg.eyebrow':      'Featured Initiative, 2025–Present',
-    'lernweg.title':        'LernWeg Primarschule',
-    'lernweg.subtitle':     'Founding a premium German-medium private primary school in Canton Glarus, Switzerland',
+    'lernweg.eyebrow':      'Flagship Education Project',
+    'lernweg.title':        'LernWeg Primarschule: School Founding & Compliance',
+    'lernweg.subtitle':     'Strategic advisory, business planning, and compliance framework design for a premium state-recognized private primary school in Canton Glarus.',
     'lernweg.tagline':      '„Im Tal verwurzelt, in der Welt zuhause."',
     'lernweg.stat1':        'Pupils at Capacity',
     'lernweg.stat2':        'Establishment Budget',
@@ -183,6 +183,8 @@ const translations = {
     'footer.connect':  'Connect',
     'footer.copy':     '© 2026 Perry Gamba. All rights reserved.',
 
+    'trust.logos.title': 'Partner & Clients',
+
     // Key Achievements
     'achieve.eyebrow': 'Key Achievements',
     'achieve.1': 'Built and deployed national M&E systems for Uganda\'s Ministry of Defence, improving accountability across <strong>50+ health facilities</strong>',
@@ -270,19 +272,73 @@ const translations = {
     'football.stat.league':    'League Level',
     'football.stat.pos':       'Primary Position',
     'football.gallery.title':  'Leadership Gallery',
+    
+    // Case Studies (English)
+    'case.eyebrow':            'Featured Projects',
+    'case.title':              'Featured Case Studies',
+    'case.subtitle':           'Proven real-world impact across public health, compliance, and international development',
+    'case.mod.title':          'Uganda MoD - HMIS & M&E Framework',
+    'case.mod.challenge.title':'Challenge',
+    'case.mod.challenge.desc': 'Disconnected reporting and data inconsistencies across 50+ military medical facilities made national program evaluation impossible.',
+    'case.mod.approach.title': 'Approach',
+    'case.mod.approach.desc':  'Designed and deployed a national digital HMIS and structured M&E framework. Conducted capacity-building workshops for 300+ health worker facilitators.',
+    'case.mod.results.title':  'Outcomes & Impact',
+    'case.mod.results.desc':   'Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.',
+    
+    'case.compliance.title':          'Canton Schwyz - Private School Compliance',
+    'case.compliance.challenge.title':'Challenge',
+    'case.compliance.challenge.desc': 'A private school project faced permit rejection from the Schwyz Education Department due to regulatory concepts misalignment.',
+    'case.compliance.approach.title': 'Approach',
+    'case.compliance.approach.desc':  'Performed a rigorous gap analysis against the Swiss Federal Constitution (Art. 62), Lehrplan 21, HarmoS Concordat, and Volksschulgesetz Schwyz. Drafted a 9-page resubmission roadmap.',
+    'case.compliance.results.title':  'Outcomes & Impact',
+    'case.compliance.results.desc':   'Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.',
+    
+    'case.lernraum.title':          'Swiss-East Africa - School Partnerships',
+    'case.lernraum.challenge.title':'Challenge',
+    'case.lernraum.challenge.desc': 'Coordinating cross-cultural youth leadership workshops across Swiss public/private schools and tracking program impact.',
+    'case.lernraum.approach.title': 'Approach',
+    'case.lernraum.approach.desc':  'Designed a project planning, outcomes monitoring system, and generated formal stakeholder impact reports.',
+    'case.lernraum.results.title':  'Outcomes & Impact',
+    'case.lernraum.results.desc':   'Successfully managed multi-country program timelines and delivered reports for donor and school board evaluation.',
+
+    // Work With Me / Engagement Models (English)
+    'work.title':                     'Work With Me',
+    'work.subtitle':                  'Flexible engagement models designed for international organizations, NGOs, and educational institutions',
+    'work.model.retainer.title':      'Advisory Retainer',
+    'work.model.retainer.desc':       'Ongoing advisory support for M&E system oversight, compliance monitoring, or program management. Includes regular check-ins and review of data pipelines.',
+    'work.model.project.title':       'Project-Based Consulting',
+    'work.model.project.desc':        'Fixed-scope projects with clear deliverables (e.g., designing an M&E framework, conducting an impact evaluation, or writing a cantonal permit dossier).',
+    'work.model.training.title':      'Workshops & Capacity Building',
+    'work.model.training.desc':       'Tailored training sessions for your teams in M&E methodologies, data quality audits, project management, and Swiss school compliance.',
+    'work.cta.call':                  'Schedule Discovery Call',
+    'work.cta.proposal':              'Request Proposal',
+
+    // Capability Statement (English)
+    'capability.title':               'Capability Statement',
+    'capability.subtitle':            'Perry Gamba - Senior Consultant & Evidence Systems Advisor',
+    'capability.overview':            'Core Capabilities',
+    'capability.overview.desc':       'Highly qualified consultant with 15+ years of experience in M&E systems, public health, data analytics, and educational compliance. Proven track record of improving reporting quality and program outcomes by 20–40% in international and Swiss environments.',
+    'capability.differentiators':     'Key Differentiators',
+    'capability.differentiators.list':'<li><strong>PMP® Certified:</strong> Disciplined project management and Agile execution.</li><li><strong>Multilingual:</strong> English, German (B2), Swahili, and 10 African languages.</li><li><strong>Evidence-Based:</strong> Published researcher in peer-reviewed public health and digital marketing journals.</li><li><strong>Crossover Leadership:</strong> Swiss 1. Liga competitive athlete bringing operational stamina and team discipline.</li>',
+    'capability.corporate.data':      'Corporate Data & Contact',
+    'capability.codes':               'DUNS / UEI / Contracting Codes: Available on Request',
+    'capability.download':            'Download Capability Statement (PDF)',
+    'capability.print':               'Print / Save as PDF',
+    'capability.back':                'Back to Website',
   },
 
   de: {
     // Meta Metadata
-    'meta.title':       'Perry Gamba - M&E-Berater | Programmmanagement | Datenanalyse',
-    'meta.desc':        'Perry Gamba ist ein PMP®-zertifizierter Berater mit 15+ Jahren Erfahrung in M&E-Systemdesign, Programmmanagement, öffentlicher Gesundheit und Datenanalyse in Afrika und Europa. Ansässig in der Schweiz.',
+    'meta.title':       'Perry Gamba - Senior Consultant für Internationale Entwicklung & Evidenzsysteme',
+    'meta.desc':        'Perry Gamba ist ein PMP®-zertifizierter Senior Consultant mit 15+ Jahren Erfahrung in M&E-Systemen, Programmevaluation, Datenanalyse und Public Health in Afrika und Europa. Ansässig in der Schweiz.',
 
     // Navigation
     'nav.home':         'Startseite',
     'nav.about':        'Über mich',
-    'nav.services':     'Leistungen',
+    'nav.services':     'Leistungen & Pakete',
+    'nav.cases':        'Fallstudien',
     'nav.experience':   'Erfahrung',
-    'nav.lernweg':      'LernWeg',
+    'nav.lernweg':      'Bildungsberatung',
     'nav.education':    'Ausbildung',
     'nav.research':     'Forschung',
     'nav.skills':       'Kompetenzen',
@@ -292,14 +348,14 @@ const translations = {
     // Hero
     'hero.eyebrow':     'PMP®-zertifizierter Berater · Schänis, Schweiz',
     'hero.availability':'Offen für neue Projekte',
-    'hero.subtitle':    'M&E-Systeme   Programmmanagement   Datenanalyse   Beratung',
-    'hero.description': 'Ich helfe Regierungen, NGOs und internationalen Organisationen, evidenzbasierte M&E-Systeme zu gestalten, komplexe Programme zu managen und Daten in Entscheidungen umzuwandeln, mit über 15 Jahren Wirkung in Afrika und Europa.',
+    'hero.subtitle':    'Senior Consultant für Internationale Entwicklung & Evidenzsysteme',
+    'hero.description': 'Ich unterstütze Regierungen, NGOs und internationale Organisationen dabei, evidenzbasierte M&E-Systeme zu konzipieren, Programmwirkung zu evaluieren und komplexe Daten in strategische Entscheidungen umzuwandeln.',
     'hero.stat1':       'Jahre Erfahrung',
     'hero.stat2':       'Gesundheitseinrichtungen',
     'hero.stat3':       'Ausgebildete Personen',
     'hero.stat4':       'Leistungsverbesserung',
-    'hero.cta.primary': 'Strategische Beratung buchen',
-    'hero.cta.secondary': 'Leistungen ansehen',
+    'hero.cta.primary': 'Erstgespräch vereinbaren',
+    'hero.cta.secondary': 'Capability Statement',
     'hero.cta.cv':      'Lebenslauf herunterladen (PDF)',
 
     // About
@@ -314,22 +370,22 @@ const translations = {
     'about.h3':       'PMP® Zertifiziert',
 
     // Services
-    'services.title':    'Leistungen',
-    'services.subtitle': 'Praxisnahes Fachwissen – von der Strategie bis zur Umsetzung',
-    's1.title': 'M&E-Systemdesign & Implementierung',
-    's1.desc':  'Konzeption und Einführung nationaler und organisationaler M&E-Rahmen, Datenqualitätssysteme, HMIS-Infrastruktur und Berichtstools – nachhaltig und auf Rechenschaftspflicht ausgerichtet.',
+    'services.title':    'Leistungen & Lösungen',
+    'services.subtitle': 'Strukturierte, ergebnisorientierte Beratungspakete für internationale Entwicklung, NGOs und den Bildungssektor.',
+    's1.title': 'Evidenz- & M&E-Systemarchitektur',
+    's1.desc':  'Konzeption und Einführung robuster nationaler oder organisationaler M&E-Rahmen und digitaler HMIS-Berichtsstrukturen gemäss internationalen Standards.<br><span class="srv-meta"><strong>Lieferergebnisse:</strong> M&E-Konzept, Indikatorenkatalog, Dashboards, Betriebsvorschriften</span><br><span class="srv-meta"><strong>Dauer:</strong> 8–12 Wochen</span><br><span class="srv-meta"><strong>Wirkung:</strong> 100%ige Compliance bei der Berichterstattung und nachweisbare Rechenschaftspflicht</span>',
     's2.title': 'Programmevaluation & Wirkungsanalyse',
-    's2.desc':  'Rigorose Evaluation von Projekten in öffentlicher Gesundheit, sozialer Entwicklung und Bildung mit qualitativen und quantitativen Methoden, einschließlich systematischer Reviews und USAID-Rahmen.',
-    's3.title': 'Datenanalyse & Berichterstattung',
-    's3.desc':  'Rohdaten in handlungsrelevante Erkenntnisse umwandeln mit SPSS, R, MySQL, Advanced Excel und Tableau. Dashboards und Berichtssysteme entwickeln, die strategische Entscheidungen unterstützen.',
-    's4.title': 'Management von Gesundheitsprogrammen',
-    's4.desc':  'PMP®-zertifiziertes End-to-End-Management komplexer länderübergreifender Gesundheits- und Entwicklungsprogramme – von Planung und Stakeholder-Koordination bis zu Lieferung und Leistungsüberprüfung.',
-    's5.title': 'Kapazitätsaufbau & Training',
+    's2.desc':  'Rigorose Evaluation von Projekten in öffentlicher Gesundheit, sozialer Entwicklung und Bildung mit qualitativen und quantitativen Methoden, einschließlich systematischer Reviews und USAID-Rahmen.<br><span class="srv-meta"><strong>Lieferergebnisse:</strong> Zwischen- und Endberichte, Wirkungsmetriken, qualitative Analysen</span><br><span class="srv-meta"><strong>Dauer:</strong> 6–10 Wochen</span><br><span class="srv-meta"><strong>Wirkung:</strong> Unabhängig verifizierte Projektergebnisse und fundierte Politikberatung</span>',
+    's3.title': 'Schweizer Schul-Compliance & Beratung',
+    's3.desc':  'Advisory-Support für Privatschulprojekte bei kantonalen Bewilligungen, pädagogischen Konzepten und regulatorischen Vorgaben (Lehrplan 21/HarmoS).<br><span class="srv-meta"><strong>Lieferergebnisse:</strong> Bewilligungsdossier, Compliance-Audit, Pädagogisches Konzept, Risikoanalyse</span><br><span class="srv-meta"><strong>Dauer:</strong> Projektbasiert</span><br><span class="srv-meta"><strong>Wirkung:</strong> Erfolgreiche kantonale Betriebsbewilligung und staatlich anerkannte Privatschulführung</span>',
+    's4.title': 'Datenanalyse & Dashboard-Entwicklung',
+    's4.desc':  'Rohdaten in handlungsrelevante Erkenntnisse umwandeln mit SPSS, R, MySQL, Advanced Excel und Tableau. Dashboards und Berichtssysteme entwickeln, die strategische Entscheidungen unterstützen.',
+    's5.title': 'Kapazitätsaufbau & Schulungsprogramme',
     's5.desc':  'Konzeption und Durchführung von M&E-, Public-Health- und Projektmanagement-Schulungen für Regierungsmitarbeiter, Gemeindekrankenpfleger, NGO-Teams und Vertreter von Flüchtlingsgemeinschaften.',
-    's6.title': 'Strategie- & Entwicklungsberatung',
-    's6.desc':  'Beratungsunterstützung für Organisationen, die in afrikanische Märkte eintreten, Entwicklungsinitiativen gestalten, Flüchtlingsintegrationsprogramme navigieren oder ESG- und Rechenschaftsrahmen stärken möchten.',
+    's6.title': 'Grenzüberschreitendes Programmmanagement',
+    's6.desc':  'PMP®-zertifiziertes End-to-End-Management komplexer länderübergreifender Gesundheits-, Sozialentwicklungs- und interkultureller Partnerschaftsprogramme von der Strategie bis zur Umsetzung.',
     'services.cta.text':   'Bereit, Ihr Projekt zu besprechen?',
-    'services.cta.button': 'Beratung buchen',
+    'services.cta.button': 'Erstgespräch vereinbaren',
 
     // Experience
     'experience.title':    'Berufserfahrung',
@@ -339,9 +395,9 @@ const translations = {
     'exp.tab.development': 'Entwicklung & Grundlagen',
 
     // LernWeg Initiative (German)
-    'lernweg.eyebrow':      'Aktuelle Initiative, 2025–Heute',
-    'lernweg.title':        'LernWeg Primarschule',
-    'lernweg.subtitle':     'Gründung einer erstklassigen deutschsprachigen Privatprimarschule im Kanton Glarus, Schweiz',
+    'lernweg.eyebrow':      'Flaggschiff-Bildungsprojekt',
+    'lernweg.title':        'LernWeg Primarschule: Schulgründung & Compliance',
+    'lernweg.subtitle':     'Strategische Beratung, Businessplanung und Design des Compliance-Rahmens für eine erstklassige, staatlich anerkannte Privatprimarschule im Kanton Glarus.',
     'lernweg.tagline':      '„Im Tal verwurzelt, in der Welt zuhause."',
     'lernweg.stat1':        'Schüler im Vollbetrieb',
     'lernweg.stat2':        'Gründungsbudget',
@@ -456,6 +512,8 @@ const translations = {
     'footer.connect':  'Verbinden',
     'footer.copy':     '© 2026 Perry Gamba. Alle Rechte vorbehalten.',
 
+    'trust.logos.title': 'Partner & Institutionen',
+
     // Key Achievements
     'achieve.eyebrow': 'Wichtigste Leistungen',
     'achieve.1': 'Nationales M&amp;E-System für das ugandische Verteidigungsministerium aufgebaut und eingeführt, wodurch die Rechenschaftspflicht in <strong>50+ Gesundheitseinrichtungen</strong> verbessert wurde',
@@ -543,6 +601,59 @@ const translations = {
     'football.stat.league':    'Liga',
     'football.stat.pos':       'Hauptposition',
     'football.gallery.title':  'Führungs-Galerie',
+    
+    // Case Studies (German)
+    'case.eyebrow':            'Erfolgsgeschichten',
+    'case.title':              'Projektreferenzen & Fallstudien',
+    'case.subtitle':           'Nachgewiesene Wirkung in der Praxis – öffentliche Gesundheit, regulatorische Compliance und Schuleentwicklung',
+    'case.mod.title':          'Ugandisches Verteidigungsministerium - HMIS & M&E-System',
+    'case.mod.challenge.title':'Herausforderung',
+    'case.mod.challenge.desc': 'Papierbasiertes, unvollständiges Berichtswesen und unzuverlässige Daten erschwerten die Programmsteuerung in 50+ militärischen Gesundheitseinrichtungen.',
+    'case.mod.approach.title': 'Ansatz',
+    'case.mod.approach.desc':  'Konzeption und Einführung eines einheitlichen M&E-Rahmenplans und eines digitalen HMIS; Durchführung von Schulungsworkshops für 300+ Fachkräfte.',
+    'case.mod.results.title':  'Ergebnisse & Wirkung',
+    'case.mod.results.desc':   'Steigerung der Berichtsqualität um 20–40%, verbesserte Transparenz und flächendeckende Datenverfügbarkeit in allen 50+ Einrichtungen.',
+    
+    'case.compliance.title':          'Kanton Schwyz - Schulbewilligungs-Compliance',
+    'case.compliance.challenge.title':'Herausforderung',
+    'case.compliance.challenge.desc': 'Ein Privatschulprojekt (LebeORT) stand vor der Ablehnung der Betriebsbewilligung durch das Bildungsdepartement wegen mangelnder regulatorischer Abstimmung.',
+    'case.compliance.approach.title': 'Ansatz',
+    'case.compliance.approach.desc':  'Systematische Gap-Analyse des Schulkonzepts gegenüber Art. 62 Bundesverfassung, Lehrplan 21, HarmoS und Volksschulgesetz Schwyz; Erstellung eines 9-seitigen Neueinreichungs-Roadmaps.',
+    'case.compliance.results.title':  'Ergebnisse & Wirkung',
+    'case.compliance.results.desc':   'Identifizierung und Behebung aller 13 regulatorischen Lücken zur Wiederherstellung der vollen Bewilligungsreife.',
+    
+    'case.lernraum.title':          'Schweiz-Ostafrika - Schulpartnerschaften',
+    'case.lernraum.challenge.title':'Herausforderung',
+    'case.lernraum.challenge.desc': 'Aufbau wirksamer interkultureller Austauschprojekte und Messung des Projektfortschritts an öffentlichen und privaten Schweizer Schulen.',
+    'case.lernraum.approach.title': 'Ansatz',
+    'case.lernraum.approach.desc':  'Entwicklung eines wirkungsorientierten Projekt-Trackings, Ergebnismonitorings und Erstellung professioneller Evaluationsberichte.',
+    'case.lernraum.results.title':  'Ergebnisse & Wirkung',
+    'case.lernraum.results.desc':   'Sicherstellung transparenter Berichterstattung gegenüber Schulbehörden und Gebern; erfolgreiche Absicherung der Projektförderung.',
+
+    // Work With Me / Engagement Models (German)
+    'work.title':                     'Zusammenarbeit',
+    'work.subtitle':                  'Flexible Kooperationsmodelle für internationale Organisationen, NGOs und Bildungsinstitutionen',
+    'work.model.retainer.title':      'Strategisches Mandat',
+    'work.model.retainer.desc':       'Fortlaufende Beratung und Qualitätssicherung für M&E-Prozesse, Daten-Pipelines oder kantonale Compliance. Beinhaltet regelmässige Reviews.',
+    'work.model.project.title':       'Projektbasierte Beratung',
+    'work.model.project.desc':        'Konkrete Projekte mit klaren Meilensteinen (z.B. Aufbau eines M&E-Systems, Durchführung einer Evaluation oder Erstellung eines Bewilligungsdossiers).',
+    'work.model.training.title':      'Workshops & Kapazitätsaufbau',
+    'work.model.training.desc':       'Individuell angepasste Schulungen für Ihre Teams in M&E-Methoden, Datenqualität, Projektmanagement und Schweizer Schul-Compliance.',
+    'work.cta.call':                  'Erstgespräch vereinbaren',
+    'work.cta.proposal':              'Offerte anfordern',
+
+    // Capability Statement (German)
+    'capability.title':               'Capability Statement',
+    'capability.subtitle':            'Perry Gamba - Senior Consultant & Experte für Evidenzsysteme',
+    'capability.overview':            'Kernkompetenzen',
+    'capability.overview.desc':       'Qualifizierter Senior-Berater mit 15+ Jahren Erfahrung in M&E-Systemen, Programmevaluation, Datenanalyse und Schweizer Schul-Compliance. Nachweisbare Verbesserung der Berichtsqualität um 20–40% in internationalen und Schweizer Umgebungen.',
+    'capability.differentiators':     'Alleinstellungsmerkmale',
+    'capability.differentiators.list':'<li><strong>PMP®-zertifiziert:</strong> Diszipliniertes Projektmanagement und agile Umsetzung (Agile execution).</li><li><strong>Mehrsprachig:</strong> Englisch, Deutsch (B2), Swahili und 10 afrikanische Sprachen.</li><li><strong>Evidenzbasiert:</strong> Publizierter Forscher in peer-reviewed Fachzeriften für öffentliche Gesundheit und digitales Marketing.</li><li><strong>High-Performance Leadership:</strong> Aktiver Stürmer in der Schweizer 1. Liga, der physische Ausdauer und Teamdisziplin einbringt.</li>',
+    'capability.corporate.data':      'Unternehmensdaten & Kontakt',
+    'capability.codes':               'DUNS / UEI / Vergabenummern: Auf Anfrage erhältlich',
+    'capability.download':            'Capability Statement herunterladen (PDF)',
+    'capability.print':               'Drucken / Als PDF speichern',
+    'capability.back':                'Zurück zur Website',
   }
 };
 

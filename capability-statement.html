@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="meta.title">Perry Gamba - Capability Statement</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Standalone overrides for Capability Statement Layout */
+        body.capability-body {
+            background-color: #f8fafc;
+            color: #334155;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .cap-navbar {
+            background: #0a0e1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .cap-navbar .nav-logo h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .cap-nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .btn-cap-back {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-cap-back:hover {
+            color: #d4af37;
+        }
+
+        .btn-print {
+            background: #d4af37;
+            color: #0a0e1a;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-print:hover {
+            background: #b8952e;
+            transform: translateY(-1px);
+        }
+
+        .cap-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: #ffffff;
+            padding: 3.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 30px rgba(10,14,26,0.05);
+            border-top: 6px solid #0a0e1a;
+            position: relative;
+        }
+
+        .cap-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .cap-title-area {
+            max-width: 65%;
+        }
+
+        .cap-title-area h1 {
+            font-size: 2.5rem;
+            color: #0a0e1a;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .cap-subtitle {
+            font-size: 1.1rem;
+            color: #10b981;
+            font-weight: 600;
+            margin: 0 0 0.8rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .cap-tagline {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin: 0;
+        }
+
+        .cap-badge-area {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.8rem;
+        }
+
+        .cap-badge-img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+        }
+
+        .cap-section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            color: #0a0e1a;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .cap-section-title i {
+            color: #d4af37;
+            font-size: 1.2rem;
+        }
+
+        .cap-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .cap-past-perf-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .cap-perf-item {
+            border-left: 3px solid #10b981;
+            padding-left: 1.2rem;
+        }
+
+        .cap-perf-item h4 {
+            margin: 0 0 0.4rem 0;
+            color: #0a0e1a;
+            font-size: 1.05rem;
+        }
+
+        .cap-perf-item p {
+            margin: 0;
+            font-size: 0.92rem;
+            color: #475569;
+        }
+
+        .cap-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            font-size: 0.9rem;
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .info-cell strong {
+            color: #0a0e1a;
+        }
+
+        .differentiators-list {
+            padding-left: 1.2rem;
+            margin: 0;
+            font-size: 0.92rem;
+            color: #475569;
+        }
+
+        .differentiators-list li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Print formatting */
+        @media print {
+            body.capability-body {
+                background: #ffffff;
+                color: #000000;
+                font-size: 11pt;
+            }
+
+            .cap-navbar, .btn-print, .btn-cap-back, .lang-toggle {
+                display: none !important;
+            }
+
+            .cap-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                border-top: none;
+                max-width: 100%;
+            }
+
+            .cap-section-title {
+                margin-top: 20pt;
+                page-break-inside: avoid;
+            }
+
+            .cap-past-perf-list {
+                page-break-inside: avoid;
+            }
+
+            .cap-info-grid {
+                background: none !important;
+                border: 1px solid #94a3b8 !important;
+                page-break-inside: avoid;
+            }
+
+            /* Direct page break before Past Performance to guarantee perfect 2-page budget */
+            .page-break-print {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body class="capability-body">
+
+    <!-- Capability Navbar -->
+    <header class="cap-navbar">
+        <div class="nav-logo">
+            <h2>Perry Gamba</h2>
+        </div>
+        <div class="cap-nav-controls">
+            <a href="index.html" class="btn-cap-back">
+                <i class="fas fa-arrow-left"></i> <span data-key="capability.back">Back to Website</span>
+            </a>
+            
+            <div class="lang-toggle" role="group" aria-label="Language Selector">
+                <button class="lang-btn active" data-lang="en" aria-label="Switch language to English">EN</button>
+                <span class="lang-divider" aria-hidden="true">|</span>
+                <button class="lang-btn" data-lang="de" aria-label="Sprache auf Deutsch umstellen">DE</button>
+            </div>
+            
+            <button onclick="window.print()" class="btn-print">
+                <i class="fas fa-print"></i> <span data-key="capability.print">Print / Save as PDF</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Capability Page Container -->
+    <main class="cap-container">
+        
+        <!-- Header Section -->
+        <section class="cap-header">
+            <div class="cap-title-area">
+                <h1 data-key="capability.title">Capability Statement</h1>
+                <p class="cap-subtitle" data-key="capability.subtitle">Perry Gamba - Senior Consultant &amp; Evidence Systems Advisor</p>
+                <p class="cap-tagline" data-key="hero.eyebrow">PMP® Certified Consultant · Schänis, Switzerland</p>
+            </div>
+            <div class="cap-badge-area">
+                <img src="assets/images/pmp-certification-badge.png" alt="PMP® Certification" class="cap-badge-img">
+            </div>
+        </section>
+
+        <!-- Core Capabilities Section -->
+        <section>
+            <h3 class="cap-section-title"><i class="fas fa-sliders-h"></i> <span data-key="capability.overview">Core Capabilities</span></h3>
+            <p data-key="capability.overview.desc" style="font-size: 0.95rem; color: #475569; margin-bottom: 1.5rem;">
+                Highly qualified consultant with 15+ years of experience in M&amp;E systems, public health, data analytics, and educational compliance. Proven track record of improving reporting quality and program outcomes by 20–40% in international and Swiss environments.
+            </p>
+            
+            <div class="cap-grid-2">
+                <div class="service-card" style="padding: 1.5rem; border-top: 3px solid #10b981; box-shadow: none; border-bottom: 1px solid #e2e8f0;">
+                    <h4 data-key="s1.title" style="margin: 0 0 0.5rem 0; color: #0a0e1a; font-size: 1.05rem;">Evidence &amp; M&amp;E Systems Architecture</h4>
+                    <p data-key="s1.desc" style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin: 0;"></p>
+                </div>
+                <div class="service-card" style="padding: 1.5rem; border-top: 3px solid #10b981; box-shadow: none; border-bottom: 1px solid #e2e8f0;">
+                    <h4 data-key="s2.title" style="margin: 0 0 0.5rem 0; color: #0a0e1a; font-size: 1.05rem;">Program Evaluation &amp; Impact Assessment</h4>
+                    <p data-key="s2.desc" style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin: 0;"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Differentiators Section -->
+        <section>
+            <h3 class="cap-section-title"><i class="fas fa-award"></i> <span data-key="capability.differentiators">Key Differentiators</span></h3>
+            <div class="cap-grid-2">
+                <div>
+                    <ul class="differentiators-list" data-key="capability.differentiators.list">
+                        <li><strong>PMP® Certified:</strong> Disciplined project management and Agile execution.</li>
+                        <li><strong>Multilingual:</strong> English, German (B2), Swahili, and 10 African languages.</li>
+                        <li><strong>Evidence-Based:</strong> Published researcher in peer-reviewed public health and digital marketing journals.</li>
+                        <li><strong>Crossover Leadership:</strong> Swiss 1. Liga competitive athlete bringing operational stamina and team discipline.</li>
+                    </ul>
+                </div>
+                <div class="service-card" style="padding: 1.5rem; border-top: 3px solid #d4af37; box-shadow: none; border-bottom: 1px solid #e2e8f0;">
+                    <h4 data-key="s3.title" style="margin: 0 0 0.5rem 0; color: #0a0e1a; font-size: 1.05rem;">Swiss Education Compliance &amp; Advisory</h4>
+                    <p data-key="s3.desc" style="font-size: 0.85rem; color: #475569; line-height: 1.5; margin: 0;"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Performance (Forces break on print for beautiful 2-page layout) -->
+        <section class="page-break-print">
+            <h3 class="cap-section-title"><i class="fas fa-history"></i> <span data-key="case.title">Featured Case Studies</span></h3>
+            <div class="cap-past-perf-list">
+                <div class="cap-perf-item">
+                    <h4 data-key="case.mod.title">Uganda MoD - HMIS &amp; M&amp;E Framework</h4>
+                    <p><strong data-key="case.mod.challenge.title">Challenge:</strong> <span data-key="case.mod.challenge.desc">Disconnected reporting and data inconsistencies across 50+ military medical facilities.</span></p>
+                    <p style="margin-top: 0.3rem;"><strong data-key="case.mod.results.title">Results:</strong> <span data-key="case.mod.results.desc">Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.</span></p>
+                </div>
+                <div class="cap-perf-item">
+                    <h4 data-key="case.compliance.title">Canton Schwyz - School Permit Compliance</h4>
+                    <p><strong data-key="case.compliance.challenge.title">Challenge:</strong> <span data-key="case.compliance.challenge.desc">A private school project faced permit rejection from the Schwyz Education Department.</span></p>
+                    <p style="margin-top: 0.3rem;"><strong data-key="case.compliance.results.title">Results:</strong> <span data-key="case.compliance.results.desc">Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.</span></p>
+                </div>
+                <div class="cap-perf-item">
+                    <h4 data-key="case.lernraum.title">Swiss-East Africa - School Partnerships</h4>
+                    <p><strong data-key="case.lernraum.challenge.title">Challenge:</strong> <span data-key="case.lernraum.challenge.desc">Coordinating cross-cultural youth leadership workshops across Swiss public/private schools.</span></p>
+                    <p style="margin-top: 0.3rem;"><strong data-key="case.lernraum.results.title">Results:</strong> <span data-key="case.lernraum.results.desc">Successfully managed multi-country program timelines and delivered reports for donor evaluation.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Data & Contact Section -->
+        <section>
+            <h3 class="cap-section-title"><i class="fas fa-info-circle"></i> <span data-key="capability.corporate.data">Corporate Data &amp; Contact</span></h3>
+            <div class="cap-info-grid">
+                <div class="info-cell">
+                    <strong>Email:</strong> perry@perrygamba.consulting
+                </div>
+                <div class="info-cell">
+                    <strong>Phone:</strong> +41 765156367
+                </div>
+                <div class="info-cell">
+                    <strong>Location:</strong> Schänis, SG, Switzerland
+                </div>
+                <div class="info-cell">
+                    <strong>Languages:</strong> EN, DE (B2), Swahili, 10 African languages
+                </div>
+                <div class="info-cell" style="grid-column: span 2;">
+                    <strong data-key="capability.codes">Contracting Codes:</strong> Available on request
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="translations.js"></script>
+</body>
+</html>

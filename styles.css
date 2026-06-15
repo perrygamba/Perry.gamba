@@ -3281,3 +3281,365 @@ section { padding: 6rem 0; }
         color: var(--text);
     }
 }
+
+/* ============================================================
+   CONSULTING BUSINESS DEVELOPMENT UPGRADES
+   ============================================================ */
+
+/* ── Trust Logo Strip ────────────────────────────────────── */
+.trust-logos-strip {
+    background: var(--white);
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logos-strip-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logos-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    padding-bottom: 0.3rem;
+}
+
+.logos-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%) opacity(50%);
+}
+
+.logo-item:hover {
+    filter: grayscale(0%) opacity(100%);
+    transform: scale(1.05);
+}
+
+.trust-logo {
+    max-height: 40px;
+    max-width: 120px;
+    object-fit: contain;
+}
+
+/* ── Premium Buttons & Alignment ─────────────────────────── */
+.btn-premium-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    padding: 13px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.88rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-premium-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
+.services-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.services-cta-buttons .btn {
+    margin: 0;
+}
+
+/* ── Services Metadata ───────────────────────────────────── */
+.srv-meta {
+    display: inline-block;
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.srv-meta strong {
+    color: var(--navy);
+}
+
+/* ── Featured Case Studies ───────────────────────────────── */
+.case-studies {
+    background: var(--ivory);
+    padding: 6rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.case-studies-tabs-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.case-studies-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.case-studies-tabs .tab-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.case-studies-tabs .tab-btn:hover {
+    color: var(--navy);
+}
+
+.case-studies-tabs .tab-btn.active {
+    color: #10b981;
+}
+
+.case-studies-tabs .tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #10b981;
+}
+
+.case-card-v2 {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 25px var(--shadow);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    animation: fadeIn 0.5s ease;
+}
+
+.case-metrics-column {
+    background: linear-gradient(135deg, var(--navy) 0%, #1a2f5e 100%);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--white);
+}
+
+.case-metric-box {
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding-bottom: 1.5rem;
+}
+
+.case-metric-box:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.case-metric-number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1.2;
+    margin-bottom: 0.2rem;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.case-metric-label {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.8;
+}
+
+.case-details-column {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.case-block h4 {
+    font-family: 'Inter', sans-serif;
+    color: var(--navy);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.case-block h4 i {
+    color: #10b981;
+    font-size: 1.05rem;
+}
+
+.case-block p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--text);
+    margin: 0;
+}
+
+/* ── Engagement Models ───────────────────────────────────── */
+.engagement-models-section {
+    margin-top: 6rem;
+    border-top: 1px solid var(--border);
+    padding-top: 5rem;
+}
+
+.engagement-section-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.engagement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.engagement-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 15px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.engagement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px var(--shadow-lg);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.engagement-icon-v2 {
+    width: 48px;
+    height: 48px;
+    background: rgba(16, 185, 129, 0.08);
+    color: #10b981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.engagement-card h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.engagement-card p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 1.8rem;
+    flex-grow: 1;
+}
+
+.engagement-btn {
+    align-self: flex-start;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #10b981;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: gap 0.2s;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.engagement-btn:hover {
+    gap: 0.6rem;
+    color: var(--navy);
+}
+
+@media (max-width: 768px) {
+    .logos-grid {
+        gap: 2rem;
+    }
+    .logo-item {
+        height: 50px;
+    }
+    .trust-logo {
+        max-height: 35px;
+    }
+    .case-card-v2 {
+        grid-template-columns: 1fr;
+    }
+    .case-metrics-column {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    .case-metric-box {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .case-details-column {
+        padding: 2rem;
+    }
+}
+

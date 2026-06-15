@@ -174,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupTabs('.credentials-tabs-container', '.tab-btn', '.tab-pane');
     setupTabs('.experience-tabs-container', '.tab-btn', '.tab-pane');
     setupTabs('.research-tabs-container', '.tab-btn', '.tab-pane');
+    setupTabs('.case-studies-tabs-container', '.tab-btn', '.tab-pane');
 });
 
 // ── Active nav link styles ────────────────────────────────
