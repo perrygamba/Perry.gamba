@@ -154,8 +154,8 @@
             color: #0a0e1a;
             border-bottom: 2px solid #cbd5e1;
             padding-bottom: 0.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 0.03em;
             display: flex;
@@ -168,10 +168,18 @@
             font-size: 1.2rem;
         }
 
-        .cap-grid-2 {
+        /* Two column layout for Page 1 */
+        .cap-page-1-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.75rem;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 2.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .cap-page-1-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
 
         .cap-overview-text {
@@ -251,71 +259,125 @@
             font-weight: bold;
         }
 
-        .cap-past-perf-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+        /* Credentials List Style */
+        .credentials-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-size: 0.92rem;
+            color: #475569;
         }
 
-        .cap-perf-item {
-            border-left: 3px solid #10b981;
-            padding-left: 1.2rem;
+        .credentials-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.6rem;
+            line-height: 1.4;
         }
 
-        .cap-perf-item h4 {
-            margin: 0 0 0.4rem 0;
+        .credentials-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0.5rem;
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* Case Studies Styles */
+        .cap-case-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #10b981;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: none;
+            transition: all 0.3s ease;
+        }
+
+        .cap-case-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(10,14,26,0.04);
+            border-color: #cbd5e1;
+        }
+
+        .cap-case-card h4 {
+            margin: 0 0 0.5rem 0;
             color: #0a0e1a;
             font-size: 1.1rem;
             font-weight: 600;
         }
 
-        .cap-perf-item p {
+        .cap-case-card p {
             margin: 0 0 0.4rem 0;
             font-size: 0.92rem;
             color: #475569;
             line-height: 1.5;
         }
 
-        .cap-perf-item p:last-child {
+        .cap-case-card p:last-child {
             margin-bottom: 0;
         }
 
-        .cap-perf-item strong {
+        .cap-case-card strong {
             color: #0a0e1a;
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
-        .cap-info-grid {
+        /* Styled Corporate footer box */
+        .cap-footer-card {
+            background: #0a0e1a;
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 2.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .cap-footer-card .cap-section-title {
+            color: #ffffff;
+            border-bottom: 2px solid #d4af37;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .cap-footer-card .cap-info-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem 2rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem 2.5rem;
             font-size: 0.9rem;
-            background: #f8fafc;
-            padding: 1.5rem;
-            border-radius: 6px;
-            border: 1px solid #e2e8f0;
+            background: transparent;
+            border: none;
+            padding: 0;
+            border-radius: 0;
         }
 
-        .info-cell {
-            border-bottom: 1px solid #f1f5f9;
-            padding-bottom: 0.4rem;
+        .cap-footer-card .info-cell {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
         }
 
-        .info-cell strong {
-            color: #0a0e1a;
+        .cap-footer-card .info-cell strong {
+            color: #d4af37;
             display: inline-block;
             width: 100px;
         }
 
-        .info-cell.full-width {
+        .cap-footer-card .info-cell span {
+            color: #f8fafc;
+        }
+
+        .cap-footer-card .info-cell.full-width {
             grid-column: span 2;
             border-bottom: none;
             padding-bottom: 0;
         }
 
-        .info-cell.full-width strong {
+        .cap-footer-card .info-cell.full-width strong {
             width: auto;
             margin-right: 0.5rem;
         }
@@ -348,7 +410,7 @@
             }
 
             .capability-body section {
-                padding: 0.75rem 0 !important;
+                padding: 0.5rem 0 !important;
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
@@ -363,12 +425,12 @@
             }
 
             .cap-title-area h1 {
-                font-size: 2rem !important;
+                font-size: 2.2rem !important;
                 margin-bottom: 0.2rem !important;
             }
 
             .cap-subtitle {
-                font-size: 0.95rem !important;
+                font-size: 1rem !important;
                 margin-bottom: 0.4rem !important;
             }
 
@@ -377,13 +439,13 @@
             }
 
             .cap-badge-img {
-                width: 70px !important;
-                height: 70px !important;
+                width: 75px !important;
+                height: 75px !important;
             }
 
             .cap-section-title {
                 margin-top: 1rem !important;
-                margin-bottom: 0.75rem !important;
+                margin-bottom: 0.6rem !important;
                 font-size: 1.15rem !important;
                 border-bottom: 1.5px solid #0a0e1a !important;
                 padding-bottom: 0.3rem !important;
@@ -393,8 +455,10 @@
                 display: none !important;
             }
 
-            .cap-grid-2 {
-                gap: 1.25rem !important;
+            .cap-page-1-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1.3fr !important;
+                gap: 1.5rem !important;
             }
 
             .cap-card {
@@ -410,8 +474,8 @@
                 border-top-color: #d4af37 !important;
             }
 
-            .differentiators-list li {
-                margin-bottom: 0.4rem !important;
+            .differentiators-list li, .credentials-list li {
+                margin-bottom: 0.35rem !important;
             }
 
             /* Direct page break before Past Performance to guarantee perfect 2-page budget */
@@ -421,35 +485,40 @@
                 padding-top: 0.5rem !important;
             }
 
-            .cap-past-perf-list {
-                gap: 0.75rem !important;
-            }
-
-            .cap-perf-item {
-                border-left: 3px solid #10b981 !important;
-                padding-left: 1rem !important;
-                margin-bottom: 0 !important;
+            .cap-case-card {
+                padding: 1rem !important;
+                border: 1px solid #cbd5e1 !important;
+                border-left: 4px solid #10b981 !important;
+                background: #ffffff !important;
+                margin-bottom: 0.75rem !important;
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
 
-            .cap-info-grid {
-                background: #f8fafc !important;
-                border: 1px solid #cbd5e1 !important;
-                padding: 1rem !important;
-                gap: 0.5rem 1.5rem !important;
+            .cap-footer-card {
+                background: #0a0e1a !important;
+                color: #ffffff !important;
+                padding: 1.5rem !important;
+                border-radius: 8px !important;
+                margin-top: 1rem !important;
                 page-break-inside: avoid;
                 break-inside: avoid;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
 
-            .info-cell {
-                border-bottom: 1px solid #cbd5e1 !important;
+            .cap-footer-card .cap-section-title {
+                color: #ffffff !important;
+                border-bottom: 2px solid #d4af37 !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .cap-footer-card .info-cell {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
                 padding-bottom: 0.3rem !important;
             }
 
-            .info-cell.full-width {
+            .cap-footer-card .info-cell.full-width {
                 border-bottom: none !important;
                 padding-bottom: 0 !important;
             }
@@ -481,101 +550,129 @@
     </header>
 
     <!-- Capability Page Container -->
+    <!-- Capability Page Container -->
     <main class="cap-container">
         
-        <!-- Header Section -->
-        <section class="cap-header">
-            <div class="cap-title-area">
-                <h1 data-key="capability.title">Capability Statement</h1>
-                <p class="cap-subtitle" data-key="capability.subtitle">Perry Gamba - Senior Consultant &amp; Evidence Systems Advisor</p>
-                <p class="cap-tagline" data-key="hero.eyebrow">PMP® Certified Consultant · Schänis, Switzerland</p>
-            </div>
-            <div class="cap-badge-area">
-                <img src="assets/images/pmp-certification-badge.png" alt="PMP® Certification" class="cap-badge-img">
-            </div>
-        </section>
+        <!-- Page 1 Content Area -->
+        <div class="cap-page-1">
+            <!-- Header Section -->
+            <section class="cap-header">
+                <div class="cap-title-area">
+                    <h1 data-key="capability.title">Capability Statement</h1>
+                    <p class="cap-subtitle" data-key="capability.subtitle">Perry Gamba - Senior Consultant &amp; Evidence Systems Advisor</p>
+                    <p class="cap-tagline" data-key="hero.eyebrow">PMP® Certified Consultant · Schänis, Switzerland</p>
+                </div>
+                <div class="cap-badge-area">
+                    <img src="assets/images/pmp-certification-badge.png" alt="PMP® Certification" class="cap-badge-img">
+                </div>
+            </section>
 
-        <!-- Core Capabilities Section -->
-        <section>
-            <h3 class="cap-section-title"><i class="fas fa-sliders-h"></i> <span data-key="capability.overview">Core Capabilities</span></h3>
-            <p data-key="capability.overview.desc" class="cap-overview-text">
-                Highly qualified consultant with 15+ years of experience in M&amp;E systems, public health, data analytics, and educational compliance. Proven track record of improving reporting quality and program outcomes by 20–40% in international and Swiss environments.
-            </p>
-            
-            <div class="cap-grid-2">
-                <div class="cap-card">
-                    <h4 data-key="s1.title">Evidence &amp; M&amp;E Systems Architecture</h4>
-                    <p data-key="s1.desc"></p>
-                </div>
-                <div class="cap-card">
-                    <h4 data-key="s2.title">Program Evaluation &amp; Impact Assessment</h4>
-                    <p data-key="s2.desc"></p>
-                </div>
-            </div>
-        </section>
+            <!-- Grid Layout for Page 1 -->
+            <div class="cap-page-1-grid">
+                <!-- Left Column: Bio, Differentiators, Credentials -->
+                <div class="cap-col-left">
+                    <section style="padding-top: 0;">
+                        <h3 class="cap-section-title"><i class="fas fa-user-tie"></i> <span data-key="nav.about">About Me</span></h3>
+                        <p data-key="capability.overview.desc" class="cap-overview-text">
+                            Highly qualified consultant with 15+ years of experience in M&amp;E systems, public health, data analytics, and educational compliance. Proven track record of improving reporting quality and program outcomes by 20–40% in international and Swiss environments.
+                        </p>
+                    </section>
 
-        <!-- Differentiators Section -->
-        <section>
-            <h3 class="cap-section-title"><i class="fas fa-award"></i> <span data-key="capability.differentiators">Key Differentiators</span></h3>
-            <div class="cap-grid-2">
-                <div>
-                    <ul class="differentiators-list" data-key="capability.differentiators.list">
-                        <li><strong>PMP® Certified:</strong> Disciplined project management and Agile execution.</li>
-                        <li><strong>Multilingual:</strong> English, German (B2), Swahili, and 10 African languages.</li>
-                        <li><strong>Evidence-Based:</strong> Published researcher in peer-reviewed public health and digital marketing journals.</li>
-                        <li><strong>Crossover Leadership:</strong> Swiss 1. Liga competitive athlete bringing operational stamina and team discipline.</li>
-                    </ul>
-                </div>
-                <div class="cap-card gold-border">
-                    <h4 data-key="s3.title">Swiss Education Compliance &amp; Advisory</h4>
-                    <p data-key="s3.desc"></p>
-                </div>
-            </div>
-        </section>
+                    <section>
+                        <h3 class="cap-section-title"><i class="fas fa-award"></i> <span data-key="capability.differentiators">Key Differentiators</span></h3>
+                        <ul class="differentiators-list" data-key="capability.differentiators.list">
+                            <li><strong>PMP® Certified:</strong> Disciplined project management and Agile execution.</li>
+                            <li><strong>Multilingual:</strong> English, German (B2), Swahili, and 10 African languages.</li>
+                            <li><strong>Evidence-Based:</strong> Published researcher in peer-reviewed public health and digital marketing journals.</li>
+                            <li><strong>Crossover Leadership:</strong> Swiss 1. Liga competitive athlete bringing operational stamina and team discipline.</li>
+                        </ul>
+                    </section>
 
-        <!-- Past Performance (Forces break on print for beautiful 2-page layout) -->
-        <section class="page-break-print">
-            <h3 class="cap-section-title"><i class="fas fa-history"></i> <span data-key="case.title">Featured Case Studies</span></h3>
-            <div class="cap-past-perf-list">
-                <div class="cap-perf-item">
-                    <h4 data-key="case.mod.title">Uganda MoD - HMIS &amp; M&amp;E Framework</h4>
-                    <p><strong data-key="case.mod.challenge.title">Challenge:</strong> <span data-key="case.mod.challenge.desc">Disconnected reporting and data inconsistencies across 50+ military medical facilities.</span></p>
-                    <p><strong data-key="case.mod.results.title">Results:</strong> <span data-key="case.mod.results.desc">Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.</span></p>
+                    <section style="padding-bottom: 0;">
+                        <h3 class="cap-section-title"><i class="fas fa-graduation-cap"></i> <span data-key="nav.education">Key Credentials</span></h3>
+                        <ul class="credentials-list">
+                            <li data-key="capability.edu1">PMP® Certification</li>
+                            <li data-key="capability.edu2">MSc in Data Analytics</li>
+                            <li data-key="capability.edu3">MSc in Public Health</li>
+                            <li data-key="capability.edu4">Masters in Project M&E</li>
+                        </ul>
+                    </section>
                 </div>
-                <div class="cap-perf-item">
-                    <h4 data-key="case.compliance.title">Canton Schwyz - School Permit Compliance</h4>
-                    <p><strong data-key="case.compliance.challenge.title">Challenge:</strong> <span data-key="case.compliance.challenge.desc">A private school project faced permit rejection from the Schwyz Education Department.</span></p>
-                    <p><strong data-key="case.compliance.results.title">Results:</strong> <span data-key="case.compliance.results.desc">Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.</span></p>
-                </div>
-                <div class="cap-perf-item">
-                    <h4 data-key="case.lernraum.title">Swiss-East Africa - School Partnerships</h4>
-                    <p><strong data-key="case.lernraum.challenge.title">Challenge:</strong> <span data-key="case.lernraum.challenge.desc">Coordinating cross-cultural youth leadership workshops across Swiss public/private schools.</span></p>
-                    <p><strong data-key="case.lernraum.results.title">Results:</strong> <span data-key="case.lernraum.results.desc">Successfully managed multi-country program timelines and delivered reports for donor evaluation.</span></p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Company Data & Contact Section -->
-        <section>
-            <h3 class="cap-section-title"><i class="fas fa-info-circle"></i> <span data-key="capability.corporate.data">Corporate Data &amp; Contact</span></h3>
-            <div class="cap-info-grid">
-                <div class="info-cell">
-                    <strong data-key="contact.email">Email</strong><span>perry@perrygamba.consulting</span>
-                </div>
-                <div class="info-cell">
-                    <strong data-key="contact.phone">Phone</strong><span>+41 765156367</span>
-                </div>
-                <div class="info-cell">
-                    <strong data-key="contact.location">Location</strong><span>Schänis, SG, Switzerland</span>
-                </div>
-                <div class="info-cell">
-                    <strong data-key="capability.languages">Languages</strong><span>EN, DE (B2), Swahili, 10 African languages</span>
-                </div>
-                <div class="info-cell full-width" data-key="capability.codes">
-                    DUNS / UEI / Contracting Codes: Available on Request
+                <!-- Right Column: Core Capabilities Stack -->
+                <div class="cap-col-right">
+                    <section style="padding-top: 0; padding-bottom: 0;">
+                        <h3 class="cap-section-title"><i class="fas fa-sliders-h"></i> <span data-key="capability.overview">Core Capabilities</span></h3>
+                        <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
+                            <div class="cap-card">
+                                <h4 data-key="s1.title">Evidence &amp; M&amp;E Systems Architecture</h4>
+                                <p data-key="s1.desc"></p>
+                            </div>
+                            <div class="cap-card">
+                                <h4 data-key="s2.title">Program Evaluation &amp; Impact Assessment</h4>
+                                <p data-key="s2.desc"></p>
+                            </div>
+                            <div class="cap-card gold-border">
+                                <h4 data-key="s3.title">Swiss Education Compliance &amp; Advisory</h4>
+                                <p data-key="s3.desc"></p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Page 2 Content Area -->
+        <div class="cap-page-2 page-break-print">
+            <!-- Featured Case Studies -->
+            <section class="cap-cases-section" style="padding-top: 0;">
+                <h3 class="cap-section-title"><i class="fas fa-history"></i> <span data-key="case.title">Featured Case Studies</span></h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.25rem;">
+                    <!-- Case Study 1 -->
+                    <div class="cap-case-card">
+                        <h4 data-key="case.mod.title">Uganda MoD - HMIS &amp; M&amp;E Framework</h4>
+                        <p><strong data-key="case.mod.challenge.title">Challenge:</strong> <span data-key="case.mod.challenge.desc">Disconnected reporting and data inconsistencies across 50+ military medical facilities.</span></p>
+                        <p><strong data-key="case.mod.results.title">Results:</strong> <span data-key="case.mod.results.desc">Achieved a 20–40% measurable improvement in reporting quality and full accountability across all 50+ facilities.</span></p>
+                    </div>
+                    <!-- Case Study 2 -->
+                    <div class="cap-case-card">
+                        <h4 data-key="case.compliance.title">Canton Schwyz - School Permit Compliance</h4>
+                        <p><strong data-key="case.compliance.challenge.title">Challenge:</strong> <span data-key="case.compliance.challenge.desc">A private school project faced permit rejection from the Schwyz Education Department.</span></p>
+                        <p><strong data-key="case.compliance.results.title">Results:</strong> <span data-key="case.compliance.results.desc">Identified and resolved 13 specific regulatory gaps, establishing a clear pathway to permit approval.</span></p>
+                    </div>
+                    <!-- Case Study 3 -->
+                    <div class="cap-case-card">
+                        <h4 data-key="case.lernraum.title">Swiss-East Africa - School Partnerships</h4>
+                        <p><strong data-key="case.lernraum.challenge.title">Challenge:</strong> <span data-key="case.lernraum.challenge.desc">Coordinating cross-cultural youth leadership workshops across Swiss public/private schools.</span></p>
+                        <p><strong data-key="case.lernraum.results.title">Results:</strong> <span data-key="case.lernraum.results.desc">Successfully managed multi-country program timelines and delivered reports for donor evaluation.</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Data & Contact Section -->
+            <section style="padding-bottom: 0;">
+                <div class="cap-footer-card">
+                    <h3 class="cap-section-title"><i class="fas fa-info-circle"></i> <span data-key="capability.corporate.data">Corporate Data &amp; Contact</span></h3>
+                    <div class="cap-info-grid">
+                        <div class="info-cell">
+                            <strong data-key="contact.email">Email</strong><span>perry@perrygamba.consulting</span>
+                        </div>
+                        <div class="info-cell">
+                            <strong data-key="contact.phone">Phone</strong><span>+41 765156367</span>
+                        </div>
+                        <div class="info-cell">
+                            <strong data-key="contact.location">Location</strong><span>Schänis, SG, Switzerland</span>
+                        </div>
+                        <div class="info-cell">
+                            <strong data-key="capability.languages">Languages</strong><span>EN, DE (B2), Swahili, 10 African languages</span>
+                        </div>
+                        <div class="info-cell full-width" data-key="capability.codes">
+                            DUNS / UEI / Contracting Codes: Available on Request
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
     </main>
 

@@ -326,6 +326,10 @@ const translations = {
     'capability.print':               'Print / Save as PDF',
     'capability.back':                'Back to Website',
     'capability.languages':           'Languages',
+    'capability.edu1':                'PMP® Certification',
+    'capability.edu2':                'MSc in Data Analytics',
+    'capability.edu3':                'MSc in Public Health',
+    'capability.edu4':                'Masters in Project M&E',
   },
 
   de: {
@@ -656,6 +660,10 @@ const translations = {
     'capability.print':               'Drucken / Als PDF speichern',
     'capability.back':                'Zurück zur Website',
     'capability.languages':           'Sprachen',
+    'capability.edu1':                'PMP®-Zertifizierung',
+    'capability.edu2':                'MSc in Datenanalyse',
+    'capability.edu3':                'MSc in Public Health',
+    'capability.edu4':                'Master in Projekt-M&E',
   }
 };
 
