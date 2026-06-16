@@ -487,12 +487,12 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 /* ── Key Achievements Strip ──────────────────────────────── */
 .achievements-strip {
     background: linear-gradient(135deg, #0c1a35 0%, #1a2f5e 55%, #0a4a42 100%);
-    padding: 3.5rem 0;
+    padding: 2.8rem 0;
 }
 
 .achievements-strip-header {
     text-align: center;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.8rem;
 }
 
 .achievements-eyebrow {
@@ -514,9 +514,10 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 
 .achievement-item {
     display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-    padding: 1.6rem 1.8rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.8rem 1.6rem;
     border-left: 1px solid rgba(255,255,255,0.08);
     transition: background 0.3s ease;
 }
@@ -528,22 +529,23 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 }
 
 .achievement-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background: rgba(201, 168, 76, 0.15);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--gold);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     flex-shrink: 0;
 }
 
 .achievement-item p {
-    color: rgba(255,255,255,0.72);
-    font-size: 0.88rem;
-    line-height: 1.65;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 .achievement-item strong {
@@ -552,11 +554,11 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 }
 
 /* ── Section Common ──────────────────────────────────────── */
-section { padding: 6rem 0; }
+section { padding: 4.2rem 0; }
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.8rem;
 }
 
 .section-eyebrow {
@@ -1774,7 +1776,8 @@ section { padding: 6rem 0; }
     .hero-image { display: none; }
     .achievements-strip-grid { grid-template-columns: repeat(2, 1fr); }
     .achievements-strip-grid .achievement-item:first-child,
-    .achievements-strip-grid .achievement-item:nth-child(3) { border-left: none; }
+    .achievements-strip-grid .achievement-item:nth-child(3),
+    .achievements-strip-grid .achievement-item:nth-child(5) { border-left: none; }
     .achievements-strip-grid .achievement-item:nth-child(4) { border-left: 1px solid rgba(255,255,255,0.08); }
 
     .about-content {
@@ -2547,7 +2550,7 @@ section { padding: 6rem 0; }
 
 /* ── LernWeg Primarschule Section ───────────────────────── */
 .lernweg-section {
-    padding: 5rem 0;
+    padding: 4.2rem 0;
     background: var(--ivory);
 }
 
@@ -3388,7 +3391,7 @@ section { padding: 6rem 0; }
 /* ── Featured Case Studies ───────────────────────────────── */
 .case-studies {
     background: var(--ivory);
-    padding: 6rem 0;
+    padding: 4.2rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }
@@ -3525,9 +3528,9 @@ section { padding: 6rem 0; }
 
 /* ── Engagement Models ───────────────────────────────────── */
 .engagement-models-section {
-    margin-top: 6rem;
+    margin-top: 4.2rem;
     border-top: 1px solid var(--border);
-    padding-top: 5rem;
+    padding-top: 3.5rem;
 }
 
 .engagement-section-title {
