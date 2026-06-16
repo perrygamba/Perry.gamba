@@ -1958,7 +1958,7 @@ section { padding: 2.4rem 0; }
 
 /* ── Credentials Tab Swapper ── */
 .credentials-tabs-container {
-    margin-bottom: 3.5rem;
+    margin-bottom: 0;
 }
 
 .credentials-tabs {
@@ -1966,7 +1966,7 @@ section { padding: 2.4rem 0; }
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .tab-btn {
