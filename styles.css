@@ -266,7 +266,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     text-transform: uppercase;
     color: var(--gold);
     font-weight: 600;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     opacity: 0.95;
 }
 
@@ -278,7 +278,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     background: var(--gold);
 }
 
-.hero-title { margin-bottom: 1.5rem; }
+.hero-title { margin-bottom: 1.0rem; }
 
 .hero-name {
     display: block;
@@ -299,7 +299,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 
 .hero-description {
     font-size: 1.05rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
     opacity: 0.85;
     line-height: 1.8;
     max-width: 520px;
@@ -308,8 +308,8 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 .hero-stats {
     display: flex;
     gap: 2.5rem;
-    margin-bottom: 2.5rem;
-    padding: 1.5rem 0;
+    margin-bottom: 1.8rem;
+    padding: 1.0rem 0;
     border-top: 1px solid rgba(255,255,255,0.12);
     border-bottom: 1px solid rgba(255,255,255,0.12);
 }
@@ -337,7 +337,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     gap: 0.5rem;
     font-size: 0.82rem;
     color: rgba(255,255,255,0.75);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     padding: 0.35rem 0.9rem;
     background: rgba(255,255,255,0.07);
     border-radius: 20px;
@@ -487,12 +487,12 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 /* ── Key Achievements Strip ──────────────────────────────── */
 .achievements-strip {
     background: linear-gradient(135deg, #0c1a35 0%, #1a2f5e 55%, #0a4a42 100%);
-    padding: 2rem 0;
+    padding: 1.4rem 0;
 }
 
 .achievements-strip-header {
     text-align: center;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.9rem;
 }
 
 .achievements-eyebrow {
@@ -516,8 +516,8 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.85rem;
-    padding: 1.4rem 1.1rem;
+    gap: 0.5rem;
+    padding: 1.0rem;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 8px;
@@ -557,11 +557,11 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
 }
 
 /* ── Section Common ──────────────────────────────────────── */
-section { padding: 3.2rem 0; }
+section { padding: 2.4rem 0; }
 
 .section-header {
     text-align: center;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-eyebrow {
@@ -571,14 +571,14 @@ section { padding: 3.2rem 0; }
     text-transform: uppercase;
     color: var(--gold);
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .section-title {
     font-size: 2.6rem;
     font-weight: 400;
     color: var(--navy);
-    margin-bottom: 1rem;
+    margin-bottom: 0.65rem;
     letter-spacing: -0.01em;
 }
 
@@ -617,7 +617,7 @@ section { padding: 3.2rem 0; }
 .about-content {
     display: grid;
     grid-template-columns: 1fr 300px;
-    gap: 5rem;
+    gap: 3.0rem;
     align-items: center;
 }
 
@@ -626,12 +626,12 @@ section { padding: 3.2rem 0; }
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--navy);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
     line-height: 1.5;
 }
 
 .about-text p {
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.9rem;
     font-size: 1.05rem;
     line-height: 1.85;
     color: var(--text);
@@ -640,8 +640,8 @@ section { padding: 3.2rem 0; }
 .about-highlights {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.2rem;
-    margin-top: 2rem;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
 }
 
 .highlight {
@@ -688,13 +688,13 @@ section { padding: 3.2rem 0; }
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.8rem;
-    margin-bottom: 3rem;
+    gap: 1.4rem;
+    margin-bottom: 1.8rem;
 }
 
 .service-card {
     background: var(--white);
-    padding: 2.2rem;
+    padding: 1.5rem;
     border-radius: 6px;
     box-shadow: 0 2px 12px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -731,7 +731,7 @@ section { padding: 3.2rem 0; }
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     color: white;
     font-size: 1.3rem;
 }
@@ -741,7 +741,7 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.15rem;
     font-weight: 400;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.4rem;
     line-height: 1.4;
 }
 
@@ -753,7 +753,7 @@ section { padding: 3.2rem 0; }
 
 .services-cta {
     text-align: center;
-    padding: 2.5rem;
+    padding: 1.8rem;
     background: var(--navy);
     border-radius: 8px;
     color: white;
@@ -903,8 +903,8 @@ section { padding: 3.2rem 0; }
 
 .edu-item {
     position: relative;
-    margin-bottom: 2.2rem;
-    padding: 1.6rem 2rem;
+    margin-bottom: 1.4rem;
+    padding: 1.2rem 1.6rem;
     background: var(--white);
     border-radius: 6px;
     box-shadow: 0 2px 12px var(--shadow);
@@ -952,7 +952,7 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.05rem;
     font-weight: 400;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
 }
 
 .edu-details h4 {
@@ -1126,12 +1126,12 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 1.8rem;
-    padding-bottom: 0.75rem;
+    margin-bottom: 1.0rem;
+    padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--border);
 }
 
-.skill-item { margin-bottom: 1.4rem; }
+.skill-item { margin-bottom: 0.9rem; }
 
 .skill-name {
     display: block;
@@ -1312,18 +1312,18 @@ section { padding: 3.2rem 0; }
 
 .football-content { position: relative; z-index: 1; }
 
-.football-info { margin-bottom: 4rem; }
+.football-info { margin-bottom: 2.5rem; }
 
 .football-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.8rem;
 }
 
 .stat-card {
     background: var(--white);
-    padding: 2rem;
+    padding: 1.4rem;
     border-radius: 6px;
     text-align: center;
     box-shadow: 0 2px 12px var(--shadow);
@@ -1344,7 +1344,7 @@ section { padding: 3.2rem 0; }
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.7rem;
     color: white;
     font-size: 1.4rem;
 }
@@ -1354,14 +1354,14 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
 }
 
 .stat-card p {
     color: var(--text);
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
 }
 
 .stat-detail {
@@ -1375,7 +1375,7 @@ section { padding: 3.2rem 0; }
 
 .football-description {
     background: var(--white);
-    padding: 2.5rem;
+    padding: 1.8rem;
     border-radius: 8px;
     box-shadow: 0 2px 12px var(--shadow);
     border-left: 3px solid var(--teal);
@@ -1386,25 +1386,25 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.9rem;
 }
 
 .football-description p {
     color: var(--text);
     line-height: 1.8;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.9rem;
 }
 
 .season-stats {
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
     border-top: 1px solid var(--border);
 }
 
 .season-stats h4 {
     color: var(--teal);
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     font-weight: 600;
 }
 
@@ -1416,7 +1416,7 @@ section { padding: 3.2rem 0; }
 
 .stat-item {
     text-align: center;
-    padding: 1rem;
+    padding: 0.7rem;
     background: var(--ivory);
     border-radius: 6px;
 }
@@ -1427,7 +1427,7 @@ section { padding: 3.2rem 0; }
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--navy);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
 }
 
 .stat-item .stat-label {
@@ -1440,10 +1440,10 @@ section { padding: 3.2rem 0; }
 /* Football Gallery */
 .football-gallery {
     background: var(--white);
-    padding: 2.5rem;
+    padding: 1.8rem;
     border-radius: 8px;
     box-shadow: 0 2px 12px var(--shadow);
-    margin-top: 2rem;
+    margin-top: 1.2rem;
 }
 
 .football-gallery h3 {
@@ -1451,14 +1451,14 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.4rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     text-align: center;
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.2rem;
+    gap: 0.8rem;
 }
 
 .gallery-item {
@@ -1527,15 +1527,15 @@ section { padding: 3.2rem 0; }
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2.5rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    margin-bottom: 1.5rem;
-    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.0rem;
+    padding: 1.0rem 1.2rem;
     background: var(--ivory);
     border-radius: 6px;
     border-left: 3px solid var(--teal);
@@ -1579,7 +1579,7 @@ section { padding: 3.2rem 0; }
 
 .contact-form {
     background: var(--ivory);
-    padding: 2.2rem;
+    padding: 1.6rem;
     border-radius: 6px;
 }
 
@@ -1588,10 +1588,10 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
 }
 
-.form-group { margin-bottom: 1.2rem; }
+.form-group { margin-bottom: 0.8rem; }
 
 .form-group input,
 .form-group textarea {
@@ -2103,7 +2103,7 @@ section { padding: 3.2rem 0; }
     background: var(--ivory);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 2.2rem;
+    padding: 1.6rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 12px rgba(10, 14, 26, 0.02);
 }
@@ -2119,8 +2119,8 @@ section { padding: 3.2rem 0; }
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--navy);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid rgba(10, 14, 26, 0.06);
     display: flex;
     align-items: center;
@@ -2134,15 +2134,15 @@ section { padding: 3.2rem 0; }
 .matrix-chips-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .matrix-chip {
     background: var(--white);
     border: 1px solid var(--border);
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 30px;
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: var(--text);
     transition: all 0.25s ease;
@@ -2192,7 +2192,7 @@ section { padding: 3.2rem 0; }
 .leadership-grid-v2 {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 4.5rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
@@ -2204,20 +2204,20 @@ section { padding: 3.2rem 0; }
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--navy);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .leadership-storytelling p {
     font-size: 1.05rem;
     line-height: 1.8;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.9rem;
 }
 
 .leadership-metrics {
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
-    padding-top: 1.8rem;
+    margin-top: 1.4rem;
+    padding-top: 1.2rem;
     border-top: 1px solid var(--border);
 }
 
@@ -2245,7 +2245,7 @@ section { padding: 3.2rem 0; }
 .leadership-gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
+    gap: 0.5rem;
 }
 
 .gallery-item-v2 {
@@ -2404,7 +2404,7 @@ section { padding: 3.2rem 0; }
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 2.2rem;
+    padding: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2419,7 +2419,7 @@ section { padding: 3.2rem 0; }
 }
 
 .exp-card-header, .research-card-header {
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.9rem;
 }
 
 .exp-card-date, .research-card-year {
@@ -2430,7 +2430,7 @@ section { padding: 3.2rem 0; }
     font-size: 0.8rem;
     padding: 0.35rem 0.8rem;
     border-radius: 20px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
@@ -2446,7 +2446,7 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-weight: 500;
     line-height: 1.35;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.25rem;
 }
 
 .exp-card-org, .research-card-journal {
@@ -2466,7 +2466,7 @@ section { padding: 3.2rem 0; }
 .exp-card-bullets li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 0.65rem;
+    margin-bottom: 0.4rem;
     font-size: 0.92rem;
     line-height: 1.6;
     color: var(--text);
@@ -2497,7 +2497,7 @@ section { padding: 3.2rem 0; }
     font-size: 0.92rem;
     line-height: 1.6;
     color: var(--text);
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.8rem;
     
     /* Clamping to 3 lines */
     display: -webkit-box;
@@ -2524,7 +2524,7 @@ section { padding: 3.2rem 0; }
     font-weight: 600;
     cursor: pointer;
     padding: 0;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     align-self: flex-start;
     display: inline-flex;
     align-items: center;
@@ -2546,7 +2546,7 @@ section { padding: 3.2rem 0; }
 
 /* ── LernWeg Primarschule Section ───────────────────────── */
 .lernweg-section {
-    padding: 3.2rem 0;
+    padding: 2.4rem 0;
     background: var(--ivory);
 }
 
@@ -2557,7 +2557,7 @@ section { padding: 3.2rem 0; }
     border-radius: 8px;
     box-shadow: 0 4px 24px var(--shadow);
     overflow: hidden;
-    margin-top: 2.5rem;
+    margin-top: 1.8rem;
     border: 1px solid var(--border);
     transition: box-shadow 0.3s ease;
 }
@@ -2568,10 +2568,10 @@ section { padding: 3.2rem 0; }
 
 .lernweg-identity {
     background: var(--navy);
-    padding: 2.5rem 2rem;
+    padding: 1.8rem 1.4rem;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.6rem;
     justify-content: space-between;
     border-top: 4px solid var(--teal);
     position: relative;
@@ -2593,7 +2593,7 @@ section { padding: 3.2rem 0; }
 .lernweg-logo-block {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.4rem;
 }
 
 .lernweg-name {
@@ -2651,10 +2651,10 @@ section { padding: 3.2rem 0; }
 
 .lernweg-body {
     background: var(--white);
-    padding: 2.5rem;
+    padding: 1.8rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.0rem;
     border-left: 3px solid var(--teal);
 }
 
@@ -2662,7 +2662,7 @@ section { padding: 3.2rem 0; }
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 0.8rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -2692,7 +2692,7 @@ section { padding: 3.2rem 0; }
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 0.6rem;
 }
 
 .lernweg-bullets li {
@@ -3288,13 +3288,13 @@ section { padding: 3.2rem 0; }
 /* ── Trust Logo Strip ────────────────────────────────────── */
 .trust-logos-strip {
     background: var(--white);
-    padding: 2.5rem 0;
+    padding: 1.8rem 0;
     border-bottom: 1px solid var(--border);
 }
 
 .logos-strip-header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
 }
 
 .logos-eyebrow {
@@ -3312,7 +3312,7 @@ section { padding: 3.2rem 0; }
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3.5rem;
+    gap: 2.5rem;
 }
 
 .logo-item {
@@ -3387,7 +3387,7 @@ section { padding: 3.2rem 0; }
 /* ── Featured Case Studies ───────────────────────────────── */
 .case-studies {
     background: var(--ivory);
-    padding: 3.2rem 0;
+    padding: 2.4rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }
@@ -3401,9 +3401,9 @@ section { padding: 3.2rem 0; }
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.0rem;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
     flex-wrap: wrap;
 }
 
@@ -3433,7 +3433,7 @@ section { padding: 3.2rem 0; }
 .case-studies-tabs .tab-btn.active::after {
     content: '';
     position: absolute;
-    bottom: -17px;
+    bottom: -13px;
     left: 0;
     right: 0;
     height: 3px;
@@ -3453,18 +3453,18 @@ section { padding: 3.2rem 0; }
 
 .case-metrics-column {
     background: linear-gradient(135deg, var(--navy) 0%, #1a2f5e 100%);
-    padding: 2.5rem;
+    padding: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.3rem;
     color: var(--white);
 }
 
 .case-metric-box {
     text-align: center;
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.0rem;
 }
 
 .case-metric-box:last-child {
@@ -3491,10 +3491,10 @@ section { padding: 3.2rem 0; }
 }
 
 .case-details-column {
-    padding: 3rem;
+    padding: 2.0rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.3rem;
 }
 
 .case-block h4 {
@@ -3502,7 +3502,7 @@ section { padding: 3.2rem 0; }
     color: var(--navy);
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -3524,9 +3524,9 @@ section { padding: 3.2rem 0; }
 
 /* ── Engagement Models ───────────────────────────────────── */
 .engagement-models-section {
-    margin-top: 3.2rem;
+    margin-top: 2.2rem;
     border-top: 1px solid var(--border);
-    padding-top: 2.5rem;
+    padding-top: 1.8rem;
 }
 
 .engagement-section-title {
@@ -3540,13 +3540,13 @@ section { padding: 3.2rem 0; }
 .engagement-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 1.4rem;
+    margin-top: 1.8rem;
 }
 
 .engagement-card {
     background: var(--white);
-    padding: 2.5rem;
+    padding: 1.8rem;
     border-radius: 8px;
     border: 1px solid var(--border);
     box-shadow: 0 4px 15px var(--shadow);
@@ -3572,14 +3572,14 @@ section { padding: 3.2rem 0; }
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
 }
 
 .engagement-card h4 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.25rem;
     color: var(--navy);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
@@ -3587,7 +3587,7 @@ section { padding: 3.2rem 0; }
     font-size: 0.92rem;
     line-height: 1.7;
     color: var(--muted);
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.2rem;
     flex-grow: 1;
 }
 
