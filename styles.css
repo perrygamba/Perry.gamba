@@ -480,7 +480,7 @@ h1, h2, h3, .nav-logo h2, .section-title, .hero-name {
     object-fit: cover;
     object-position: 35% 22%;
     border-radius: 10px;
-    transform: scale(1.12);
+    transform: scale(1.12) translateX(10%);
     transform-origin: center top;
 }
 
